@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Пудов](https://up.htmlacademy.ru/adaptive/10/user/216332).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Бухвалова](https://github.com/yoksel).
 
 ---
 
