@@ -3,19 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <title>Пинк - конкурс</title>
 </head>
 
 <body>
   <header class="site-header">
-    <h1 class="visually-hidden">Панель навигации</h1>
-    <nav class="site-nav site-nav--closed site-nav--nojs">
+    <h1 class="visually-hidden">PINK-конкурс</h1>
 
-      <ul class="site-nav__logo-items">
-        <li class="site-nav__logo-item">
-          <a class="site-nav__logo-link" href="#">PINK</a>
-        </li>
-      </ul>
+    <nav class="site-nav site-nav--closed site-nav--nojs">
+      <button class="site-nav__toggle" type="button">Открыть меню</button>
+
+      <div class="site-nav__logo">
+        <a class="site-nav__link site-nav__link--logo" href="#">
+          <img src="http://placehold.it/150x100" alt="Логотип Пинк">
+        </a>
+      </div>
 
       <ul class="site-nav__items">
         <li class="site-nav__item">
@@ -32,8 +34,9 @@
         </li>
       </ul>
     </nav>
-    <h1 class="site-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <p class="site-header__title site-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</p>
   </header>
+
   <main class="site-main">
     <section class="contest">
       <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
@@ -150,17 +153,20 @@
       </form>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="site-footer__logo">
       <a class="site-footer__link" href="index.html">
         <img src="http://placehold.it/150x100" alt="Логотип Пинк">
       </a>
     </div>
+
     <div class="site-footer__social">
-      <a class="site-footer__link site-footer__link--tv" href="#">TV</a>
-      <a class="site-footer__link site-footer__link--fb" href="#">FB</a>
+      <a class="site-footer__link site-footer__link--tv" href="#">Twitter</a>
+      <a class="site-footer__link site-footer__link--fb" href="#">Facebook</a>
       <a class="site-footer__link site-footer__link--yt" href="#">YouTube</a>
     </div>
+
     <div class="site-footer__copyright">Разработано:
       <a class="site-footer__link site-footer__link--html" href="#">HTML Academy</a>
     </div>

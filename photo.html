@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <title>Пинк - фотографии</title>
 </head>
 
 <body>
   <header class="site-header">
-    <h1 class="visually-hidden">Панель навигации</h1>
+    <h1 class="visually-hidden">PINK-фотографии</h1>
     <nav class="site-nav site-nav--closed site-nav--nojs">
+      <button class="site-nav__toggle" type="button">Открыть меню</button>
 
-      <ul class="site-nav__logo-items">
-        <li class="site-nav__logo-item">
-          <a class="site-nav__logo-link" href="#">PINK</a>
-        </li>
-      </ul>
+      <div class="site-nav__logo">
+        <a class="site-nav__link site-nav__link--logo" href="#">
+          <img src="http://placehold.it/150x100" alt="Логотип Пинк">
+        </a>
+      </div>
 
       <ul class="site-nav__items">
         <li class="site-nav__item">
@@ -32,16 +33,18 @@
         </li>
       </ul>
     </nav>
-    <h1 class="site-header__title">Фотографии пользователей</h1>
+    <p class="site-header__title site-header__title--photo">Фотографии пользователей</p>
   </header>
+
   <main class="site-main">
-    <h2 class="visually-hidden">Лента пользователей</h2>
+
     <section class="feed">
+      <h2 class="visually-hidden">Лента пользователей</h2>
       <p class="feed__promo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших!</p>
 
       <article class="post">
 
-        <div class="post__content-photo post__content-photo--panorama">
+        <div class="post__photo post__photo--panorama">
           <img src="http://placehold.it/150x100" alt="Фотография пользователя">
         </div>
         <div class="post__wrapper">
@@ -55,7 +58,7 @@
 
       <article class="post">
         <div class="post__wrapper">
-          <div class="post__content-photo">
+          <div class="post__photo">
             <img src="http://placehold.it/150x100" alt="Фотография пользователя">
           </div>
           <p class="post__author">Левон
@@ -68,7 +71,7 @@
 
       <article class="post">
         <div class="post__wrapper">
-          <div class="post__content-photo">
+          <div class="post__photo">
             <img src="http://placehold.it/150x100" alt="Фотография пользователя">
           </div>
           <p class="post__author">Антон
@@ -81,7 +84,7 @@
 
       <article class="post">
         <div class="post__wrapper">
-          <div class="post__content-photo">
+          <div class="post__photo">
             <img src="http://placehold.it/150x100" alt="Фотография пользователя">
           </div>
           <p class="post__author">Борис
@@ -94,7 +97,7 @@
 
       <article class="post">
         <div class="post__wrapper">
-          <div class="post__content-photo">
+          <div class="post__photo">
             <img src="http://placehold.it/150x100" alt="Фотография пользователя">
           </div>
           <p class="post__author">Сергей
@@ -107,7 +110,7 @@
 
       <article class="post">
         <div class="post__wrapper">
-          <div class="post__content-photo">
+          <div class="post__photo">
             <img src="http://placehold.it/150x100" alt="Фотография пользователя">
           </div>
           <p class="post__author">Максим
@@ -120,7 +123,7 @@
 
       <article class="post">
         <div class="post__wrapper">
-          <div class="post__content-photo">
+          <div class="post__photo">
             <img src="http://placehold.it/150x100" alt="Фотография пользователя">
           </div>
           <p class="post__author">Надежда
@@ -130,12 +133,11 @@
           <span class="post__likes">Нравится:2560</span>
         </div>
       </article>
-
     </section>
+
     <section class="photo-editor">
       <h2 class="visually-hidden">Фоторедактор</h2>
       <p class="photo-editor__text"> Затмите их всех! Выкладывайте все, что накопилось в телефоне !</p>
-
       <section class="photo-editor__console">
         <div class="photo-editor__display">
           <img src="http://placehold.it/150x100" alt="Дисплей фоторедактора">
@@ -171,17 +173,20 @@
       </section>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="site-footer__logo">
       <a class="site-footer__link" href="index.html">
         <img src="http://placehold.it/150x100" alt="Логотип Пинк">
       </a>
     </div>
+
     <div class="site-footer__social">
-      <a class="site-footer__link site-footer__link--tv" href="#">TV</a>
-      <a class="site-footer__link site-footer__link--fb" href="#">FB</a>
+      <a class="site-footer__link site-footer__link--tv" href="#">Twitter</a>
+      <a class="site-footer__link site-footer__link--fb" href="#">Facebook</a>
       <a class="site-footer__link site-footer__link--yt" href="#">YouTube</a>
     </div>
+
     <div class="site-footer__copyright">Разработано:
       <a class="site-footer__link site-footer__link--html" href="#">HTML Academy</a>
     </div>

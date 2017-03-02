@@ -3,21 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <title>Пинк</title>
 </head>
 
 <body>
   <header class="site-header">
-    <h1 class="visually-hidden">Панель навигации</h1>
+    <h1 class="visually-hidden">Приложение PINK</h1>
     <nav class="site-nav site-nav--closed site-nav--nojs">
+      <button class="site-nav__toggle" type="button">Открыть меню</button>
 
-      <ul class="site-nav__logo-items">
-        <li class="site-nav__logo-item">
-          <a class="site-nav__logo-link" href="#">PINK</a>
-        </li>
-      </ul>
+      <div class="site-nav__logo">
+        <a class="site-nav__link site-nav__link--logo" href="#">
+          <img src="http://placehold.it/150x100" alt="Логотип Пинк">
+        </a>
+      </div>
 
-      <ul class="site-nav__items">
+      <ul class="site-nav__list">
         <li class="site-nav__item">
           <a class="site-nav__link" href="#">Главная</a>
         </li>
@@ -32,13 +33,18 @@
         </li>
       </ul>
     </nav>
+
     <div class="site-header__demo-img">
       <img src="http://placehold.it/150x100" alt="Демо-картинка">
     </div>
+
   </header>
+
   <main class="site-main">
-    <h2 class="visually-hidden">Скачать приложение</h2>
+
+
     <section class="download">
+      <h2 class="visually-hidden">Скачать приложение</h2>
       <a class="download__link custom-btn custom-btn--download" href="http://www.apple.com/itunes/">Скачать приложение</a>
       <div class="download__markets">
         <a class="download__link download__link--apple" href="http://www.apple.com/itunes/">Itunes</a>
@@ -49,13 +55,14 @@
         Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8.
       </div>
     </section>
+
     <section class="advantages">
       <h2 class="visually-hidden">О преимуществах</h2>
       <div class="advantages__proposals">
         <div class="advantages__proposal">Устали от серости мегаполиса?</div>
         <div class="advantages__proposal">Нам есть, что вам предложить!</div>
       </div>
-      <ul class="advantages__items">
+      <ul class="advantages__list">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__descr">Приложение позволяет вам победить осенюю хандру и дипрессию буквально в несколько кликов</p>
@@ -71,9 +78,10 @@
         </li>
       </ul>
     </section>
+
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
-      <ul class="reviews__items">
+      <ul class="reviews__list">
         <li class="reviews__item">
           <span class="reviews__author">Николай Петров</span>
           <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
@@ -93,10 +101,10 @@
         <button class="slider-controls__toggle" type="button"></button>
       </div>
     </section>
-    <section class="pricelist">
-      <div class="pricelist__wrapper">
 
-        <h2 class="visually-hidden">Тарифные пакеты</h2>
+    <section class="pricelist">
+      <h2 class="visually-hidden">Тарифные пакеты</h2>
+      <div class="pricelist__wrapper">
 
 
         <table class="pricelist__table ">
@@ -146,12 +154,13 @@
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <h2 class="visually-hidden">Обратная связь</h2>
 
     <div class="site-footer__wrapper">
       <p class="site-footer__question">Остались вопросы? Свяжитесь с нами!</p>
-      <ul class="site-footer__items">
+      <ul class="site-footer__list">
         <li class="site-footer__item">
           <span class="site-footer__action">Звоните:</span>
           <span class="site-footer__contact">+7(812)555-66-66</span>
