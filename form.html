@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1 class="visually-hidden">Панель навигации</h1>
+    <nav class="site-nav site-nav--closed site-nav--nojs">
+
+      <ul class="site-nav__logo-items">
+        <li class="site-nav__logo-item">
+          <a class="site-nav__logo-link" href="#">PINK</a>
+        </li>
+      </ul>
+
+      <ul class="site-nav__items">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Конкурс</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="site-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <main class="site-main">
+    <section class="contest">
+      <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+
+      <p class="contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту.</p>
+      <form class="contest__form" action="https://echo.htmlacademy.ru/ " method="get">
+        <div class="contest__wrapper">
+          <fieldset class="contest__fieldset contest__fieldset--identification">
+            <ul class="contest__list contest__list--identification">
+              <li class="contest__item contest__item--identification">
+                <label class="contest__label contest__label--identification" for="lastname">Фамилия:</label>
+                <input class="contest__field contest__field--identification" name="lastname" id="lastname" placeholder="Укажите фамилию*" required>
+              </li>
+
+              <li class="contest__item contest__item--identification">
+                <label class="contest__label contest__label--identification" for="name">Имя:</label>
+                <input class="contest__field contest__field--identification" name="name" id="name" placeholder="Введите ваше имя*" required>
+              </li>
+
+              <li class="contest__item contest__item--identification">
+                <label class="contest__label contest__label--identification" for="patronymic">Отчество:</label>
+                <input class="contest__field contest__field--identification" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="contest__fieldset contest__fieldset--achievement">
+            <legend class="contest__legend contest__legend--achievement">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="contest__list contest__list--achievement">
+
+              <li class="contest__item contest__item--achievement">
+                <input class="contest__field contest__field--achievement" type="checkbox" name="achievement" id="achievement-1">
+                <label class="contest__label contest__label--achievement" for="achievement-1">Сделал селфи с акулой</label>
+              </li>
+
+              <li class="contest__item contest__item--achievement">
+                <input class="contest__field contest__field--achievement" type="checkbox" name="achievement" id="achievement-2">
+                <label class="contest__label contest__label--achievement" for="achievement-2">Обгорел на пляже</label>
+              </li>
+
+              <li class="contest__item contest__item--achievement">
+                <input class="contest__field contest__field--achievement" type="checkbox" name="achievement" id="achievement-3">
+                <label class="contest__label contest__label--achievement" for="achievement-3">Видел Чака Норриса</label>
+              </li>
+
+              <li class="contest__item contest__item--achievement">
+                <input class="contest__field contest__field--achievement" type="checkbox" name="achievement" id="achievement-4">
+                <label class="contest__label contest__label--achievement" for="achievement-4">Накупил сувениров</label>
+              </li>
+
+              <li class="contest__item contest__item--achievement">
+                <input class="contest__field contest__field--achievement" type="checkbox" name="achievement" id="achievement-5">
+                <label class="contest__label contest__label--achievement" for="achievement-5">Удержал башню</label>
+              </li>
+
+              <li class="contest__item contest__item--achievement">
+                <input class="contest__field contest__field--achievement" type="checkbox" name="achievement" id="achievement-6">
+                <label class="contest__label contest__label--achievement" for="achievement-6">Разгромил отель</label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="contest__fieldset contest__fieldset--feedback">
+
+            <ul class="contest__list contest__list--feedback">
+
+              <li class="contest__item contest__item--feedback">
+                <label class="contest__label contest__label--feedback" for="phone">Номер телефона:</label>
+                <input class="contest__field contest__field--feedback" type="text" name="phone" id="phone" placeholder="Номер пожалуйста">
+              </li>
+
+              <li class="contest__item contest__item--feedback">
+                <label class="contest__label contest__label--feedback" for="mail">Адресок почты:</label>
+                <input class="contest__field contest__field--feedback" type="text" name="mail" id="mail" placeholder="Введите почту*" required>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="contest__fieldset contest__fieldset--soft">
+            <legend class="contest__legend contest__legend--soft">С каким приложением путешествовали?</legend>
+            <ul class="contest__list contest__list--soft">
+
+              <li class="contest__item contest__item--soft">
+                <input class="contest__field contest__field--soft" type="radio" name="soft" id="soft-1">
+                <label class="contest__label contest__label--soft" for="soft-1">Pink для iOS</label>
+              </li>
+
+              <li class="contest__item contest__item--soft">
+                <input class="contest__field contest__field--soft" type="radio" name="soft" id="soft-2">
+                <label class="contest__label contest__label--soft" for="soft-2">Pink на Android</label>
+              </li>
+
+              <li class="contest__item contest__item--soft">
+                <input class="contest__field contest__field--soft" type="radio" name="soft" id="soft-3">
+                <label class="contest__label contest__label--soft" for="soft-3">Windows Phone</label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="contest__fieldset contest__fieldset--impressions">
+            <legend class="contest__legend contest__legend--impressions">Опишите свои эмоции</legend>
+            <textarea class="contest__textarea" name="impressions" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="original-btn contest__btn" type="submit">Отправить форму</button>
+          <p class="contest__footnote">
+            <sup>*</sup>-обязательные поля
+          </p>
+
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__logo">
+      <a class="site-footer__link" href="index.html">
+        <img src="http://placehold.it/150x100" alt="Логотип Пинк">
+      </a>
+    </div>
+    <div class="site-footer__social">
+      <a class="site-footer__link site-footer__link--tv" href="#">TV</a>
+      <a class="site-footer__link site-footer__link--fb" href="#">FB</a>
+      <a class="site-footer__link site-footer__link--yt" href="#">YouTube</a>
+    </div>
+    <div class="site-footer__copyright">Разработано:
+      <a class="site-footer__link site-footer__link--html" href="#">HTML Academy</a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
