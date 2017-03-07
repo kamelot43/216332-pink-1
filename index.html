@@ -2,11 +2,30 @@
 <html lang="ru">
 
 <head>
+<style>
+  HTML {
+    background: url( 'preview/pink-index-mobile.jpg' ) 50% 0 no-repeat;
+  }
+
+  @media (min-width: 660px) {
+    HTML {
+      background-image: url( 'preview/pink-index-tablet.jpg' );
+    }
+  }
+
+  @media (min-width: 960px) {
+    HTML {
+      background-image: url( 'img/pink-index-desktop.jpg' );
+    }
+  }
+  BODY {
+    opacity: .5;
+  }
+</style>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>Пинк</title>
 </head>
-
 <body>
   <header class="site-header">
     <h1 class="visually-hidden">Приложение PINK</h1>
@@ -15,7 +34,7 @@
 
       <div class="site-nav__logo">
         <a href="#">
-          <img src="http://placehold.it/150x100" alt="Логотип Пинк">
+          <img src="http://placehold.it/150x70" alt="Логотип Пинк">
         </a>
       </div>
 
@@ -36,7 +55,7 @@
     </nav>
 
     <div class="site-header__demo-img">
-      <img src="http://placehold.it/150x100" alt="Демо-картинка">
+        <img src="http://placehold.it/255x285" alt="Демо-картинка">
     </div>
 
   </header>
@@ -45,6 +64,7 @@
 
 
     <section class="download">
+      <div class="download__wrapper">
       <h2 class="visually-hidden">Скачать приложение</h2>
       <a class="custom-btn custom-btn--download" href="http://www.apple.com/itunes/">Скачать приложение</a>
       <div class="download__markets">
@@ -55,9 +75,11 @@
       <div class="download__descr">
         Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8.
       </div>
+    </div>
     </section>
 
     <section class="advantages">
+      <div class="advantages__wrapper">
       <h2 class="visually-hidden">О преимуществах</h2>
       <div class="advantages__proposals">
         <div class="advantages__proposal">Устали от серости мегаполиса?</div>
@@ -78,21 +100,23 @@
           <p class="advantages__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
+    </div>
     </section>
 
     <section class="reviews">
+      <div class="reviews__wrapper">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
-          <span class="reviews__author">Николай Петров</span>
+          <h3 class="reviews__author">Николай Петров</h3>
           <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
         </li>
         <li class="reviews__item">
-          <span class="reviews__author">Николай Петров</span>
+          <h3 class="reviews__author">Николай Петров</h3>
           <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
         </li>
         <li class="reviews__item">
-          <span class="reviews__author">Николай Петров</span>
+          <h3 class="reviews__author">Николай Петров</h3>
           <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
         </li>
       </ul>
@@ -101,6 +125,7 @@
         <button class="slider-controls__toggle" type="button"></button>
         <button class="slider-controls__toggle" type="button"></button>
       </div>
+    </div>
     </section>
 
     <section class="pricelist">

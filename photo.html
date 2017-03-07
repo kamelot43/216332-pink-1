@@ -2,6 +2,25 @@
 <html lang="ru">
 
 <head>
+<style>
+  HTML {
+    background: url( 'preview/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
+  }
+
+  @media (min-width: 660px) {
+    HTML {
+      background-image: url( 'preview/pink-photo-tablet.jpg' );
+    }
+  }
+
+  @media (min-width: 960px) {
+    HTML {
+      background-image: url( 'img/pink-photo-desktop.jpg' );
+    }
+  }
+  BODY {
+    opacity: .5;
+  }
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>Пинк - фотографии</title>
