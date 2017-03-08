@@ -24,6 +24,8 @@
   </style>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
   <title>Пинк - конкурс</title>
 </head>
 
@@ -40,7 +42,7 @@
         </a>
       </div>
 
-      <ul class="site-nav__items">
+      <ul class="site-nav__list">
         <li class="site-nav__item">
           <a class="site-nav__link" href="index.html">Главная</a>
         </li>
@@ -48,7 +50,7 @@
           <a class="site-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">Конкурс</a>
+          <a class="site-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-nav__item">
           <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
@@ -64,7 +66,7 @@
 
       <p class="contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту.</p>
       <form class="contest__form" action="https://echo.htmlacademy.ru/ " method="get">
-        <div class="contest__wrapper">
+
           <fieldset class="contest__fieldset contest__fieldset--identification">
             <ul class="contest__list contest__list--identification">
               <li class="contest__item contest__item--identification">
@@ -85,8 +87,9 @@
             </ul>
           </fieldset>
 
+          <div class="contest__wrapper">
           <fieldset class="contest__fieldset contest__fieldset--achievement">
-            <legend class="contest__legend contest__legend--achievement">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="contest__legend contest__legend--achievement">Ваши безбашенные<br> достижения в путешествии</legend>
             <ul class="contest__list contest__list--achievement">
 
               <li class="contest__item contest__item--achievement">
@@ -120,9 +123,12 @@
               </li>
 
             </ul>
+
           </fieldset>
+        </div>
 
           <fieldset class="contest__fieldset contest__fieldset--feedback">
+
 
             <ul class="contest__list contest__list--feedback">
 
@@ -137,9 +143,12 @@
               </li>
 
             </ul>
+
           </fieldset>
 
+          <div class="contest__wrapper">
           <fieldset class="contest__fieldset contest__fieldset--soft">
+
             <legend class="contest__legend contest__legend--soft">С каким приложением путешествовали?</legend>
             <ul class="contest__list contest__list--soft">
 
@@ -159,18 +168,22 @@
               </li>
 
             </ul>
+
           </fieldset>
+        </div>
 
           <fieldset class="contest__fieldset contest__fieldset--impressions">
             <legend class="contest__legend contest__legend--impressions">Опишите свои эмоции</legend>
             <textarea class="contest__textarea" name="impressions" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
+
           </fieldset>
+
           <button class="original-btn contest__btn" type="submit">Отправить форму</button>
           <p class="contest__footnote">
-            <sup>*</sup>-обязательные поля
+            <sup class="contest__asterisk">*</sup>-обязательные поля
           </p>
 
-        </div>
+
       </form>
     </section>
   </main>
@@ -192,6 +205,25 @@
       <a href="index.html">Разработано:</a>
     </div>
   </footer>
+
+  <!--Модальное окно №1-->
+  <div class="popup popup--denied">
+    <div class="popup__wrapper">
+      <h3 class="popup__title">Что-то пошло не так!</h3>
+      <p class="popup__message">Проверьте поля,выделенные красным,<br>скорее всего вы забыли их заполнить.</p>
+    </div>
+      <button class="original-btn popup__btn" type="button" title="Закрыть окно">Закрыть окно</button>
+  </div>
+
+  <!--Модальное окно №2-->
+  <div class="popup popup--success">
+    <div class="popup__wrapper">
+      <h3 class="popup__title">Ваша заявка отправлена</h3>
+      <p class="popup__message">Спасибо за ваше участие ваша заявка<br> уже поступила к нам.В ближайшее<br> время мы рассмотрим ее и<br> оповестим вас.</p>
+    </div>
+      <button class="original-btn popup__btn" type="button" title="Закрыть окно">Закрыть окно</button>
+
+  </div>
 
 
 </body>

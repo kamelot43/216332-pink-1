@@ -2,28 +2,30 @@
 <html lang="ru">
 
 <head>
-<style>
-  HTML {
-    background: url( 'preview/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
-  }
-
-  @media (min-width: 660px) {
+  <style>
     HTML {
-      background-image: url( 'preview/pink-photo-tablet.jpg' );
+      background: url( 'preview/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
     }
-  }
 
-  @media (min-width: 960px) {
-    HTML {
-      background-image: url( 'img/pink-photo-desktop.jpg' );
+    @media (min-width: 660px) {
+      HTML {
+        background-image: url( 'preview/pink-photo-tablet.jpg' );
+      }
     }
-  }
-  BODY {
-    opacity: .5;
-  }
+
+    @media (min-width: 960px) {
+      HTML {
+        background-image: url( 'img/pink-photo-desktop.jpg' );
+      }
+    }
+    BODY {
+      opacity: .5;
+    }
   </style>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
   <title>Пинк - фотографии</title>
 </head>
 
@@ -161,38 +163,38 @@
       <p class="photo-editor__text"> Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне !</p>
       <section class="photo-editor__console">
         <div class="photo-editor__wrapper">
-        <div class="photo-editor__display">
-          <img src="img/photo-7-mobile@1x.jpg" alt="Дисплей фоторедактора">
-        </div>
-        <div class="photo-editor__filters">
+          <div class="photo-editor__display">
+            <img src="img/photo-7-mobile@1x.jpg" alt="Дисплей фоторедактора">
+          </div>
+          <div class="photo-editor__filters">
 
-          <div class="photo-editor__filter">
-            <button class="photo-editor__btn photo-editor__btn--crop" type="button"></button>
-            <div class="photo-editor__scale">
-              <div class="photo-editor__toggle  photo-editor__toggle--crop"></div>
+            <div class="photo-editor__filter">
+              <button class="photo-editor__btn photo-editor__btn--crop" type="button"></button>
+              <div class="photo-editor__scale">
+                <div class="photo-editor__toggle  photo-editor__toggle--crop"></div>
+              </div>
+            </div>
+
+            <div class="photo-editor__filter">
+              <button class="photo-editor__btn photo-editor__btn--fill" type="button"></button>
+              <div class="photo-editor__scale photo-editor__scale--hidden">
+                <div class="photo-editor__toggle  photo-editor__toggle--fill"></div>
+              </div>
+            </div>
+
+            <div class="photo-editor__filter">
+              <button class="photo-editor__btn photo-editor__btn--contrast" type="button"></button>
+              <div class="photo-editor__scale photo-editor__scale--hidden">
+                <div class="photo-editor__toggle  photo-editor__toggle--contrast"></div>
+              </div>
             </div>
           </div>
 
-          <div class="photo-editor__filter">
-            <button class="photo-editor__btn photo-editor__btn--fill" type="button"></button>
-            <div class="photo-editor__scale photo-editor__scale--hidden">
-              <div class="photo-editor__toggle  photo-editor__toggle--fill"></div>
-            </div>
-          </div>
-
-          <div class="photo-editor__filter">
-            <button class="photo-editor__btn photo-editor__btn--contrast" type="button"></button>
-            <div class="photo-editor__scale photo-editor__scale--hidden">
-              <div class="photo-editor__toggle  photo-editor__toggle--contrast"></div>
-            </div>
+          <div class="photo-editor__upload">
+            <button class="photo-editor__upload-btn custom-btn custom-btn--post" type="button">Запостить</button>
+            <button class="photo-editor__upload-btn custom-btn custom-btn--cancel-post" type="button">Отмена</button>
           </div>
         </div>
-
-        <div class="photo-editor__upload">
-          <button class="photo-editor__upload-btn custom-btn custom-btn--post" type="button">Запостить</button>
-          <button class="photo-editor__upload-btn custom-btn custom-btn--cancel-post" type="button">Отмена</button>
-        </div>
-      </div>
       </section>
     </section>
   </main>
