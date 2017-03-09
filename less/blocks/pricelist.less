@@ -1,21 +1,23 @@
 .pricelist {
+  min-height: 510px;
   overflow: hidden;
-  padding-top: 133px;
 }
 .pricelist__wrapper {
   .container();
+  padding-top: 120px;
 }
 .pricelist__table {
   position: relative;
-  border-collapse: collapse;
   width: 800px;
   left: -93%;
+  border-collapse: collapse;
+
 }
 .pricelist__title {
+  height: 95px;
   font-size: 18px;
   line-height: 30px;
   font-weight: @bold;
-  height: 95px;
   text-align: center;
   outline: 2px solid blue;
   background: #283645;
@@ -23,22 +25,22 @@
 }
 .pricelist__option {
   position: relative;
+  height: 55px;
+  width: 110px;
+  padding-left: 15px;
+  padding-top: 5px;
   font-size: 14px;
   line-height: 30px;
   font-weight: @regular;
   border-bottom: 1px solid #e5e5e5;
-  height: 55px;
-  width: 110px;
   text-transform: uppercase;
-  padding-left: 15px;
-  padding-top: 5px;
   outline: 2px solid red;
 }
 .pricelist__icon {
-  width: 30px;
-  height: 25px;
   position: absolute;
   right: 15px;
+  width: 30px;
+  height: 25px;
   background-repeat: no-repeat;
   outline: 2px solid green;
 }
