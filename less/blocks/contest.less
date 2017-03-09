@@ -1,0 +1,163 @@
+.contest {
+  min-height: 2215px;
+}
+.contest__promo {
+  .container();
+  padding-top: 48px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contest__list {
+  .list-clear-indent();
+}
+
+.contest__list--achievement {
+  padding-top: 40px;
+}
+
+.contest__list--soft {
+  padding-top: 40px;
+}
+
+.contest__label--identification {
+  padding-left: 20px;
+  color: @crimson-color;
+  text-transform: uppercase;
+}
+
+.contest__label--feedback {
+  padding-left: 20px;
+  color: @crimson-color;
+  text-transform: uppercase;
+
+}
+
+.contest__label--achievement {
+  position: relative;
+  padding-left: 72px;
+  font-size: 18px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    display: block;
+    width: 39px;
+    height: 39px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+}
+
+.contest__label--soft {
+  position: relative;
+  padding-left: 72px;
+  font-size: 18px;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    display: block;
+    width: 39px;
+    height: 39px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+.contest__field {
+  margin-bottom: 20px;
+  width: 270px;
+  height: 55px;
+  border: 2px solid @lightgray-color;
+}
+
+.contest__field--achievement {
+  display: none;
+}
+
+.contest__field--soft {
+  display: none;
+}
+.contest__fieldset {
+  .container();
+  padding: 0;
+  margin-bottom: 30px;
+  outline: 3px solid green;
+}
+.contest__fieldset--identification {
+  min-height: 325px;
+}
+.contest__fieldset--achievement {
+  min-height: 605px;
+}
+.contest__fieldset--feedback {
+  min-height: 210px;
+}
+
+.contest__fieldset--soft {
+  min-height: 340px;
+  margin-bottom: 35px;
+}
+
+.contest__fieldset--impressions {
+  margin-bottom: 30px;
+}
+
+.contest__legend {
+  line-height: 18px;
+  color: @crimson-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest__legend--achievement {
+  padding-top: 40px;
+}
+
+.contest__legend--soft {
+  padding-top: 35px;
+}
+
+.contest__item--achievement {
+  margin-bottom: 50px;
+}
+.contest__item--achievement:last-child {
+  margin-bottom: 45px;
+}
+
+.contest__item--soft {
+  margin-bottom: 43px;
+}
+
+.contest__textarea {
+  margin-top: 20px;
+  width: 275px;
+  height: 195px;
+  outline: 2px solid red;
+
+}
+
+.contest__btn {
+  margin-left: 10px;
+  margin-bottom: 35px;
+}
+
+.contest__footnote {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest__asterisk {
+  color: @crimson-color;
+}

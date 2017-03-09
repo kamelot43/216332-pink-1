@@ -1,0 +1,33 @@
+.reviews {
+  min-height: 315px;
+}
+.reviews__list {
+  .list-clear-indent();
+  padding-top: 35px;
+}
+
+.reviews__item:nth-child(n+2) {
+  display: none;
+}
+.reviews__wrapper {
+  .container();
+}
+.reviews__author {
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: @bold;
+  text-align: center;
+}
+.reviews__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: @regular;
+  text-align: center;
+}
+.reviews__controls {
+  //временно для разметки!!
+  padding-bottom: 15px;
+}

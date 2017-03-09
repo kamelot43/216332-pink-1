@@ -2,7 +2,31 @@
 <html lang="ru">
 
 <head>
+  <style>
+    HTML {
+      background: url('preview/pink-photo-mobile.jpg') 50% 0 no-repeat;
+    }
+
+    @media (min-width: 660px) {
+      HTML {
+        background-image: url('preview/pink-photo-tablet.jpg');
+      }
+    }
+
+    @media (min-width: 960px) {
+      HTML {
+        background-image: url('img/pink-photo-desktop.jpg');
+      }
+    }
+
+    BODY {
+      opacity: .5;
+    }
+  </style>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
   <title>Пинк - фотографии</title>
 </head>
 
@@ -13,17 +37,17 @@
       <button class="site-nav__toggle" type="button">Открыть меню</button>
 
       <div class="site-nav__logo">
-        <a class="site-nav__link site-nav__link--logo" href="#">
-          <img src="http://placehold.it/150x100" alt="Логотип Пинк">
+        <a href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
         </a>
       </div>
 
-      <ul class="site-nav__items">
+      <ul class="site-nav__list">
         <li class="site-nav__item">
           <a class="site-nav__link" href="index.html">Главная</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">Фотографии</a>
+          <a class="site-nav__link" >Фотографии</a>
         </li>
         <li class="site-nav__item">
           <a class="site-nav__link" href="form.html">Конкурс</a>
@@ -45,7 +69,7 @@
       <article class="post">
 
         <div class="post__photo post__photo--panorama">
-          <img src="http://placehold.it/150x100" alt="Фотография пользователя">
+          <img src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
         </div>
         <div class="post__wrapper">
           <p class="post__author">Анна
@@ -59,7 +83,7 @@
       <article class="post">
         <div class="post__wrapper">
           <div class="post__photo">
-            <img src="http://placehold.it/150x100" alt="Фотография пользователя">
+            <img src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль">
           </div>
           <p class="post__author">Левон
             <span class="post__time">(5 часов назад)</span>
@@ -72,7 +96,7 @@
       <article class="post">
         <div class="post__wrapper">
           <div class="post__photo">
-            <img src="http://placehold.it/150x100" alt="Фотография пользователя">
+            <img src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка">
           </div>
           <p class="post__author">Антон
             <span class="post__time">(12 часов назад)</span>
@@ -85,7 +109,7 @@
       <article class="post">
         <div class="post__wrapper">
           <div class="post__photo">
-            <img src="http://placehold.it/150x100" alt="Фотография пользователя">
+            <img src="img/photo-3-mobile@1x.jpg" alt="Архитектура">
           </div>
           <p class="post__author">Борис
             <span class="post__time">(20 часов назад)</span>
@@ -98,7 +122,7 @@
       <article class="post">
         <div class="post__wrapper">
           <div class="post__photo">
-            <img src="http://placehold.it/150x100" alt="Фотография пользователя">
+            <img src="img/photo-4-mobile@1x.jpg" alt="Прилавок с бахчой">
           </div>
           <p class="post__author">Сергей
             <span class="post__time">(25 часов назад)</span>
@@ -111,7 +135,7 @@
       <article class="post">
         <div class="post__wrapper">
           <div class="post__photo">
-            <img src="http://placehold.it/150x100" alt="Фотография пользователя">
+            <img src="img/photo-5-mobile@1x.jpg" alt="Вид с горы">
           </div>
           <p class="post__author">Максим
             <span class="post__time">(40 часов назад)</span>
@@ -124,7 +148,7 @@
       <article class="post">
         <div class="post__wrapper">
           <div class="post__photo">
-            <img src="http://placehold.it/150x100" alt="Фотография пользователя">
+            <img src="img/photo-6-mobile@1x.jpg" alt="Вид из окна самолета">
           </div>
           <p class="post__author">Надежда
             <span class="post__time">(45 часов назад)</span>
@@ -137,58 +161,60 @@
 
     <section class="photo-editor">
       <h2 class="visually-hidden">Фоторедактор</h2>
-      <p class="photo-editor__text"> Затмите их всех! Выкладывайте все, что накопилось в телефоне !</p>
+      <p class="photo-editor__text"> Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне !</p>
       <section class="photo-editor__console">
-        <div class="photo-editor__display">
-          <img src="http://placehold.it/150x100" alt="Дисплей фоторедактора">
-        </div>
-        <div class="photo-editor__filters">
+        <div class="photo-editor__wrapper">
+          <div class="photo-editor__display">
+            <img src="img/photo-7-mobile@1x.jpg" alt="Дисплей фоторедактора">
+          </div>
+          <div class="photo-editor__filters">
 
-          <div class="photo-editor__filter">
-            <button class="photo-editor__btn photo-editor__btn--crop" type="button"></button>
-            <div class="photo-editor__scale">
-              <div class="photo-editor__toggle  photo-editor__toggle--crop"></div>
+            <div class="photo-editor__filter">
+              <button class="photo-editor__btn photo-editor__btn--crop" type="button"></button>
+              <div class="photo-editor__scale">
+                <div class="photo-editor__toggle  photo-editor__toggle--crop"></div>
+              </div>
+            </div>
+
+            <div class="photo-editor__filter">
+              <button class="photo-editor__btn photo-editor__btn--fill" type="button"></button>
+              <div class="photo-editor__scale photo-editor__scale--hidden">
+                <div class="photo-editor__toggle  photo-editor__toggle--fill"></div>
+              </div>
+            </div>
+
+            <div class="photo-editor__filter">
+              <button class="photo-editor__btn photo-editor__btn--contrast" type="button"></button>
+              <div class="photo-editor__scale photo-editor__scale--hidden">
+                <div class="photo-editor__toggle  photo-editor__toggle--contrast"></div>
+              </div>
             </div>
           </div>
 
-          <div class="photo-editor__filter">
-            <button class="photo-editor__btn photo-editor__btn--fill" type="button"></button>
-            <div class="photo-editor__scale photo-editor__scale--hidden">
-              <div class="photo-editor__toggle  photo-editor__toggle--fill"></div>
-            </div>
+          <div class="photo-editor__upload">
+            <button class="photo-editor__upload-btn custom-btn custom-btn--post" type="submit">Запостить</button>
+            <button class="photo-editor__upload-btn custom-btn custom-btn--cancel-post" type="reset">Отмена</button>
           </div>
-
-          <div class="photo-editor__filter">
-            <button class="photo-editor__btn photo-editor__btn--contrast" type="button"></button>
-            <div class="photo-editor__scale photo-editor__scale--hidden">
-              <div class="photo-editor__toggle  photo-editor__toggle--contrast"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="photo-editor__upload">
-          <button class="photo-editor__upload-btn custom-btn custom-btn--post" type="button">Запостить</button>
-          <button class="photo-editor__upload-btn custom-btn custom-btn--cancel-post" type="button">Отмена</button>
         </div>
       </section>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__logo">
-      <a class="site-footer__link" href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип Пинк">
+    <div class="site-footer__logo site-footer__logo--photo">
+      <a href="index.html">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
       </a>
     </div>
 
-    <div class="site-footer__social">
-      <a class="site-footer__link site-footer__link--tv" href="#">Twitter</a>
-      <a class="site-footer__link site-footer__link--fb" href="#">Facebook</a>
-      <a class="site-footer__link site-footer__link--yt" href="#">YouTube</a>
+    <div class="site-footer__social social">
+      <a class="site-footer__link social__link social__link--tw" href="#">Twitter</a>
+      <a class="site-footer__link social__link social__link--fb" href="#">Facebook</a>
+      <a class="site-footer__link social__link social__link--yt" href="#">YouTube</a>
     </div>
 
     <div class="site-footer__copyright">Разработано:
-      <a class="site-footer__link site-footer__link--html" href="#">HTML Academy</a>
+    <a href="http://htmlacademy.ru/">Html Academy:</a>
     </div>
   </footer>
 

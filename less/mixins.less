@@ -1,0 +1,18 @@
+.list-clear-indent() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+.container() {
+  width: 280px;
+  margin: 0 auto;
+}

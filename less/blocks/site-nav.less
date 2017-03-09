@@ -1,0 +1,54 @@
+.site-nav {
+  position: relative;
+  min-height: 325px;
+  background: @darkviolet-color;
+}
+
+.site-nav__list {
+  .list-clear-indent();
+}
+
+.site-nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 56px;
+  height: 50px;
+  font-size: 0;
+  background-color: transparent;
+  outline: 1px solid red;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+.site-nav--closed .site-nav__toggle {
+  background-image: url("../img/icon-menu-burger.svg");
+}
+
+.site-nav--opened .site-nav__toggle {
+  background-image: url("../img/icon-menu-cross.svg");
+}
+
+.site-nav__link {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: @bold;
+  color: #ffffff;
+}
+
+.site-nav__item {
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+
+.site-nav__logo {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+}
