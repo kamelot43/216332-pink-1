@@ -1,5 +1,26 @@
 .download {
   min-height: 270px;
+  @media @tablet-widths {
+    position: relative;
+    z-index: 10;
+    margin-top: -540px;
+    background-color: transparent;
+    margin-bottom: 80px;
+  }
+}
+.download__text {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+    margin: 0;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: @light;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 
 .download__markets {
@@ -18,8 +39,15 @@
   outline: 2px solid red;
 }
 .download__wrapper {
-  .container();
+  width: 280px;
+  margin: 0 auto;
   padding-top: 26px;
+    @media @tablet-widths {
+      width: 300px;
+      margin: 0;
+      margin-left: 10px;
+      padding-top: 12px;
+    }
 }
 .download__descr {
   margin-top: 15px;
@@ -28,4 +56,7 @@
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+  @media @tablet-widths {
+   margin-top: 28px;
+  }
 }

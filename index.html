@@ -34,7 +34,7 @@
 
 <body>
   <header class="site-header site-header--index">
-    <h1 class="visually-hidden">Приложение PINK</h1>
+
     <nav class="site-nav site-nav--closed site-nav--nojs">
       <button class="site-nav__toggle" type="button">Открыть меню</button>
 
@@ -61,8 +61,15 @@
     </nav>
 
     <div class="site-header__demo-img">
-      <img src="img/iphone-hand-mobile@1x.png" alt="Демо-картинка">
-      <!--<img src="http://placehold.it/255x285" alt="Демо-картинка">-->
+      <picture>
+        <source
+          media="(min-width: 960px)"
+        srcset="http://placehold.it/470x550">
+        <source
+          media="(min-width: 660px)"
+          srcset="http://placehold.it/470x540">
+        <img src="img/iphone-hand-mobile@1x.png" alt="Демо-картинка">
+      </picture>
     </div>
 
   </header>
@@ -73,6 +80,7 @@
     <section class="download">
       <div class="download__wrapper">
         <h2 class="visually-hidden">Скачать приложение</h2>
+        <p class="download__text">Взгляните на жизнь иначе.</p>
         <a class="custom-btn custom-btn--download" href="http://www.apple.com/itunes/">Скачать приложение</a>
         <div class="download__markets">
           <a class="download__link download__link--apple" href="http://www.apple.com/itunes/">Itunes</a>
@@ -90,7 +98,7 @@
         <h2 class="visually-hidden">О преимуществах</h2>
         <div class="advantages__proposals">
           <div class="advantages__proposal">Устали от серости мегаполиса?</div>
-          <div class="advantages__proposal">Нам есть, что вам предложить!</div>
+          <div class="advantages__proposal">Нам есть, что вам<br> предложить!</div>
         </div>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -107,6 +115,13 @@
             <p class="advantages__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+        <section class="advantages__research">
+           <div class="advantages__research-inner">
+             <h3 class="advantages__research-title">Эффект<br> на 24 часа!</h3>
+             <p class="advantages__research-descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+             <a class="advantages__research-link">Узнать больше об исследовании</a>
+           </div>
+        </section>
       </div>
     </section>
 

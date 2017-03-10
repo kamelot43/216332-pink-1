@@ -1,9 +1,15 @@
 .advantages {
-  min-height: 1002px;
+  //min-height: 1002px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 720px;
   background-repeat: no-repeat;
   overflow: hidden;
+  //Временно!!
+  @media @tablet-widths {
+  background-position: 15px 250px;
+  background-repeat: no-repeat;
+  background-size: 270px 540px;
+  }
 }
 .advantages__wrapper {
   .container ();
@@ -14,6 +20,11 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: @light;
+    @media @tablet-widths {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    }
 }
 .advantages__proposal:nth-child(2) {
   margin-bottom: 0;
@@ -21,11 +32,21 @@
 
 .advantages__proposals {
   padding-top: 40px;
+    @media @tablet-widths {
+      padding-top: 50px;
+    }
 }
 .advantages__list {
   .list-clear-indent();
   padding-top: 120px;
   padding-bottom: 330px;
+@media @tablet-widths {
+  width: 310px;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
 }
 .advantages__title {
   margin: 0;
@@ -34,6 +55,9 @@
   text-align: center;
   font-size: 18px;
   line-height: 24px;
+  @media @tablet-widths {
+    text-align: left;
+  }
 }
 .advantages__descr {
   margin: 0;
@@ -42,10 +66,46 @@
   font-weight: @regular;
   background: rgba(51, 204, 255, 0.3);
   text-align: center;
+  @media @tablet-widths {
+    text-align: left;
+  }
 }
 .advantages__item {
   margin-bottom: 30px;
+  @media @tablet-widths {
+    margin-bottom: 35px;
+  }
 }
 .advantages__item:last-child {
   margin-bottom: 0;
+}
+
+//Стилизация блока исследования британских ученых
+.advantages__research {
+  display: none;
+    @media @tablet-widths {
+      display: block;
+    }
+}
+
+.advantages__research-inner {
+  width: 320px;
+  margin-left: auto;
+  padding-top: 94px;
+  padding-bottom: 30px;
+}
+.advantages__research-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: @bold;
+}
+.advantages__research-descr {
+  margin: 0;
+  margin-bottom: 5px;
+  line-height: 24px;
+}
+.advantages__research-link {
+  cursor: pointer;
 }
