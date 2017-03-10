@@ -4,6 +4,15 @@
 .reviews__list {
   .list-clear-indent();
   padding-top: 35px;
+  @media @tablet-widths {
+    padding-top: 90px;
+  }
+}
+.reviews__item {
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews__item:nth-child(n+2) {
@@ -19,6 +28,17 @@
   line-height: 30px;
   font-weight: @bold;
   text-align: center;
+    @media @tablet-widths {
+      order: 2;
+    }
+}
+.reviews__author-description {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+    font-size: 14px;
+    font-weight: @regular;
+  }
 }
 .reviews__text {
   margin: 0;
@@ -26,6 +46,11 @@
   line-height: 30px;
   font-weight: @regular;
   text-align: center;
+  @media @tablet-widths {
+    order: -1;
+    font-size: 18px;
+    padding-bottom: 35px;
+  }
 }
 .reviews__controls {
   //временно для разметки!!

@@ -1,17 +1,23 @@
 .pricelist {
-  min-height: 510px;
+  //min-height: 510px;
   overflow: hidden;
 }
 .pricelist__wrapper {
   .container();
   padding-top: 120px;
+  @media @tablet-widths {
+  padding-top: 100px;
+  }
 }
 .pricelist__table {
   position: relative;
   width: 800px;
   left: -93%;
   border-collapse: collapse;
-
+  @media @tablet-widths {
+    left: 0;
+    width: 620px;
+  }
 }
 .pricelist__title {
   height: 95px;
@@ -22,6 +28,16 @@
   outline: 2px solid blue;
   background: #283645;
   color: #ffffff;
+  @media @tablet-widths {
+    height: 75px;
+  }
+}
+.pricelist__title--hidden {
+  display: none;
+    @media @tablet-widths {
+      display: table-cell;
+      background: transparent;
+    }
 }
 .pricelist__option {
   position: relative;
@@ -35,7 +51,22 @@
   border-bottom: 1px solid #e5e5e5;
   text-transform: uppercase;
   outline: 2px solid red;
+  @media @tablet-widths {
+    padding-top: 0;
+    height: 45px;
+    font-size: 0;
+  }
 }
+.pricelist__option--base {
+  display: none;
+  @media @tablet-widths {
+    display: table-cell;
+    font-size: 14px;
+    font-weight: @light;
+    text-transform: none;
+  }
+}
+
 .pricelist__icon {
   position: absolute;
   right: 15px;
@@ -57,4 +88,7 @@
 .pricelist__controls {
   //временно для разметки!
   padding-bottom: 60px;
+  @media @tablet-widths {
+  padding-bottom: 40px;
+  }
 }
