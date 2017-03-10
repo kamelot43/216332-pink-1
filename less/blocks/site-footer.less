@@ -11,10 +11,23 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: @light;
+  @media @tablet-widths {
+    width: 420px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 47px;
+    padding-top: 45px;
+    font-weight: @light;
+  }
 }
 .site-footer__list {
   .list-clear-indent();
   padding-top: 30px;
+  @media @tablet-widths {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 }
 .site-footer__action {
   font-size: 18px;
@@ -31,6 +44,13 @@
 .site-footer__item {
   text-align: center;
   margin-bottom: 18px;
+    @media @tablet-widths {
+    padding-left: 35px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    padding-top: 13px;
+    }
 }
 .site-footer__item:last-child {
   margin-bottom: 0;
@@ -65,4 +85,10 @@
   background-position: center;
   font-size: 0;
   outline: 2px solid red;
+}
+.site-footer__inner--index {
+  display: none;
+    @media @tablet-widths {
+      display: block;
+    }
 }
