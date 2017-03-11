@@ -66,10 +66,13 @@
     <section class="contest">
       <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
 
-      <p class="contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту.</p>
+      <p class="contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту.
+      <span class="conest__request">Пожалуйста заполните форму ниже.</span>
+    </p>
       <form class="contest__form" action="https://echo.htmlacademy.ru/ " method="get">
 
         <fieldset class="contest__fieldset contest__fieldset--identification">
+            <div class="contest__wrapper">
           <ul class="contest__list contest__list--identification">
             <li class="contest__item contest__item--identification">
               <label class="contest__label contest__label--identification" for="lastname">Фамилия:</label>
@@ -87,10 +90,12 @@
             </li>
 
           </ul>
+        </div>
         </fieldset>
 
-        <div class="contest__wrapper">
+
           <fieldset class="contest__fieldset contest__fieldset--achievement">
+              <div class="contest__wrapper">
             <legend class="contest__legend contest__legend--achievement">Ваши безбашенные<br> достижения в путешествии</legend>
             <ul class="contest__list contest__list--achievement">
 
@@ -125,11 +130,12 @@
               </li>
 
             </ul>
-
+</div>
           </fieldset>
-        </div>
+
 
         <fieldset class="contest__fieldset contest__fieldset--feedback">
+            <div class="contest__wrapper">
 
 
           <ul class="contest__list contest__list--feedback">
@@ -145,11 +151,13 @@
             </li>
 
           </ul>
+        </div>
 
         </fieldset>
 
-        <div class="contest__wrapper">
+
           <fieldset class="contest__fieldset contest__fieldset--soft">
+              <div class="contest__wrapper">
 
             <legend class="contest__legend contest__legend--soft">С каким приложением путешествовали?</legend>
             <ul class="contest__list contest__list--soft">
@@ -170,14 +178,16 @@
               </li>
 
             </ul>
+            </div>
 
           </fieldset>
-        </div>
+
 
         <fieldset class="contest__fieldset contest__fieldset--impressions">
+            <div class="contest__wrapper">
           <legend class="contest__legend contest__legend--impressions">Опишите свои эмоции</legend>
           <textarea class="contest__textarea" name="impressions" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
-
+</div>
         </fieldset>
 
         <button class="original-btn contest__btn" type="submit">Отправить форму</button>
@@ -191,7 +201,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__inner site-footer__inner--index">
+    <div class="site-footer__inner">
     <div class="site-footer__logo">
       <a href="index.html">
         <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">

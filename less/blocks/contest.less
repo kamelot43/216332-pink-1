@@ -1,15 +1,35 @@
 .contest {
   min-height: 2215px;
 }
+.contest__wrapper {
+  .container();
+}
 .contest__promo {
   .container();
   padding-top: 48px;
   margin-bottom: 40px;
   text-align: center;
+    @media @tablet-widths {
+      padding-top: 95px;
+      margin-bottom: 70px;
+      width: 520px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+}
+.contest__form {
+    @media @tablet-widths {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 .contest__list {
   .list-clear-indent();
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contest__list--achievement {
@@ -24,6 +44,11 @@
   padding-left: 20px;
   color: @crimson-color;
   text-transform: uppercase;
+  @media @tablet-widths {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 20px;
+  }
 }
 
 .contest__label--feedback {
@@ -79,6 +104,10 @@
   width: 270px;
   height: 55px;
   border: 2px solid @lightgray-color;
+  @media @tablet-widths {
+    margin-bottom: 53px;
+    width: 100%;
+  }
 }
 
 .contest__field--achievement {
@@ -89,7 +118,6 @@
   display: none;
 }
 .contest__fieldset {
-  .container();
   padding: 0;
   margin-bottom: 30px;
   outline: 3px solid green;
@@ -107,6 +135,9 @@
 .contest__fieldset--soft {
   min-height: 340px;
   margin-bottom: 35px;
+    @media @tablet-widths {
+      order: -2;
+    }
 }
 
 .contest__fieldset--impressions {
@@ -127,6 +158,13 @@
 .contest__legend--soft {
   padding-top: 35px;
 }
+.contest__item--identification {
+  @media @tablet-widths {
+  display: flex;
+  flex-direction: row;
+}
+}
+
 
 .contest__item--achievement {
   margin-bottom: 50px;
@@ -160,4 +198,10 @@
 
 .contest__asterisk {
   color: @crimson-color;
+}
+.conest__request {
+  display: none;
+    @media @tablet-widths {
+      display: block;
+    }
 }
