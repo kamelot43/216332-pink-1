@@ -1,16 +1,18 @@
 .reviews {
   min-height: 315px;
 }
+
 .reviews__list {
   .list-clear-indent();
   padding-top: 35px;
   @media @tablet-widths {
     padding-top: 90px;
   }
-    @media @desktop-widths {
+  @media @desktop-widths {
     padding-top: 140px;
-    }
+  }
 }
+
 .reviews__item {
   @media @tablet-widths {
     display: flex;
@@ -21,12 +23,14 @@
 .reviews__item:nth-child(n+2) {
   display: none;
 }
+
 .reviews__wrapper {
   .container();
-    @media @desktop-widths {
-      padding-bottom: 30px;
-    }
+  @media @desktop-widths {
+    padding-bottom: 30px;
+  }
 }
+
 .reviews__author {
   margin: 0;
   padding-bottom: 15px;
@@ -34,13 +38,14 @@
   line-height: 30px;
   font-weight: @bold;
   text-align: center;
-    @media @tablet-widths {
-      order: 2;
-    }
-    @media @desktop-widths {
-      font-size: 24px;
-    }
+  @media @tablet-widths {
+    order: 2;
+  }
+  @media @desktop-widths {
+    font-size: 24px;
+  }
 }
+
 .reviews__author-description {
   display: none;
   @media @tablet-widths {
@@ -48,10 +53,11 @@
     font-size: 14px;
     font-weight: @regular;
   }
-    @media @desktop-widths {
-      font-size: 18px;
-    }
+  @media @desktop-widths {
+    font-size: 18px;
+  }
 }
+
 .reviews__text {
   margin: 0;
   font-size: 14px;
@@ -60,22 +66,24 @@
   text-align: center;
   @media @tablet-widths {
     order: -1;
-    font-size: 18px;
     padding-bottom: 35px;
+    font-size: 18px;
   }
   @media @desktop-widths {
-  width: 680px;
-  margin: 0 auto;
-  outline: 2px solid red;
+    width: 680px;
+    margin: 0 auto;
+    outline: 2px solid red;
   }
 }
+
 .reviews__controls {
   //временно для разметки!!
   padding-bottom: 15px;
-    @media @desktop-widths {
-      display: none;
-    }
+  @media @desktop-widths {
+    display: none;
+  }
 }
+
 .reviews__toggle {
   display: none;
   width: 22px;
@@ -89,9 +97,11 @@
     display: inline-block;
   }
 }
+
 .reviews__toggle--prev {
-   transform: translate(0px, 215px);
+  transform: translate(0px, 215px);
 }
+
 .reviews__toggle--next {
   transform: translate(885px, 215px);
 }

@@ -6,58 +6,62 @@
   overflow: hidden;
   //Временно!!
   @media @tablet-widths {
-  background-position: 15px 250px;
-  background-repeat: no-repeat;
-  background-size: 270px 540px;
+    background-position: 15px 250px;
+    background-repeat: no-repeat;
+    background-size: 270px 540px;
   }
-    @media @desktop-widths {
-      background: none;
-    }
+  @media @desktop-widths {
+    background: none;
+  }
 }
+
 .advantages__wrapper {
   .container ();
 }
+
 .advantages__proposal {
   margin-bottom: 45px;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
   font-weight: @light;
-    @media @tablet-widths {
+  @media @tablet-widths {
+    margin-bottom: 15px;
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 15px;
-    }
-      @media @desktop-widths {
+  }
+  @media @desktop-widths {
     margin-bottom: 0;
     font-size: 50px;
     line-height: 55px;
   }
 }
+
 .advantages__proposal:nth-child(2) {
   margin-bottom: 0;
 }
 
 .advantages__proposals {
   padding-top: 40px;
-    @media @tablet-widths {
-      padding-top: 50px;
-    }
-    @media @desktop-widths {
-      padding-top: 75px;
-    }
+  @media @tablet-widths {
+    padding-top: 50px;
+  }
+  @media @desktop-widths {
+    padding-top: 75px;
+  }
 }
+
 .advantages__list {
   .list-clear-indent();
   padding-top: 120px;
   padding-bottom: 330px;
-@media @tablet-widths {
-  width: 310px;
-  margin-left: auto;
-  padding-left: 10px;
-  padding-top: 130px;
-  padding-bottom: 50px;
-}
+  @media @tablet-widths {
+    width: 310px;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
   @media @desktop-widths {
     display: flex;
     width: auto;
@@ -65,6 +69,7 @@
     padding-top: 85px;
   }
 }
+
 .advantages__title {
   margin: 0;
   padding-bottom: 10px;
@@ -84,6 +89,7 @@
     line-height: 30px;
   }
 }
+
 .advantages__descr {
   margin: 0;
   font-size: 14px;
@@ -94,28 +100,29 @@
   @media @tablet-widths {
     text-align: left;
   }
-      @media @desktop-widths {
-        width: 263px;
-        margin: 0 auto;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-      }
-
+  @media @desktop-widths {
+    width: 263px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
+
 .advantages__item {
   margin-bottom: 30px;
   @media @tablet-widths {
     margin-bottom: 35px;
   }
-    @media @desktop-widths {
-      background: url("http://placehold.it/250x300") no-repeat top center;
-      flex-basis: 310px;
-      margin-bottom: 0;
-      padding-top: 355px;
-      outline: 2px solid green;
-    }
+  @media @desktop-widths {
+    flex-basis: 310px;
+    margin-bottom: 0;
+    padding-top: 355px;
+    background: url("http://placehold.it/250x300") no-repeat top center;
+    outline: 2px solid green;
+  }
 }
+
 .advantages__item:last-child {
   margin-bottom: 0;
 }
@@ -123,9 +130,9 @@
 //Стилизация блока исследования британских ученых
 .advantages__research {
   display: none;
-    @media @tablet-widths {
-      display: block;
-    }
+  @media @tablet-widths {
+    display: block;
+  }
 }
 
 .advantages__research-inner {
@@ -139,11 +146,13 @@
     padding-bottom: 110px;
   }
 }
+
 .advantages__research-title br {
   @media @desktop-widths {
     display: none;
   }
 }
+
 .advantages__research-title {
   margin: 0;
   margin-bottom: 10px;
@@ -154,17 +163,19 @@
     margin-bottom: 25px;
   }
 }
+
 .advantages__research-descr {
   margin: 0;
   margin-bottom: 5px;
   line-height: 24px;
   @media @desktop-widths {
-  width: 530px;
-  margin-bottom: 30px;
-  font-size: 18px;
-  line-height: 30px;
+    width: 530px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
-}
+
 .advantages__research-link {
   cursor: pointer;
   text-decoration: underline;

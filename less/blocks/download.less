@@ -4,27 +4,27 @@
     position: relative;
     z-index: 10;
     margin-top: -540px;
-    background-color: transparent;
     margin-bottom: 80px;
+    background-color: transparent;
   }
   @media @desktop-widths {
     margin-top: -650px;
     margin-bottom: 90px;
   }
 }
+
 .download__text {
   display: none;
   @media @tablet-widths {
     display: block;
-    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 200px;
     font-size: 40px;
     color: #ffffff;
     line-height: 50px;
     font-weight: @light;
-    width: 200px;
-    margin: 0 auto;
     text-align: center;
-    margin-bottom: 25px;
     @media @desktop-widths {
       width: 250px;
       margin-bottom: 65px;
@@ -49,17 +49,19 @@
   font-size: 0;
   outline: 2px solid red;
 }
+
 .download__wrapper {
   width: 280px;
   margin: 0 auto;
   padding-top: 26px;
-    @media @tablet-widths {
-      width: 300px;
-      margin: 0;
-      margin-left: 10px;
-      padding-top: 12px;
-    }
+  @media @tablet-widths {
+    width: 300px;
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 12px;
+  }
 }
+
 .download__descr {
   margin-top: 15px;
   padding-bottom: 30px;
@@ -68,11 +70,11 @@
   line-height: 24px;
   color: #ffffff;
   @media @tablet-widths {
-   margin-top: 28px;
+    margin-top: 28px;
   }
   @media @desktop-widths {
-   margin-top: 45px;
-   font-size: 18px;
-   text-align: left;
+    margin-top: 45px;
+    font-size: 18px;
+    text-align: left;
   }
 }
