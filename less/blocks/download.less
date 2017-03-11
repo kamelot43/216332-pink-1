@@ -7,6 +7,10 @@
     background-color: transparent;
     margin-bottom: 80px;
   }
+  @media @desktop-widths {
+    margin-top: -650px;
+    margin-bottom: 90px;
+  }
 }
 .download__text {
   display: none;
@@ -14,12 +18,19 @@
     display: block;
     margin: 0;
     font-size: 40px;
+    color: #ffffff;
     line-height: 50px;
     font-weight: @light;
     width: 200px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 25px;
+    @media @desktop-widths {
+      width: 250px;
+      margin-bottom: 65px;
+      font-size: 50px;
+      line-height: 57px;
+    }
   }
 }
 
@@ -58,5 +69,10 @@
   color: #ffffff;
   @media @tablet-widths {
    margin-top: 28px;
+  }
+  @media @desktop-widths {
+   margin-top: 45px;
+   font-size: 18px;
+   text-align: left;
   }
 }
