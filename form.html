@@ -141,17 +141,18 @@
 
         <div class="contest__wrapper contest__wrapper--feedback">
           <fieldset class="contest__fieldset contest__fieldset--feedback">
+              <legend class="contest__legend contest__legend--feedback">Контактная информация</legend>
 
 
             <ul class="contest__list contest__list--feedback">
 
-              <li class="contest__item contest__item--feedback">
+              <li class="contest__item contest__item--feedback contest__item--feedback-phone">
                 <label class="contest__label contest__label--feedback" for="phone">Номер телефона:</label>
                 <input class="contest__field contest__field--feedback" type="text" name="phone" id="phone" placeholder="Номер пожалуйста">
               </li>
 
-              <li class="contest__item contest__item--feedback">
-                <label class="contest__label contest__label--feedback" for="mail">Адресок почты:</label>
+              <li class="contest__item contest__item--feedback contest__item--feedback-mail">
+                <label class="contest__label contest__label--feedback" for="mail">Адрес<span class="contest__label-extend">ok</span> почты:</label>
                 <input class="contest__field contest__field--feedback" type="text" name="mail" id="mail" placeholder="Введите почту*" required>
               </li>
 
@@ -195,10 +196,12 @@
           </fieldset>
         </div>
 
+       <div class="contest__wrapper contest__wrapper--submit">
         <button class="original-btn contest__btn" type="submit">Отправить форму</button>
         <p class="contest__footnote">
           <sup class="contest__asterisk">*</sup>-обязательные поля
         </p>
+      </div>
 
 
       </form>
