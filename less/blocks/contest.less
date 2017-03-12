@@ -6,6 +6,7 @@
   margin-bottom: 40px;
 
   @media @tablet-widths {
+      margin-bottom: 44px;
 
     &--identification {
       order: -3;
@@ -23,7 +24,7 @@
 .contest__wrapper--achievement {
   margin-bottom: 30px;
   @media @tablet-widths {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 }
 
@@ -37,7 +38,12 @@
 }
 .contest__wrapper--impressions {
     @media @tablet-widths {
-      margin-bottom: 70px;
+      margin-bottom: 65px;
+}
+}
+.contest__wrapper--soft {
+    @media @tablet-widths {
+      margin-bottom: 40px;
 }
 }
 .contest__promo {
@@ -53,12 +59,22 @@
     font-size: 18px;
     line-height: 30px;
   }
+    @media @desktop-widths {
+      width: 820px;
+      margin-bottom: 80px;
+    }
 }
 
 .contest__form {
 
     display: flex;
     flex-direction: column;
+      @media @desktop-widths {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .container();
+        justify-content: space-between;
+      }
 
 }
 
@@ -73,7 +89,7 @@
   @media @tablet-widths {
     width: 500px;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 15px;
     margin-bottom: 20px;
     outline: 2px solid;
   }
@@ -81,13 +97,14 @@
 
 .contest__list--achievement {
   padding-top: 40px;
-    @media @tablet-widths {
-  padding-top: 45px;
-}
 }
 
 .contest__list--soft {
   padding-top: 40px;
+  @media @tablet-widths {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 }
 
 .contest__label--identification {
@@ -198,12 +215,16 @@
 .contest__fieldset {
   padding: 0;
   //margin-bottom: 30px;
-  outline: 3px solid green;
+  //outline: 3px solid green;
   .container();
 }
 
 .contest__fieldset--identification {
   //min-height: 325px;
+    @media @desktop-widths {
+      width: 430px;
+      margin-left: auto;
+    }
 }
 
 .contest__fieldset--achievement {
@@ -216,6 +237,9 @@
 
 .contest__fieldset--soft {
   //min-height: 340px;
+    @media @desktop-widths {
+      width: 430px;
+    }
 }
 
 .contest__legend {
@@ -224,6 +248,7 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .contest__legend--feedback {
   display: none;
     @media @tablet-widths {
@@ -244,7 +269,7 @@
 }
 
 .contest__legend--soft {
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 .contest__item--identification:not(:last-child) {
@@ -314,7 +339,7 @@
     width: 495px;
     margin-top: 30px;
     margin-left: 55px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 }
 
@@ -344,6 +369,9 @@
   @media @tablet-widths {
     display: block;
   }
+    @media @desktop-widths {
+      display: inline-block;
+    }
 }
 .contest__label-extend {
     @media @tablet-widths {
