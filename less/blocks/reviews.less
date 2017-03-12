@@ -5,15 +5,18 @@
 .reviews__list {
   .list-clear-indent();
   padding-top: 35px;
+
   @media @tablet-widths {
     padding-top: 90px;
   }
+
   @media @desktop-widths {
     padding-top: 140px;
   }
 }
 
 .reviews__item {
+
   @media @tablet-widths {
     display: flex;
     flex-direction: column;
@@ -26,6 +29,7 @@
 
 .reviews__wrapper {
   .container();
+
   @media @desktop-widths {
     padding-bottom: 30px;
   }
@@ -38,9 +42,11 @@
   line-height: 30px;
   font-weight: @bold;
   text-align: center;
+
   @media @tablet-widths {
     order: 2;
   }
+
   @media @desktop-widths {
     font-size: 24px;
   }
@@ -48,11 +54,13 @@
 
 .reviews__author-description {
   display: none;
+
   @media @tablet-widths {
     display: block;
     font-size: 14px;
     font-weight: @regular;
   }
+
   @media @desktop-widths {
     font-size: 18px;
   }
@@ -64,11 +72,13 @@
   line-height: 30px;
   font-weight: @regular;
   text-align: center;
+
   @media @tablet-widths {
     order: -1;
     padding-bottom: 35px;
     font-size: 18px;
   }
+
   @media @desktop-widths {
     width: 680px;
     margin: 0 auto;
@@ -79,6 +89,7 @@
 .reviews__controls {
   //временно для разметки!!
   padding-bottom: 15px;
+
   @media @desktop-widths {
     display: none;
   }
@@ -93,6 +104,7 @@
   cursor: pointer;
   opacity: 0.3;
   outline: 2px solid green;
+
   @media @desktop-widths {
     display: inline-block;
   }

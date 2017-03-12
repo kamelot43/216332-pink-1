@@ -33,32 +33,37 @@
 
 <body>
   <header class="site-header">
+    <div class="site-header__wrapper">
 
-    <nav class="site-nav site-nav--closed site-nav--nojs">
-      <button class="site-nav__toggle" type="button">Открыть меню</button>
 
-      <div class="site-nav__logo">
-        <a href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-        </a>
-      </div>
+      <nav class="site-nav site-nav--closed site-nav--nojs">
+        <div class="site-nav__wrapper">
+          <button class="site-nav__toggle" type="button">Открыть меню</button>
 
-      <ul class="site-nav__list">
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" >Фотографии</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
-        </li>
-      </ul>
-    </nav>
-    <h1 class="site-header__title site-header__title--photo">Фотографии пользователей</h1>
+          <div class="site-nav__logo">
+            <a href="index.html">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+            </a>
+          </div>
+
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link">Фотографии</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="site-header__title site-header__title--photo">Фотографии пользователей</h1>
+    </div>
   </header>
 
   <main class="site-main">
@@ -202,20 +207,22 @@
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__logo site-footer__logo--photo">
-      <a href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
-      </a>
-    </div>
+    <div class="site-footer__inner">
+      <div class="site-footer__logo site-footer__logo--photo">
+        <a href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
+        </a>
+      </div>
 
-    <div class="site-footer__social social">
-      <a class="site-footer__link social__link social__link--tw" href="#">Twitter</a>
-      <a class="site-footer__link social__link social__link--fb" href="#">Facebook</a>
-      <a class="site-footer__link social__link social__link--yt" href="#">YouTube</a>
-    </div>
+      <div class="site-footer__social social">
+        <a class="social__link social__link--tw" href="#">Twitter</a>
+        <a class="social__link social__link--fb" href="#">Facebook</a>
+        <a class="social__link social__link--yt" href="#">YouTube</a>
+      </div>
 
-    <div class="site-footer__copyright">Разработано:
-    <a href="http://htmlacademy.ru/">Html Academy:</a>
+      <div class="site-footer__copyright">Разработано:
+        <a href="http://htmlacademy.ru/">Html Academy</a>
+      </div>
     </div>
   </footer>
 
