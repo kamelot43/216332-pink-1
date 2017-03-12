@@ -22,3 +22,11 @@
         width: 940px;
       }
 }
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}

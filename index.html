@@ -34,8 +34,10 @@
 
 <body>
   <header class="site-header site-header--index">
+    <div class="site-header__wrapper">
 
     <nav class="site-nav site-nav--closed site-nav--nojs">
+      <div class="site-nav__wrapper">
       <button class="site-nav__toggle" type="button">Открыть меню</button>
 
       <div class="site-nav__logo">
@@ -58,16 +60,17 @@
           <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
         </li>
       </ul>
+    </div>
     </nav>
 
     <div class="site-header__demo-img">
       <picture>
-        <source media="(min-width: 960px)" srcset="http://placehold.it/560x650">
+        <source media="(min-width: 960px)" srcset="http://placehold.it/595x650">
         <source media="(min-width: 660px)" srcset="http://placehold.it/470x540">
         <img src="img/iphone-hand-mobile@1x.png" alt="Демо-картинка">
       </picture>
     </div>
-
+  </div>
   </header>
 
   <main class="site-main">
@@ -207,10 +210,13 @@
   </main>
 
   <footer class="site-footer site-footer--index">
+
     <h2 class="visually-hidden">Обратная связь</h2>
+    <div class="site-footer__wrapper">
 
 
     <p class="site-footer__question">Остались вопросы? Свяжитесь с нами!</p>
+
     <ul class="site-footer__list">
       <li class="site-footer__item">
         <span class="site-footer__action">Звоните:</span>
@@ -225,6 +231,8 @@
         <span class="site-footer__contact">ул.Большая<br> Конюшанная, 19/8</span>
       </li>
     </ul>
+  </div>
+
     <div class="site-footer__map">
       <iframe class="site-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.32089461570254!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2s!4v1472509188440"
         width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -246,7 +254,6 @@
         <a href="http://htmlacademy.ru/">Html Academy</a>
       </div>
     </div>
-
   </footer>
 
 </body>

@@ -1,6 +1,11 @@
 .site-header--index {
   min-height: 720px;
 }
+.site-header__wrapper {
+  @media @tablet-widths {
+  .container();
+}
+}
 
 .site-header {
   min-height: 495px;
@@ -8,24 +13,22 @@
 }
 
 .site-header__demo-img {
+  @media @mobile-widths-only {
+  margin: 0 auto;
   margin-top: 110px;
-  width: auto;
+  width: 320px;
+}
   @media @tablet-widths {
     min-height: 545px;
     margin-top: 73px;
+    width: 470px;
+    margin-left: auto;
   }
   @media @desktop-widths {
-    min-height: 650px;
-    margin-top: 95px;
-  }
-}
-
-.site-header__demo-img img {
-  @media @tablet-widths {
-    transform: translate(170px, 0);
-  }
-  @media @desktop-widths {
-    transform: translate(350px, 0);
+  min-height: 545px;
+    margin-top: 93px;
+    width: 595px;
+    margin-left: auto
   }
 }
 

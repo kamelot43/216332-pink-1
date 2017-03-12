@@ -1,6 +1,9 @@
 .download {
   min-height: 270px;
+
   @media @tablet-widths {
+    .container();
+
     position: relative;
     z-index: 10;
     margin-top: -540px;
@@ -51,14 +54,14 @@
 }
 
 .download__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 26px;
+  @media @mobile-widths-only {
+    .container();
+    padding-top: 26px;
+  }
+
   @media @tablet-widths {
     width: 300px;
-    margin: 0;
-    margin-left: 10px;
-    padding-top: 12px;
+    padding-top: 10px;
   }
 }
 
