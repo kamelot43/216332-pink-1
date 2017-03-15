@@ -15,7 +15,7 @@
 
     @media (min-width: 960px) {
       HTML {
-        background-image: url('img/pink-photo-desktop.jpg');
+        background-image: url('preview/pink-photo-desktop.jpg');
       }
     }
 
@@ -71,8 +71,8 @@
     <section class="feed">
       <h2 class="visually-hidden">Лента пользователей</h2>
       <p class="feed__promo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших!</p>
-
-      <article class="post">
+      <section class="feed__content">
+      <article class="post post--panorama">
 
         <div class="post__photo post__photo--panorama">
           <img src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
@@ -85,9 +85,10 @@
           <span class="post__likes">Нравится:215</span>
         </div>
       </article>
+      <div class="post__wrapper">
 
       <article class="post">
-        <div class="post__wrapper">
+
           <div class="post__photo">
             <img src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль">
           </div>
@@ -96,11 +97,11 @@
           </p>
           <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <span class="post__likes">Нравится:356</span>
-        </div>
+
       </article>
 
       <article class="post">
-        <div class="post__wrapper">
+
           <div class="post__photo">
             <img src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка">
           </div>
@@ -109,11 +110,11 @@
           </p>
           <p class="post__text">Соседи будут рады.</p>
           <span class="post__likes">Нравится:666</span>
-        </div>
+
       </article>
 
       <article class="post">
-        <div class="post__wrapper">
+
           <div class="post__photo">
             <img src="img/photo-3-mobile@1x.jpg" alt="Архитектура">
           </div>
@@ -122,11 +123,11 @@
           </p>
           <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <span class="post__likes">Нравится:215</span>
-        </div>
+
       </article>
 
       <article class="post">
-        <div class="post__wrapper">
+
           <div class="post__photo">
             <img src="img/photo-4-mobile@1x.jpg" alt="Прилавок с бахчой">
           </div>
@@ -135,11 +136,11 @@
           </p>
           <p class="post__text">Самая кубанская в мире!</p>
           <span class="post__likes">Нравится:4</span>
-        </div>
+
       </article>
 
       <article class="post">
-        <div class="post__wrapper">
+
           <div class="post__photo">
             <img src="img/photo-5-mobile@1x.jpg" alt="Вид с горы">
           </div>
@@ -148,11 +149,11 @@
           </p>
           <p class="post__text">Где снег-то?</p>
           <span class="post__likes">Нравится:50</span>
-        </div>
+
       </article>
 
       <article class="post">
-        <div class="post__wrapper">
+
           <div class="post__photo">
             <img src="img/photo-6-mobile@1x.jpg" alt="Вид из окна самолета">
           </div>
@@ -161,8 +162,10 @@
           </p>
           <p class="post__text">Всем GM и взаимные лайки!</p>
           <span class="post__likes">Нравится:2560</span>
-        </div>
+
       </article>
+    </div>
+    </section>
     </section>
 
     <section class="photo-editor">
@@ -225,6 +228,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/drop-down-menu.js"></script>
 
 </body>
 

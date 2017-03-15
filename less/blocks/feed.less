@@ -1,5 +1,5 @@
 .feed {
-  min-height: 2490px;
+  //min-height: 2490px;
 }
 
 .feed__promo-text {
@@ -7,4 +7,17 @@
   padding-top: 45px;
   margin-bottom: 49px;
   text-align: center;
+  @media @tablet-widths {
+    width: 450px;
+    padding-top: 90px;
+    margin-bottom: 75px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: @regular;
+  }
+}
+.feed__content {
+  display: flex;
+  flex-direction: column;
+
 }

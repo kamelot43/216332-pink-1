@@ -53,6 +53,30 @@
   background-image: url("../img/icon-menu-cross.svg");
 }
 
+.site-nav--closed .site-nav__list {
+  display: none;
+
+  @media @desktop-widths {
+    display: flex;
+  }
+}
+
+.site-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.site-nav--closed .site-nav__logo-item {
+  background-color: transparent;
+}
+
+.site-nav--nojs .site-nav__toggle {
+  display: none;
+}
+
+.site-nav--nojs .site-nav__item {
+  display: block;
+}
+
 .site-nav__link {
   display: block;
   padding-top: 16px;

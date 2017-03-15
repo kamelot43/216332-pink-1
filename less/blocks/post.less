@@ -1,6 +1,14 @@
 .post__wrapper {
   .container();
+  display: flex;
+  flex-direction: column;
   padding-bottom: 20px;
+}
+
+.post:not(:first-child) {
+  @media @tablet-widths {
+    width: 300px;
+  }
 }
 
 .post__author {
@@ -25,11 +33,11 @@
 }
 
 .post:not(:last-child) {
-  min-height: 300px;
+  //min-height: 300px;
   margin-bottom: 14px;
 }
-.post__photo--panorama {
 
+.post__photo--panorama {
   @media @mobile-widths-only {
     width: 320px;
     margin: 0 auto;
