@@ -19,5 +19,9 @@
 .feed__content {
   display: flex;
   flex-direction: column;
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
 }

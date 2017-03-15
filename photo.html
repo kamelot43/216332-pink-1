@@ -71,18 +71,27 @@
     <section class="feed">
       <h2 class="visually-hidden">Лента пользователей</h2>
       <p class="feed__promo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших!</p>
-      <section class="feed__content">
+
       <article class="post post--panorama">
 
         <div class="post__photo post__photo--panorama">
-          <img src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
+          <a href="#">
+          <picture>
+                <source media="(min-width: 960px)" srcset="http://placehold.it/470x540">
+                <source media="(min-width: 660px)" srcset="http://placehold.it/660x510">
+                <img src="img/panorama-mobile@1x.jpg" alt="Панорамный вид с моста">
+          </picture>
+        </a>
+
+
+
         </div>
-        <div class="post__wrapper">
+        <div class="post__wrapper post__wrapper--panorama">
           <p class="post__author">Анна
             <span class="post__time">(5 минут назад)</span>
           </p>
           <p class="post__text">Прыгать или нет?Напишите в комментарии свой совет и посмотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <span class="post__likes">Нравится:215</span>
+          <span class="post__likes post__likes--popular">Нравится:215</span>
         </div>
       </article>
       <div class="post__wrapper">
@@ -90,7 +99,14 @@
       <article class="post">
 
           <div class="post__photo">
-            <img src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль">
+            <picture>
+                  <source media="(min-width: 960px)" srcset="http://placehold.it/470x540">
+                  <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+                  <img src="img/photo-1-mobile@1x.jpg" alt="Белый автомобиль">
+            </picture>
+
+
+
           </div>
           <p class="post__author">Левон
             <span class="post__time">(5 часов назад)</span>
@@ -103,7 +119,13 @@
       <article class="post">
 
           <div class="post__photo">
-            <img src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка">
+            <picture>
+                  <source media="(min-width: 960px)" srcset="http://placehold.it/470x540">
+                  <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+                  <img src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка">
+            </picture>
+
+
           </div>
           <p class="post__author">Антон
             <span class="post__time">(12 часов назад)</span>
@@ -116,7 +138,13 @@
       <article class="post">
 
           <div class="post__photo">
-            <img src="img/photo-3-mobile@1x.jpg" alt="Архитектура">
+            <picture>
+                  <source media="(min-width: 960px)" srcset="http://placehold.it/470x540">
+                  <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+                  <img src="img/photo-3-mobile@1x.jpg" alt="Архитектура">
+            </picture>
+
+
           </div>
           <p class="post__author">Борис
             <span class="post__time">(20 часов назад)</span>
@@ -129,7 +157,13 @@
       <article class="post">
 
           <div class="post__photo">
-            <img src="img/photo-4-mobile@1x.jpg" alt="Прилавок с бахчой">
+            <picture>
+                  <source media="(min-width: 960px)" srcset="http://placehold.it/470x540">
+                  <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+                <img src="img/photo-4-mobile@1x.jpg" alt="Прилавок с бахчой">
+            </picture>
+
+
           </div>
           <p class="post__author">Сергей
             <span class="post__time">(25 часов назад)</span>
@@ -142,7 +176,13 @@
       <article class="post">
 
           <div class="post__photo">
-            <img src="img/photo-5-mobile@1x.jpg" alt="Вид с горы">
+            <picture>
+                  <source media="(min-width: 960px)" srcset="http://placehold.it/470x540">
+                  <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+                <img src="img/photo-5-mobile@1x.jpg" alt="Вид с горы">
+            </picture>
+
+
           </div>
           <p class="post__author">Максим
             <span class="post__time">(40 часов назад)</span>
@@ -155,17 +195,21 @@
       <article class="post">
 
           <div class="post__photo">
-            <img src="img/photo-6-mobile@1x.jpg" alt="Вид из окна самолета">
+            <picture>
+                  <source media="(min-width: 960px)" srcset="http://placehold.it/470x540">
+                  <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+              <img src="img/photo-6-mobile@1x.jpg" alt="Вид из окна самолета">
+            </picture>
+
           </div>
           <p class="post__author">Надежда
             <span class="post__time">(45 часов назад)</span>
           </p>
           <p class="post__text">Всем GM и взаимные лайки!</p>
-          <span class="post__likes">Нравится:2560</span>
+          <span class="post__likes ">Нравится:2560</span>
 
       </article>
     </div>
-    </section>
     </section>
 
     <section class="photo-editor">

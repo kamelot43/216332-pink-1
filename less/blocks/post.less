@@ -1,15 +1,45 @@
 .post__wrapper {
   .container();
-  display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
-}
-
-.post:not(:first-child) {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
   @media @tablet-widths {
-    width: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+
   }
 }
+.post__wrapper--panorama {
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 34px;
+  outline: 2px solid green;
+  @media @tablet-widths {
+    //временно для разметки
+    min-height: 450px;
+    margin-bottom: 25px;
+    width: 300px;
+
+  }
+}
+
+
+
+.post--panorama {
+    @media @tablet-widths {
+      width: auto;
+      margin-bottom: 51px;
+      padding-bottom: 20px;
+}
+}
+
 
 .post__author {
   margin: 0;
@@ -18,6 +48,9 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: @bold;
+  @media @tablet-widths {
+    padding-left: 27px;
+  }
 }
 
 .post__text {
@@ -26,15 +59,24 @@
   padding-bottom: 5px;
   font-size: 14px;
   line-height: 24px;
+  @media @tablet-widths {
+    padding-left: 27px;
+  }
 }
 
 .post__likes {
   padding-left: 50px;
-}
 
-.post:not(:last-child) {
-  //min-height: 300px;
-  margin-bottom: 14px;
+    @media @tablet-widths {
+      margin-top: auto;
+
+  &--popular {
+      margin-top: auto;
+      padding-right: 60px;
+      order: -1;
+    }
+
+  }
 }
 
 .post__photo--panorama {
@@ -42,4 +84,8 @@
     width: 320px;
     margin: 0 auto;
   }
+    @media @tablet-widths {
+      width: 660px;
+      background-color: pink;
+    }
 }
