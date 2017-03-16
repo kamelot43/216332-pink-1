@@ -25,3 +25,21 @@
   }
 
 }
+
+.feed__wrapper {
+  .container();
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  @media @tablet-widths {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}
+.feed__wrapper--panorama {
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+  }
+}

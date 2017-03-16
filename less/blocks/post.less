@@ -1,38 +1,22 @@
-.post__wrapper {
-  .container();
-  flex-direction: column;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  @media @tablet-widths {
-    flex-direction: row;
-    justify-content: space-between;
-
-  }
-}
-.post__wrapper--panorama {
-  @media @tablet-widths {
-    flex-direction: row-reverse;
-  }
-}
 
 .post {
   display: flex;
   flex-direction: column;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
   outline: 2px solid green;
+
   @media @tablet-widths {
-    //временно для разметки
-    min-height: 450px;
     margin-bottom: 25px;
+    padding-bottom: 20px;
     width: 300px;
 
   }
 }
 
-
-
 .post--panorama {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
     @media @tablet-widths {
       width: auto;
       margin-bottom: 51px;
@@ -69,6 +53,7 @@
 
     @media @tablet-widths {
       margin-top: auto;
+      padding-left: 30px;
 
   &--popular {
       margin-top: auto;
