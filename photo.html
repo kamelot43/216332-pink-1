@@ -218,8 +218,14 @@
       <section class="photo-editor__console">
         <div class="photo-editor__wrapper">
           <div class="photo-editor__display">
-            <img src="img/photo-7-mobile@1x.jpg" alt="Дисплей фоторедактора">
+            <picture>
+                  <source media="(min-width: 960px)" srcset="http://placehold.it/470x540">
+                  <source media="(min-width: 660px)" srcset="http://placehold.it/300x400">
+              <img src="img/photo-7-mobile@1x.jpg" alt="Дисплей фоторедактора">
+            </picture>
+
           </div>
+          <div class="photo-editor__controls">
           <div class="photo-editor__filters">
 
             <div class="photo-editor__filter">
@@ -248,6 +254,7 @@
             <button class="photo-editor__upload-btn custom-btn custom-btn--post" type="submit">Запостить</button>
             <button class="photo-editor__upload-btn custom-btn custom-btn--cancel-post" type="reset">Отмена</button>
           </div>
+        </div>
         </div>
       </section>
     </section>
