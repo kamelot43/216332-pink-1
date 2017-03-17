@@ -1,14 +1,18 @@
 .photo-editor__text {
-  margin: 0;
+  margin: 0 auto;
+  width: 300px;
   padding-top: 25px;
   padding-bottom: 45px;
   text-align: center;
+
   @media @tablet-widths {
     padding-top: 70px;
     padding-bottom: 25px;
+    width: 500px;
     font-size: 18px;
     line-height: 30px;
   }
+
   @media @desktop-widths {
     padding-top: 30px;
   }
@@ -18,13 +22,15 @@
   .container();
   display: flex;
   flex-direction: column;
-  padding-top: 45px;
+  padding-top: 15px;
+
   @media @tablet-widths {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 100px;
   }
+
   @media @desktop-widths {
     box-sizing: border-box;
     padding-left: 80px;
@@ -40,6 +46,7 @@
   justify-content: flex-start;
   align-items: center;
   outline: 2px solid green;
+
   @media @tablet-widths {
     flex-direction: column;
     align-items: flex-start;
@@ -52,7 +59,7 @@
   margin-left: 33px;
   padding-bottom: 30px;
   width: 100%;
-  outline: 2px solid orange;
+
   @media @tablet-widths {
     padding: 0;
     margin-left: 0;
@@ -78,12 +85,14 @@
   width: 240px;
   height: 2px;
   background-color: black;
-  transform: translate(-15px, 0px);
+  transform: translate(-15px, 0);
+
   @media @tablet-widths {
     top: 20px;
     left: 75px;
     width: 205px;
   }
+
   @media @desktop-widths {
     left: 105px;
     width: 290px;
@@ -105,6 +114,7 @@
 
 .photo-editor__scale--hidden {
   display: none;
+
   @media @tablet-widths {
     display: block;
   }
@@ -113,10 +123,12 @@
 .photo-editor__upload {
   padding-top: 40px;
   padding-bottom: 40px;
+
   @media @tablet-widths {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
   @media @desktop-widths {
     display: flex;
     flex-direction: row;
@@ -128,9 +140,11 @@
 
 .photo-editor__upload-btn:first-child {
   margin-bottom: 10px;
+
   @media @tablet-widths {
     margin-bottom: 25px;
   }
+
   @media @desktop-widths {
     margin-bottom: 0;
   }
@@ -138,6 +152,7 @@
 
 .photo-editor__console {
   //min-height: 760px;
+
   @media @desktop-widths {
     margin-bottom: 30px;
   }

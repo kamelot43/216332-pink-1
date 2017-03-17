@@ -6,7 +6,6 @@
   margin-bottom: 15px;
 
   @media @tablet-widths {
-
     &--identification {
       order: -3;
     }
@@ -110,7 +109,6 @@
 }
 
 .contest__list--feedback {
-
   @media @tablet-widths {
     width: 500px;
     margin: 0 auto;
@@ -198,7 +196,7 @@
     position: absolute;
     display: block;
     top: -5px;
-    left: 0px;
+    left: 0;
     width: 39px;
     height: 39px;
     box-sizing: border-box;
@@ -210,12 +208,6 @@
   @media @tablet-widths {
     padding-left: 57px;
   }
-}
-
-.contest__field {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: @regular;
 }
 
 .contest__field--achievement:checked + .contest__label--achievement::after {
@@ -259,6 +251,9 @@
   height: 55px;
   border: 2px solid @lightgray-color;
   padding-left: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: @regular;
 
   @media @tablet-widths {
     width: 100%;
@@ -266,7 +261,6 @@
 }
 
 .contest__field--identification {
-
   @media @desktop-widths {
     height: 60px;
   }
@@ -369,7 +363,6 @@
 }
 
 .contest__legend--achievement br {
-
   @media @tablet-widths {
     display: none;
   }
@@ -392,6 +385,8 @@
   margin-bottom: 25px;
 
   @media @tablet-widths {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 50px;
   }
 }
@@ -399,21 +394,6 @@
 .contest__item--feedback {
   flex-direction: column;
   margin-bottom: 20px;
-
-  @media @desktop-widths {
-    margin-bottom: 0;
-  }
-}
-
-.contest__item--identification {
-
-  @media @tablet-widths {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.contest__item--feedback {
 
   @media @tablet-widths {
     position: relative;
@@ -423,7 +403,7 @@
       content: "";
       position: absolute;
       top: 8px;
-      right: 0px;
+      right: 0;
       display: block;
       width: 60px;
       height: 59px;
@@ -435,6 +415,7 @@
 
   @media @desktop-widths {
     width: 370px;
+    margin-bottom: 0;
     outline: 2px solid;
 
     &::after {
@@ -447,7 +428,6 @@
   margin-bottom: 53px;
 
   @media @desktop-widths {
-
     &:first-child {
       order: -3;
     }
@@ -534,7 +514,6 @@
 }
 
 .contest__label-extend {
-
   @media @tablet-widths {
     font-size: 0;
   }
