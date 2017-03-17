@@ -1,23 +1,24 @@
-
 body > * {
-    outline: 2px solid deeppink;
+  outline: 2px solid deeppink;
 }
+
 body > * > * {
-    outline: 2px dashed lime;
-    outline-offset: -2px;
+  outline: 2px dashed lime;
+  outline-offset: -2px;
 }
+
 body > * > * > * {
-    outline: 2px dotted dodgerblue;
-    outline-offset: -4px;
+  outline: 2px dotted dodgerblue;
+  outline-offset: -4px;
 }
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
-  color: #737981;
+  //Временно
+  color: indigo;
   font-weight: @regular;
-
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -41,4 +42,8 @@ body {
 
 img {
   vertical-align: bottom;
+}
+
+picture {
+  font-size: 0;
 }

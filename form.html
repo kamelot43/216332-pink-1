@@ -15,7 +15,7 @@
 
     @media (min-width: 960px) {
       HTML {
-        background-image: url('img/pink-form-desktop.jpg');
+        background-image: url('preview/pink-form-desktop.jpg');
       }
     }
 
@@ -24,6 +24,7 @@
     }
   </style>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <script src="../node_modules/pixel-glass/script.js"></script>
@@ -32,63 +33,73 @@
 
 <body>
   <header class="site-header">
+    <div class="site-header__wrapper">
 
 
-    <nav class="site-nav site-nav--closed site-nav--nojs">
-      <button class="site-nav__toggle" type="button">Открыть меню</button>
+      <nav class="site-nav site-nav--closed site-nav--nojs">
+        <div class="site-nav__wrapper">
+          <button class="site-nav__toggle" type="button">Открыть меню</button>
 
-      <div class="site-nav__logo">
-        <a href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
-        </a>
-      </div>
+          <div class="site-nav__logo">
+            <a href="index.html">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+            </a>
+          </div>
 
-      <ul class="site-nav__list">
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link">Конкурс</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
-        </li>
-      </ul>
-    </nav>
-    <h1 class="site-header__title site-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link">Конкурс</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="site-header__title site-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
   </header>
 
   <main class="site-main">
     <section class="contest">
       <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
 
-      <p class="contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту.</p>
+      <p class="contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту.
+        <span class="conest__request">Пожалуйста заполните форму ниже.</span>
+      </p>
       <form class="contest__form" action="https://echo.htmlacademy.ru/ " method="get">
 
-        <fieldset class="contest__fieldset contest__fieldset--identification">
-          <ul class="contest__list contest__list--identification">
-            <li class="contest__item contest__item--identification">
-              <label class="contest__label contest__label--identification" for="lastname">Фамилия:</label>
-              <input class="contest__field contest__field--identification" name="lastname" id="lastname" placeholder="Укажите фамилию*" required>
-            </li>
+        <div class="contest__wrapper contest__wrapper--identification">
+          <fieldset class="contest__fieldset contest__fieldset--identification">
 
-            <li class="contest__item contest__item--identification">
-              <label class="contest__label contest__label--identification" for="name">Имя:</label>
-              <input class="contest__field contest__field--identification" name="name" id="name" placeholder="Введите ваше имя*" required>
-            </li>
+            <ul class="contest__list contest__list--identification">
+              <li class="contest__item contest__item--identification">
+                <label class="contest__label contest__label--identification" for="lastname">Фамилия:</label>
+                <input class="contest__field contest__field--identification" name="lastname" id="lastname" placeholder="Укажите фамилию*" required>
+              </li>
 
-            <li class="contest__item contest__item--identification">
-              <label class="contest__label contest__label--identification" for="patronymic">Отчество:</label>
-              <input class="contest__field contest__field--identification" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required>
-            </li>
+              <li class="contest__item contest__item--identification">
+                <label class="contest__label contest__label--identification" for="name">Имя:</label>
+                <input class="contest__field contest__field--identification" name="name" id="name" placeholder="Введите ваше имя*" required>
+              </li>
 
-          </ul>
-        </fieldset>
+              <li class="contest__item contest__item--identification">
+                <label class="contest__label contest__label--identification" for="patronymic">Отчество:</label>
+                <input class="contest__field contest__field--identification" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required>
+              </li>
 
-        <div class="contest__wrapper">
+            </ul>
+
+          </fieldset>
+        </div>
+
+        <div class="contest__wrapper contest__wrapper--achievement">
           <fieldset class="contest__fieldset contest__fieldset--achievement">
             <legend class="contest__legend contest__legend--achievement">Ваши безбашенные<br> достижения в путешествии</legend>
             <ul class="contest__list contest__list--achievement">
@@ -128,27 +139,31 @@
           </fieldset>
         </div>
 
-        <fieldset class="contest__fieldset contest__fieldset--feedback">
+        <div class="contest__wrapper contest__wrapper--feedback">
+          <fieldset class="contest__fieldset contest__fieldset--feedback">
+            <legend class="contest__legend contest__legend--feedback">Контактная информация</legend>
 
 
-          <ul class="contest__list contest__list--feedback">
+            <ul class="contest__list contest__list--feedback">
 
-            <li class="contest__item contest__item--feedback">
-              <label class="contest__label contest__label--feedback" for="phone">Номер телефона:</label>
-              <input class="contest__field contest__field--feedback" type="text" name="phone" id="phone" placeholder="Номер пожалуйста">
-            </li>
+              <li class="contest__item contest__item--feedback contest__item--feedback-phone">
+                <label class="contest__label contest__label--feedback" for="phone">Номер телефона:</label>
+                <input class="contest__field contest__field--feedback" type="text" name="phone" id="phone" placeholder="Номер пожалуйста">
+              </li>
 
-            <li class="contest__item contest__item--feedback">
-              <label class="contest__label contest__label--feedback" for="mail">Адресок почты:</label>
-              <input class="contest__field contest__field--feedback" type="text" name="mail" id="mail" placeholder="Введите почту*" required>
-            </li>
+              <li class="contest__item contest__item--feedback contest__item--feedback-mail">
+                <label class="contest__label contest__label--feedback" for="mail">Адрес<span class="contest__label-extend">ok</span> почты:</label>
+                <input class="contest__field contest__field--feedback" type="text" name="mail" id="mail" placeholder="Введите почту*" required>
+              </li>
 
-          </ul>
+            </ul>
 
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <div class="contest__wrapper">
+        <div class="contest__wrapper contest__wrapper--soft">
           <fieldset class="contest__fieldset contest__fieldset--soft">
+
 
             <legend class="contest__legend contest__legend--soft">С каким приложением путешествовали?</legend>
             <ul class="contest__list contest__list--soft">
@@ -173,16 +188,20 @@
           </fieldset>
         </div>
 
-        <fieldset class="contest__fieldset contest__fieldset--impressions">
-          <legend class="contest__legend contest__legend--impressions">Опишите свои эмоции</legend>
-          <textarea class="contest__textarea" name="impressions" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
+        <div class="contest__wrapper contest__wrapper--impressions">
+          <fieldset class="contest__fieldset contest__fieldset--impressions">
+            <legend class="contest__legend contest__legend--impressions">Опишите свои эмоции</legend>
+            <textarea class="contest__textarea" name="impressions" placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
 
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <button class="original-btn contest__btn" type="submit">Отправить форму</button>
-        <p class="contest__footnote">
-          <sup class="contest__asterisk">*</sup>-обязательные поля
-        </p>
+        <div class="contest__wrapper contest__wrapper--submit">
+          <button class="original-btn contest__btn" type="submit">Отправить форму</button>
+          <p class="contest__footnote">
+            <sup class="contest__asterisk">*</sup>-обязательные <span class="contest__footnote-extend">для заполнения</span> поля
+          </p>
+        </div>
 
 
       </form>
@@ -190,20 +209,22 @@
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer__logo">
-      <a href="index.html">
-        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
-      </a>
-    </div>
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">
+        <a href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
+        </a>
+      </div>
 
-    <div class="site-footer__social social">
-      <a class="site-footer__link social__link social__link--tw" href="#">Twitter</a>
-      <a class="site-footer__link social__link social__link--fb" href="#">Facebook</a>
-      <a class="site-footer__link social__link social__link--yt" href="#">YouTube</a>
-    </div>
+      <div class="site-footer__social social">
+        <a class="social__link social__link--tw" href="#">Twitter</a>
+        <a class="social__link social__link--fb" href="#">Facebook</a>
+        <a class="social__link social__link--yt" href="#">YouTube</a>
+      </div>
 
-    <div class="site-footer__copyright">Разработано:
-      <a href="http://htmlacademy.ru/">Html Academy</a>
+      <div class="site-footer__copyright">Разработано:
+        <a href="http://htmlacademy.ru/">Html Academy</a>
+      </div>
     </div>
   </footer>
 
@@ -225,6 +246,7 @@
     <button class="original-btn popup__btn" type="button" title="Закрыть окно">Закрыть окно</button>
 
   </div>
+  <script src="js/drop-down-menu.js"></script>
 
 
 </body>

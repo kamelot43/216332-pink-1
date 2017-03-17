@@ -1,32 +1,82 @@
 .advantages {
-  min-height: 1002px;
+  //min-height: 1002px;
+}
+
+.advantages__wrapper {
+  .container ();
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 720px;
   background-repeat: no-repeat;
   overflow: hidden;
+
+  @media @tablet-widths {
+    background-position: 0 250px;
+    background-repeat: no-repeat;
+    background-size: 270px 540px;
+  }
+
+  @media @desktop-widths {
+    background: none;
+  }
 }
-.advantages__wrapper {
-  .container ();
-}
+
 .advantages__proposal {
   margin-bottom: 45px;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
   font-weight: @light;
+
+  @media @tablet-widths {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 0;
+    font-size: 50px;
+    line-height: 55px;
+  }
 }
+
 .advantages__proposal:nth-child(2) {
   margin-bottom: 0;
 }
 
 .advantages__proposals {
   padding-top: 40px;
+
+  @media @tablet-widths {
+    padding-top: 50px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 75px;
+  }
 }
+
 .advantages__list {
   .list-clear-indent();
   padding-top: 120px;
   padding-bottom: 330px;
+
+  @media @tablet-widths {
+    width: 310px;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
+
+  @media @desktop-widths {
+    display: flex;
+    width: auto;
+    margin: 0;
+    padding-top: 85px;
+  }
 }
+
 .advantages__title {
   margin: 0;
   padding-bottom: 10px;
@@ -34,7 +84,21 @@
   text-align: center;
   font-size: 18px;
   line-height: 24px;
+
+  @media @tablet-widths {
+    text-align: left;
+  }
+
+  @media @desktop-widths {
+    width: 240px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
+
 .advantages__descr {
   margin: 0;
   font-size: 14px;
@@ -42,10 +106,36 @@
   font-weight: @regular;
   background: rgba(51, 204, 255, 0.3);
   text-align: center;
+
+  @media @tablet-widths {
+    text-align: left;
+  }
+
+  @media @desktop-widths {
+    width: 263px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
+
 .advantages__item {
   margin-bottom: 30px;
+
+  @media @tablet-widths {
+    margin-bottom: 35px;
+  }
+
+  @media @desktop-widths {
+    flex-basis: 310px;
+    margin-bottom: 0;
+    padding-top: 355px;
+    background: url("http://placehold.it/250x300") no-repeat top center;
+    outline: 2px solid green;
+  }
 }
+
 .advantages__item:last-child {
   margin-bottom: 0;
 }

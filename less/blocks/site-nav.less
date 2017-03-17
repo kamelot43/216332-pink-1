@@ -1,11 +1,29 @@
 .site-nav {
-  position: relative;
-  min-height: 325px;
+  //min-height: 325px;
   background: @darkviolet-color;
+
+  @media @desktop-widths {
+    display: flex;
+  }
+}
+
+.site-nav__wrapper {
+  position: relative;
+  .container();
+  .clearfix();
 }
 
 .site-nav__list {
   .list-clear-indent();
+
+  @media @desktop-widths {
+    float: right;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 625px;
+    padding-bottom: 27px;
+    outline: 2px solid red;
+  }
 }
 
 .site-nav__toggle {
@@ -21,6 +39,10 @@
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
+
+  @media @desktop-widths {
+    display: none;
+  }
 }
 
 .site-nav--closed .site-nav__toggle {
@@ -29,6 +51,30 @@
 
 .site-nav--opened .site-nav__toggle {
   background-image: url("../img/icon-menu-cross.svg");
+}
+
+.site-nav--closed .site-nav__list {
+  display: none;
+
+  @media @desktop-widths {
+    display: flex;
+  }
+}
+
+.site-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.site-nav--closed .site-nav__logo-item {
+  background-color: transparent;
+}
+
+.site-nav--nojs .site-nav__toggle {
+  display: none;
+}
+
+.site-nav--nojs .site-nav__item {
+  display: block;
 }
 
 .site-nav__link {
@@ -40,15 +86,46 @@
   text-transform: uppercase;
   font-weight: @bold;
   color: #ffffff;
+  border-bottom: 1px solid red;
+
+  @media @tablet-widths {
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  @media @desktop-widths {
+    padding-top: 46px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: @regular;
+    text-transform: none;
+    text-align: left;
+  }
 }
 
 .site-nav__item {
   text-align: center;
-  border-bottom: 1px solid red;
+
+  @media @desktop-widths {
+    display: inline-block;
+  }
 }
 
 .site-nav__logo {
   padding-top: 15px;
   padding-bottom: 25px;
   padding-left: 10px;
+  border-bottom: 1px solid red;
+
+  @media @tablet-widths {
+    padding-top: 35px;
+    padding-bottom: 45px;
+  }
+
+  @media @desktop-widths {
+    float: left;
+    width: 160px;
+    outline: 2px solid red;
+  }
 }

@@ -1,6 +1,32 @@
-.post__wrapper {
-  .container();
+.post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  outline: 2px solid green;
+
+  @media @tablet-widths {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    width: 300px;
+    min-height: 430px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 57px;
+    min-height: 530px;
+  }
+}
+
+.post--panorama {
   padding-bottom: 20px;
+  margin-bottom: 15px;
+
+  @media @tablet-widths {
+    width: auto;
+    margin-bottom: 51px;
+    padding-bottom: 20px;
+  }
 }
 
 .post__author {
@@ -10,6 +36,10 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: @bold;
+
+  @media @tablet-widths {
+    padding-left: 27px;
+  }
 }
 
 .post__text {
@@ -18,13 +48,36 @@
   padding-bottom: 5px;
   font-size: 14px;
   line-height: 24px;
+
+  @media @tablet-widths {
+    padding-left: 27px;
+  }
 }
 
 .post__likes {
   padding-left: 50px;
+
+  @media @tablet-widths {
+    margin-top: auto;
+    padding-left: 30px;
+
+    &--popular {
+      margin-top: auto;
+      padding-right: 60px;
+      order: -1;
+    }
+  }
 }
 
-.post:not(:last-child) {
-  min-height: 300px;
-  margin-bottom: 14px;
+.post__photo--panorama {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 660px;
+  }
+
+  @media @desktop-widths {
+    width: 960px;
+  }
 }

@@ -1,5 +1,6 @@
 .feed {
-  min-height: 2490px;
+  //min-height: 2490px;
+  box-sizing: border-box;
 }
 
 .feed__promo-text {
@@ -7,4 +8,49 @@
   padding-top: 45px;
   margin-bottom: 49px;
   text-align: center;
+
+  @media @tablet-widths {
+    width: 450px;
+    padding-top: 90px;
+    margin-bottom: 75px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: @regular;
+  }
+
+  @media @desktop-widths {
+    width: 575px;
+    margin-bottom: 90px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.feed__content {
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.feed__wrapper {
+  .container();
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+
+  @media @tablet-widths {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.feed__wrapper--panorama {
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+  }
 }
