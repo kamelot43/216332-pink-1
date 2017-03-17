@@ -6,7 +6,7 @@
   text-align: center;
 
   @media @tablet-widths {
-    padding-top: 70px;
+    padding-top: 45px;
     padding-bottom: 25px;
     width: 500px;
     font-size: 18px;
@@ -14,7 +14,7 @@
   }
 
   @media @desktop-widths {
-    padding-top: 30px;
+    padding-top: 6px;
   }
 }
 
@@ -43,8 +43,7 @@
   padding-top: 40px;
   padding-bottom: 35px;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
   outline: 2px solid green;
 
   @media @tablet-widths {
@@ -56,19 +55,19 @@
 
 .photo-editor__filter {
   position: relative;
-  margin-left: 33px;
   padding-bottom: 30px;
-  width: 100%;
 
   @media @tablet-widths {
     padding: 0;
     margin-left: 0;
     margin-bottom: 15px;
+    width: 100%;
+    outline: 2px solid;
   }
 }
 
 .photo-editor__btn {
-  width: 48px;
+  width: 77px;
   height: 47px;
   padding: 0;
   border: none;
@@ -76,6 +75,10 @@
   opacity: 0.3;
   outline: 2px solid red;
   cursor: pointer;
+
+  @media @tablet-widths {
+    width: 57px;
+  }
 }
 
 .photo-editor__scale {
