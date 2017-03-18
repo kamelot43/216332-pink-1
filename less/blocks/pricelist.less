@@ -11,7 +11,12 @@
    width: 100%;
    height: 100%;
   background: url("../img/bg-triangle-white.svg") no-repeat 0 0;
-  top: -40px;
+  top: -35px;
+ }
+ @media @desktop-widths {
+   &::before {
+     top: -15px;
+   }
  }
 }
 
@@ -25,7 +30,7 @@
   }
 
   @media @desktop-widths {
-    padding-top: 140px;
+    padding-top: 150px;
     padding-bottom: 91px;
   }
 }
@@ -127,7 +132,10 @@
   }
 
   @media @desktop-widths {
+    width: 120px;
     height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -140,6 +148,11 @@
     font-weight: @light;
     text-transform: none;
   }
+    @media @desktop-widths {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: @regular;
+    }
 }
 
 .pricelist__icon {
@@ -153,6 +166,10 @@
   right: 65px;
   top: 10px;
 }
+@media @desktop-widths {
+  right: 105px;
+  top: 15px;
+}
 }
 
 .pricelist__package {
@@ -160,6 +177,10 @@
   font-weight: @bold;
   @media @tablet-widths {
     font-size: 16px;
+  }
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -170,6 +191,10 @@
   text-transform: uppercase;
   @media @tablet-widths {
     font-size: 18px;
+  }
+  @media @desktop-widths {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
