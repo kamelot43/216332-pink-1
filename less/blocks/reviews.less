@@ -1,5 +1,5 @@
 .reviews {
-  min-height: 315px;
+//  min-height: 315px;
 }
 
 .reviews__list {
@@ -36,7 +36,7 @@
 
 .reviews__author {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   font-size: 18px;
   line-height: 30px;
   font-weight: @bold;
@@ -86,7 +86,9 @@
 }
 
 .reviews__controls {
-  //временно для разметки!!
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
   padding-bottom: 15px;
 
   @media @desktop-widths {
@@ -115,4 +117,10 @@
 
 .reviews__toggle--next {
   transform: translate(885px, 215px);
+}
+
+.reviews__quotes {
+  @media @desktop-widths {
+  display: none;
+  }
 }
