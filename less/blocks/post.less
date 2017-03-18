@@ -1,13 +1,12 @@
 .post {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
-  padding-bottom: 10px;
+  margin-bottom: 21px;
   outline: 2px solid green;
 
   @media @tablet-widths {
-    margin-bottom: 25px;
-    padding-bottom: 20px;
+    margin-bottom: 22px;
+    //padding-bottom: 20px;
     width: 300px;
     min-height: 430px;
   }
@@ -17,52 +16,70 @@
     min-height: 530px;
   }
 }
+.post__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 14px;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  outline: 2px solid;
+
+  @media @tablet-widths {
+    min-height: 115px;
+    padding-left: 27px;
+    padding-right: 40px;
+    padding-top: 21px;
+  }
+}
+.post__content--panorama {
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+    min-height: 80px;
+  }
+    @media @desktop-widths {
+      min-height: 60px;
+    }
+}
 
 .post--panorama {
-  padding-bottom: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   @media @tablet-widths {
     width: auto;
     margin-bottom: 51px;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
   }
+    @media @desktop-widths {
+      margin-bottom: 47px;
+    }
 }
 
 .post__author {
   margin: 0;
-  padding-top: 23px;
-  padding-left: 20px;
   font-size: 14px;
   line-height: 24px;
   font-weight: @bold;
-
-  @media @tablet-widths {
-    padding-left: 27px;
-  }
 }
 
 .post__text {
   margin: 0;
-  padding-left: 20px;
   padding-bottom: 5px;
   font-size: 14px;
   line-height: 24px;
-
-  @media @tablet-widths {
-    padding-left: 27px;
-  }
 }
 
 .post__likes {
-  padding-left: 50px;
+  padding-left: 35px;
 
   @media @tablet-widths {
     margin-top: auto;
     padding-left: 30px;
 
     &--popular {
-      margin-top: auto;
+      margin-top: 0;
       padding-right: 60px;
       order: -1;
     }
