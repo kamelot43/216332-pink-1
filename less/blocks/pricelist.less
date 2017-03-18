@@ -20,7 +20,7 @@
   padding-top: 120px;
 
   @media @tablet-widths {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 71px;
   }
 
@@ -86,6 +86,14 @@
     font-size: 14px;
     font-weight: @regular;
   }
+  @media @tablet-widths {
+    &::before {
+      background: url("../img/bg-hit-tablet.svg") no-repeat;
+    }
+    &::after {
+      top:4px;
+    }
+  }
 }
 
 .pricelist__title--hidden {
@@ -102,6 +110,7 @@
   height: 58px;
   width: 110px;
   padding-left: 25px;
+  padding-right: 25px;
   font-size: 14px;
   line-height: 30px;
   font-weight: @regular;
@@ -111,6 +120,8 @@
 
   @media @tablet-widths {
     padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 45px;
     font-size: 0;
   }
@@ -138,11 +149,18 @@
   height: 25px;
   background-repeat: no-repeat;
   outline: 2px solid green;
+@media @tablet-widths {
+  right: 65px;
+  top: 10px;
+}
 }
 
 .pricelist__package {
   text-transform: uppercase;
   font-weight: @bold;
+  @media @tablet-widths {
+    font-size: 16px;
+  }
 }
 
 .pricelist__price {
@@ -150,6 +168,9 @@
   font-size: 24px;
   font-weight: @light;
   text-transform: uppercase;
+  @media @tablet-widths {
+    font-size: 18px;
+  }
 }
 
 .pricelist__controls {

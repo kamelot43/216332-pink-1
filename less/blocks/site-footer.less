@@ -44,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
   }
 
   @media @desktop-widths {
@@ -132,8 +132,8 @@
 
   @media @tablet-widths {
     align-items: center;
-    justify-content: space-between;
-    width: 180px;
+    justify-content: space-around;
+    width: 185px;
     margin-bottom: 0;
   }
 }
@@ -195,11 +195,16 @@
    display: block;
    width: 100%;
    height: 100%;
-  background: url("../img/bg-triangle-white-footer.svg") no-repeat -135px -16px;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat top center;
+  top: -15px;
   z-index: 1;
 }
   @media @tablet-widths {
-    height: 380px;
+    height: 370px;
+
+    &::before {
+      top:5px;
+    }
   }
 
   @media @desktop-widths {
