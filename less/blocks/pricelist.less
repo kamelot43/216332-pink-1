@@ -5,19 +5,20 @@
   overflow: hidden;
 
   &::before {
-   content: "";
-   position: absolute;
-   display: block;
-   width: 100%;
-   height: 100%;
-  background: url("../img/bg-triangle-white.svg") no-repeat 0 0;
-  top: -35px;
- }
- @media @desktop-widths {
-   &::before {
-     top: -15px;
-   }
- }
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-triangle-white.svg") no-repeat 0 0;
+    top: -35px;
+  }
+
+  @media @desktop-widths {
+    &::before {
+      top: -15px;
+    }
+  }
 }
 
 .pricelist__wrapper {
@@ -70,6 +71,7 @@
     height: 95px;
   }
 }
+
 .pricelist__title--popular {
   &::before {
     content: "";
@@ -80,6 +82,7 @@
     height: 73px;
     background: url("../img/bg-hit.svg") no-repeat;
   }
+
   &::after {
     content: "хит";
     position: absolute;
@@ -91,12 +94,14 @@
     font-size: 14px;
     font-weight: @regular;
   }
+
   @media @tablet-widths {
     &::before {
       background: url("../img/bg-hit-tablet.svg") no-repeat;
     }
+
     &::after {
-      top:4px;
+      top: 4px;
     }
   }
 }
@@ -148,11 +153,12 @@
     font-weight: @light;
     text-transform: none;
   }
-    @media @desktop-widths {
-      font-size: 18px;
-      line-height: 30px;
-      font-weight: @regular;
-    }
+
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: @regular;
+  }
 }
 
 .pricelist__icon {
@@ -162,22 +168,26 @@
   height: 25px;
   background-repeat: no-repeat;
   outline: 2px solid green;
-@media @tablet-widths {
-  right: 65px;
-  top: 10px;
-}
-@media @desktop-widths {
-  right: 105px;
-  top: 15px;
-}
+
+  @media @tablet-widths {
+    right: 65px;
+    top: 10px;
+  }
+
+  @media @desktop-widths {
+    right: 105px;
+    top: 15px;
+  }
 }
 
 .pricelist__package {
   text-transform: uppercase;
   font-weight: @bold;
+
   @media @tablet-widths {
     font-size: 16px;
   }
+
   @media @desktop-widths {
     font-size: 18px;
     line-height: 30px;
@@ -189,9 +199,11 @@
   font-size: 24px;
   font-weight: @light;
   text-transform: uppercase;
+
   @media @tablet-widths {
     font-size: 18px;
   }
+
   @media @desktop-widths {
     font-size: 24px;
     line-height: 30px;

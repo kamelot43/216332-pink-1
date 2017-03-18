@@ -39,9 +39,10 @@
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
-    @media @tablet-widths {
-      top: 30px;
-    }
+
+  @media @tablet-widths {
+    top: 30px;
+  }
 
   @media @desktop-widths {
     display: none;
@@ -82,6 +83,7 @@
 
 .site-nav__link {
   display: block;
+  position: relative;
   padding-top: 16px;
   padding-bottom: 15px;
   text-decoration: none;
@@ -106,10 +108,43 @@
     font-weight: @regular;
     text-transform: none;
     text-align: left;
+    border-bottom: 0;
   }
 }
 
+.site-nav__link--active {
+  @media @desktop-widths {
+    border-bottom: 1px solid #ffffff;
+  }
+}
 
+.site-nav__link--active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90px;
+  left: 95px;
+  height: 2px;
+  background-color: #ffffff;
+
+  @media @tablet-widths {
+    left: 266px;
+  }
+
+  @media @desktop-widths {
+    display: none;
+  }
+}
+
+.site-nav__link--active-photo::after {
+  left: 70px;
+  width: 142px;
+
+  @media @tablet-widths {
+    width: 140px;
+    left: 240px;
+  }
+}
 
 .site-nav__item {
   text-align: center;
