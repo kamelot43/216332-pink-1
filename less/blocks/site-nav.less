@@ -22,7 +22,6 @@
     justify-content: space-between;
     width: 625px;
     padding-bottom: 27px;
-    outline: 2px solid red;
   }
 }
 
@@ -34,7 +33,6 @@
   height: 50px;
   font-size: 0;
   background-color: transparent;
-  outline: 1px solid red;
   background-position: right;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -118,7 +116,7 @@
 
 .site-nav__item {
   text-align: center;
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid @dimgray-color;
 
   @media @desktop-widths {
     display: inline-block;
@@ -129,7 +127,7 @@
 .site-nav__logo {
   padding-top: 15px;
   padding-bottom: 25px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid @dimgray-color;
 
   @media @tablet-widths {
     padding-top: 35px;
@@ -139,6 +137,6 @@
   @media @desktop-widths {
     float: left;
     width: 160px;
-    outline: 2px solid red;
+    border-bottom: none;
   }
 }

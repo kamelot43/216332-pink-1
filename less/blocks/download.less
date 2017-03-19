@@ -53,12 +53,18 @@
   background-repeat: no-repeat;
   background-position: center;
   font-size: 0;
-  outline: 2px solid red;
+
+  &:first-child {
+    background-position-x: 0;
+  }
+
+  &:last-child {
+    background-position-x: 25px;
+  }
 }
 
 .download__link--apple {
   background-image: url("../img/logo-apple.svg");
-  background-position-x: 0;
 }
 
 .download__link--android {
@@ -67,9 +73,7 @@
 
 .download__link--microsoft {
   background-image: url("../img/logo-microsoft.svg");
-  background-position-x: 25px;
 }
-
 
 .download__wrapper {
   @media @mobile-widths-only {

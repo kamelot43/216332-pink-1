@@ -10,7 +10,16 @@
 
 .site-header {
   //min-height: 495px;
-  background-color: @darkviolet-color;
+  background: @darkviolet-color url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+
+  &--inner {
+    background-position: center bottom -222px;
+  }
+
+  @media @tablet-widths {
+    background-position: 0 0;
+    background-size: cover;
+  }
 }
 
 .site-header__demo-img {
