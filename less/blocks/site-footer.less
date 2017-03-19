@@ -132,7 +132,7 @@
   @media @tablet-widths {
     align-items: flex-end;
     justify-content: flex-start;
-    width: 190px;
+    width: 200px;
     padding-top: 30px;
   }
 
@@ -166,9 +166,18 @@
   height: 40px;
   vertical-align: middle;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 10px 0;
   font-size: 0;
-  outline: 2px solid red;
+  background-image: url("../img/logo-htmlacademy.svg");
+
+  @media @tablet-widths {
+    background-position: bottom;
+    transform: translateY(10px);
+  }
+
+  @media @desktop-widths {
+    transform: translateY(-10px);
+  }
 }
 
 .site-footer__inner {

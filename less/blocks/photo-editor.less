@@ -60,7 +60,7 @@
   padding-bottom: 35px;
   flex-direction: row;
   justify-content: center;
-  outline: 2px solid green;
+  //outline: 2px solid green;
 
   @media @tablet-widths {
     flex-direction: column;
@@ -74,11 +74,18 @@
   padding-bottom: 30px;
 
   @media @tablet-widths {
+    display: flex;
+    align-items: center;
     padding: 0;
     margin-left: 0;
     margin-bottom: 15px;
     width: 100%;
+    min-height: 55px;
     outline: 2px solid;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 20px;
   }
 }
 
@@ -91,9 +98,62 @@
   opacity: 0.3;
   outline: 2px solid red;
   cursor: pointer;
+  background-position: 10px 5px;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop.svg");
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill.svg");
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-position: center;
+  }
 
   @media @tablet-widths {
-    width: 57px;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+
+    &--crop {
+      background-image: url("../img/icon-editor-crop-active.svg");
+    }
+
+    &--fill {
+      background-image: url("../img/icon-editor-fill-active.svg");
+    }
+
+    &--contrast {
+      background-image: url("../img/icon-editor-contrast-active.svg");
+      background-position: center;
+      background-size: 70%;
+    }
+  }
+
+  @media @desktop-widths {
+    width: 48px;
+    height: 45px;
+  }
+}
+
+.photo-editor__btn--active.photo-editor__btn {
+  opacity: 1;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop-active.svg");
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill-active.svg");
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast-active.svg");
   }
 }
 
@@ -144,7 +204,7 @@
   padding-bottom: 40px;
 
   @media @tablet-widths {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 50px;
   }
 
@@ -153,8 +213,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 130px;
-    padding-bottom: 55px;
+    padding-top: 125px;
+    padding-bottom: 50px;
   }
 }
 
@@ -171,6 +231,7 @@
 }
 
 .photo-editor__console {
+  background: @whitesmoke-color;
   //min-height: 760px;
 
   @media @desktop-widths {

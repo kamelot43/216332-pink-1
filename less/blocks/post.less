@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 21px;
-  outline: 2px solid green;
+  //outline: 2px solid green;
 
   @media @tablet-widths {
     margin-bottom: 22px;
@@ -25,7 +25,8 @@
   padding-right: 14px;
   padding-top: 20px;
   padding-bottom: 17px;
-  outline: 2px solid;
+  background: @whitesmoke-color;
+  //outline: 2px solid;
 
   @media @tablet-widths {
     min-height: 115px;
@@ -43,7 +44,7 @@
 
   @media @desktop-widths {
     min-height: 60px;
-    padding-right: 40px;
+    padding-right: 35px;
   }
 }
 
@@ -85,12 +86,6 @@
 
     &--popular {
       order: -1;
-    }
-  }
-
-  @media @desktop-widths {
-    &--popular {
-      transform: translateX(10px);
     }
   }
 }
@@ -135,4 +130,23 @@
   outline: 2px solid red;
   margin-right: 20px;
   background: url("../img/icon-heart.svg") no-repeat 2px 2px;
+}
+
+.post__btn {
+  margin-right: 20px;
+  vertical-align: middle;
+
+  @media @tablet-widths {
+    margin-right: 0;
+
+    &--popular {
+      margin-left: 10px;
+    }
+  }
+
+  @media @desktop-widths {
+    &--popular {
+      margin-left: 15px;
+    }
+  }
 }
