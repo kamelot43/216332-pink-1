@@ -93,11 +93,12 @@
       background-position-y: 10px;
     }
   }
+
   @media @desktop-widths {
-      &--popular {
-    background-position-x: 105px;
-    background-position-y: 6px;
-      }
+    &--popular {
+      background-position-x: 105px;
+      background-position-y: 6px;
+    }
   }
 }
 
@@ -105,24 +106,26 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+
   &::after {
-     content: "Панорама дня";
-     position: absolute;
-     top: 0;
-     right: 20px;
-     display: block;
-     padding: 6px 20px;
-     font-size: 12px;
-     font-weight: 700;
-     text-transform: uppercase;
-     color: #ffffff;
-     background-color: @crimson-color;
-   }
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: block;
+    padding: 6px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: @crimson-color;
+  }
 
   @media @tablet-widths {
     width: 660px;
+
     &::after {
-      top:55px;
+      top: 55px;
     }
   }
 

@@ -10,23 +10,23 @@
   cursor: pointer;
 
   &::before {
-     content: "";
-     position: absolute;
-     width: 7px;
-     height: 7px;
-     bottom: 6px;
-     left: 6px;
-     border-radius: 50%;
-     background-color: @silver-color;
-     display: block;
-   }
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    bottom: 6px;
+    left: 6px;
+    border-radius: 50%;
+    background-color: @silver-color;
+    display: block;
+  }
 
   &--active {
     &::before {
-    border: 3px solid @darkviolet-color;
-    bottom: 3px;
+      border: 3px solid @darkviolet-color;
+      bottom: 3px;
+    }
   }
-}
 
   &:last-child {
     margin-right: 0;
