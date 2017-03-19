@@ -30,7 +30,7 @@
   @media @tablet-widths {
     min-height: 115px;
     padding-left: 27px;
-    padding-right: 40px;
+    padding-right: 30px;
     padding-top: 21px;
   }
 }
@@ -43,11 +43,12 @@
 
   @media @desktop-widths {
     min-height: 60px;
+    padding-right: 40px;
   }
 }
 
 .post--panorama {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 
   @media @tablet-widths {
     width: auto;
@@ -74,26 +75,55 @@
 }
 
 .post__likes {
+  display: block;
   padding-left: 35px;
+  background: url("../img/icon-heart.svg") no-repeat 5px 10px;
 
   @media @tablet-widths {
     margin-top: auto;
-    padding-left: 30px;
+    padding-left: 0;
+    background-position-x: 230px;
+    background-position-y: 5px;
 
     &--popular {
       margin-top: 0;
-      padding-right: 60px;
+      padding-right: 25px;
       order: -1;
+      background-position-x: 102px;
+      background-position-y: 10px;
     }
+  }
+  @media @desktop-widths {
+      &--popular {
+    background-position-x: 105px;
+    background-position-y: 6px;
+      }
   }
 }
 
 .post__photo--panorama {
+  position: relative;
   width: 320px;
   margin: 0 auto;
+  &::after {
+     content: "Панорама дня";
+     position: absolute;
+     top: 0;
+     right: 20px;
+     display: block;
+     padding: 6px 20px;
+     font-size: 12px;
+     font-weight: 700;
+     text-transform: uppercase;
+     color: #ffffff;
+     background-color: @crimson-color;
+   }
 
   @media @tablet-widths {
     width: 660px;
+    &::after {
+      top:55px;
+    }
   }
 
   @media @desktop-widths {

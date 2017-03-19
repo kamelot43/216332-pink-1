@@ -39,9 +39,14 @@
     box-sizing: border-box;
     padding-left: 80px;
     padding-right: 60px;
+    padding-top: 90px;
   }
 }
-
+.photo-editor__controls {
+  @media @tablet-widths {
+    width: 270px;
+  }
+}
 .photo-editor__filters {
   display: flex;
   padding-top: 40px;
@@ -142,6 +147,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 130px;
+    padding-bottom: 55px;
   }
 }
 
@@ -161,7 +167,7 @@
   //min-height: 760px;
 
   @media @desktop-widths {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 }
 

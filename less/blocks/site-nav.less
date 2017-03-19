@@ -85,6 +85,7 @@
   display: block;
   position: relative;
   padding-top: 16px;
+  padding-bottom: 14px;
   text-decoration: none;
   text-align: center;
   font-size: 18px;
@@ -110,14 +111,13 @@
 }
 
 .site-nav__link--active {
+  @media @desktop-widths {
   border-bottom: 1px solid red;
+}
 }
 
 .site-nav__item {
-  display: flex;
-  justify-content: center;
   text-align: center;
-  padding-bottom: 14px;
   border-bottom: 1px solid orange;
 
   @media @desktop-widths {

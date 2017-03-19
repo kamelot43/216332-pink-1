@@ -107,27 +107,23 @@
 }
 
 .site-footer__logo {
-  //padding-top: 52px;
-  //margin-bottom: 40px;
-  text-align: center;
-  padding-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 75px;
+
 
   @media @tablet-widths {
-    margin-bottom: 0;
-    padding-top: 40px;
+   min-height: 50px;
   }
 
   @media @desktop-widths {
-    padding-top: 70px;
+   min-height: 80px;
+   align-items: flex-start;
   }
 }
 
 .site-footer__logo--photo {
-  padding-top: 42px;
-
-  @media @desktop-widths {
-    padding-top: 70px;
-  }
+  flex-basis: 65px;
 }
 
 .site-footer__social {
@@ -135,35 +131,36 @@
   justify-content: center;
 
   @media @tablet-widths {
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 185px;
-    padding-top: 40px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 190px;
+    min-height: 80px;
   }
 
   @media @desktop-widths {
-    padding-top: 80px;
+    min-height: 70px;
+    align-items: flex-start;
   }
 }
 
 .site-footer__copyright {
-  text-align: center;
+  display: flex;
+  flex-basis: 45px;
   line-height: 18px;
-  padding-bottom: 25px;
+
 
   @media @tablet-widths {
-    padding-top: 50px;
+    flex-direction: row;
+    align-items: flex-end;
+    min-height: 55px;
   }
 
   @media @desktop-widths {
-    padding-top: 80px;
     font-size: 18px;
     line-height: 18px;
+    align-items: flex-start;
+    min-height: 45px;
   }
-}
-
-.site-footer__copyright--photo {
-  padding-bottom: 35px;
 }
 
 .site-footer__copyright a {
@@ -181,14 +178,14 @@
   .container();
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   min-height: 285px;
 
   @media @tablet-widths {
-    display: flex;
     flex-direction: row;
-    .container();
     justify-content: space-between;
+    .container();
     min-height: 115px;
   }
 
@@ -221,7 +218,7 @@
   }
 
   @media @tablet-widths {
-    height: 370px;
+    height: 366px;
 
     &::before {
       top: 5px;
@@ -230,5 +227,6 @@
 
   @media @desktop-widths {
     height: 480px;
+    margin-bottom: 10px;
   }
 }
