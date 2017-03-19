@@ -75,29 +75,22 @@
 }
 
 .post__likes {
-  display: block;
-  padding-left: 35px;
-  background: url("../img/icon-heart.svg") no-repeat 5px 10px;
+  display: flex;
+  align-items: center;
 
   @media @tablet-widths {
+    flex-direction: row-reverse;
+    justify-content: space-between;
     margin-top: auto;
-    padding-left: 0;
-    background-position-x: 230px;
-    background-position-y: 5px;
 
     &--popular {
-      margin-top: 0;
-      padding-right: 25px;
       order: -1;
-      background-position-x: 102px;
-      background-position-y: 10px;
     }
   }
 
   @media @desktop-widths {
     &--popular {
-      background-position-x: 105px;
-      background-position-y: 6px;
+      transform: translateX(10px);
     }
   }
 }
@@ -132,4 +125,14 @@
   @media @desktop-widths {
     width: 960px;
   }
+}
+
+.post__heart {
+  font-size: 0;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  outline: 2px solid red;
+  margin-right: 20px;
+  background: url("../img/icon-heart.svg") no-repeat 2px 2px;
 }
