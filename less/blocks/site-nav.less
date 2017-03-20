@@ -8,9 +8,11 @@
 }
 
 .site-nav__wrapper {
-  position: relative;
-  .container-custom();
-  .clearfix();
+  @media @desktop-widths {
+    .clearfix();
+    .container();
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .site-nav__list {
@@ -28,14 +30,12 @@
 .site-nav__toggle {
   position: absolute;
   top: 10px;
-  right: 18px;
+  right: 0;
   width: 56px;
   height: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
   font-size: 0;
   background-color: transparent;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
@@ -71,12 +71,6 @@
 
 .site-nav--closed .site-nav__logo {
   border-bottom: none;
-}
-
-.site-nav--oppened {
-  @media @desktop-widths {
-    background-color: transparent;
-  }
 }
 
 .site-nav--closed .site-nav__logo-item {

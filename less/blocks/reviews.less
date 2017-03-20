@@ -7,7 +7,7 @@
   padding-top: 35px;
 
   @media @tablet-widths {
-    padding-top: 95px;
+    padding-top: 90px;
   }
 
   @media @desktop-widths {
@@ -85,15 +85,18 @@
     width: 680px;
     margin: 0 auto;
     padding-bottom: 40px;
-    outline: 2px solid red;
   }
 }
 
 .reviews__controls {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  padding-bottom: 15px;
+  margin-top: 32px;
+  padding-bottom: 17px;
+
+  @media @tablet-widths {
+    margin-top: 25px;
+  }
 
   @media @desktop-widths {
     display: none;
@@ -105,10 +108,8 @@
   width: 22px;
   height: 41px;
   border: none;
-  background-color: red;
   cursor: pointer;
   opacity: 0.3;
-  outline: 2px solid green;
 
   @media @desktop-widths {
     display: inline-block;

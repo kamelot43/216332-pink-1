@@ -54,7 +54,7 @@
 }
 
 .contest__wrapper--impressions {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
   @media @tablet-widths {
     margin-bottom: 65px;
@@ -270,9 +270,10 @@
   width: 260px;
   height: 55px;
   border: 2px solid @lightgray-color;
-  padding-left: 15px;
+  padding-left: 20px;
   font-size: 18px;
   line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: @regular;
 
   @media @tablet-widths {
@@ -290,12 +291,12 @@
   margin-top: 5px;
 
   @media @tablet-widths {
-    width: 420px;
+    width: 412px;
     order: -2;
   }
 
   @media @desktop-widths {
-    width: 290px;
+    width: 285px;
     margin-top: 0;
   }
 }
@@ -311,7 +312,7 @@
 .contest__field--soft:checked + .contest__label--soft::after {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 10px;
   left: 12px;
   display: block;
   width: 15px;
@@ -446,11 +447,11 @@
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
+      top: 5px;
       right: 0;
       display: block;
       width: 60px;
-      height: 59px;
+      height: 57px;
       background-repeat: no-repeat;
       background-position: center;
       border: 2px solid @lightgray-color;
@@ -497,34 +498,37 @@
 
 .contest__textarea {
   margin-top: 25px;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-  width: 230px;
-  height: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  height: 200px;
   font-size: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
   font-weight: @regular;
+  border: 2px solid @lightgray-color;
+  box-sizing: border-box;
 
   @media @tablet-widths {
-    width: 455px;
-    height: 155px;
+    width: 500px;
+    height: 195px;
     margin-top: 30px;
-    margin-left: 55px;
+    margin-left: 60px;
     margin-bottom: 40px;
   }
 
   @media @desktop-widths {
-    height: 85px;
-    width: 770px;
+    height: 125px;
+    width: 820px;
     margin-top: 35px;
     margin-bottom: 35px;
   }
 }
 
 .contest__btn {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media @tablet-widths {
     margin-bottom: 45px;

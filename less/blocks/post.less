@@ -1,17 +1,17 @@
 .post {
   display: flex;
   flex-direction: column;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   //outline: 2px solid green;
 
   @media @tablet-widths {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     width: 300px;
     min-height: 430px;
   }
 
   @media @desktop-widths {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
     min-height: 530px;
   }
 }
@@ -21,9 +21,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
-  padding-left: 15px;
-  padding-right: 14px;
-  padding-top: 20px;
+  padding-left: 17px;
+  padding-right: 10px;
+  padding-top: 19px;
   padding-bottom: 17px;
   background: @whitesmoke-color;
   //outline: 2px solid;
@@ -32,7 +32,7 @@
     min-height: 115px;
     padding-left: 27px;
     padding-right: 30px;
-    padding-top: 21px;
+    padding-top: 24px;
   }
 }
 
@@ -40,6 +40,7 @@
   @media @tablet-widths {
     flex-direction: row-reverse;
     min-height: 80px;
+    padding-bottom: 5px;
   }
 
   @media @desktop-widths {
@@ -49,11 +50,11 @@
 }
 
 .post--panorama {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   @media @tablet-widths {
     width: auto;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   @media @desktop-widths {
@@ -68,16 +69,34 @@
   font-weight: @bold;
 }
 
+.post__time {
+  font-weight: @light;
+}
+
 .post__text {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
+
+  @media @tablet-widths {
+    padding-bottom: 0;
+  }
+}
+
+.post__text--panorama {
+  @media @tablet-widths {
+    padding-bottom: 20px;
+  }
 }
 
 .post__likes {
   display: flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @crimson-color;
 
   @media @tablet-widths {
     flex-direction: row-reverse;

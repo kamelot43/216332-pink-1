@@ -26,7 +26,7 @@
   padding-top: 112px;
 
   @media @tablet-widths {
-    padding-top: 80px;
+    padding-top: 88px;
     padding-bottom: 71px;
   }
 
@@ -41,6 +41,7 @@
   width: 825px;
   left: -98%;
   border-collapse: collapse;
+  background: white;
 
   @media @tablet-widths {
     left: 0;
@@ -111,7 +112,8 @@
 
   @media @tablet-widths {
     display: table-cell;
-    background: transparent;
+    background: @whitesmoke-color;
+    border: none;
   }
 }
 
@@ -187,7 +189,6 @@
   background-image: url("../img/icon-no.svg");
 }
 
-
 .pricelist__package {
   text-transform: uppercase;
   font-weight: @bold;
@@ -222,7 +223,7 @@
   display: flex;
   justify-content: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 
   @media @tablet-widths {
     display: none;
