@@ -9,7 +9,7 @@
 
 .site-nav__wrapper {
   position: relative;
-  .container();
+  .container-custom();
   .clearfix();
 }
 
@@ -28,9 +28,11 @@
 .site-nav__toggle {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 18px;
   width: 56px;
   height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 0;
   background-color: transparent;
   background-position: right;
@@ -65,6 +67,16 @@
 
 .site-nav--closed {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.site-nav--closed .site-nav__logo {
+  border-bottom: none;
+}
+
+.site-nav--oppened {
+  @media @desktop-widths {
+    background-color: transparent;
+  }
 }
 
 .site-nav--closed .site-nav__logo-item {
@@ -110,7 +122,7 @@
 
 .site-nav__link--active {
   @media @desktop-widths {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #ffffff;
   }
 }
 
@@ -127,6 +139,7 @@
 .site-nav__logo {
   padding-top: 15px;
   padding-bottom: 25px;
+  padding-left: 20px;
   border-bottom: 1px solid @dimgray-color;
 
   @media @tablet-widths {
