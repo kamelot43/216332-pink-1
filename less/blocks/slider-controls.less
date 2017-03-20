@@ -1,0 +1,32 @@
+.slider-controls__toggle {
+  position: relative;
+  width: 22px;
+  height: 15px;
+  margin-left: 3px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    bottom: 6px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: @silver-color;
+    display: block;
+  }
+
+  &--active {
+    &::before {
+      border: 3px solid @darkviolet-color;
+      background: transparent;
+      bottom: 3px;
+    }
+  }
+
+}

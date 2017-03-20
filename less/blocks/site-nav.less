@@ -8,9 +8,11 @@
 }
 
 .site-nav__wrapper {
-  position: relative;
-  .container();
-  .clearfix();
+  @media @desktop-widths {
+    .clearfix();
+    .container();
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .site-nav__list {
@@ -22,23 +24,25 @@
     justify-content: space-between;
     width: 625px;
     padding-bottom: 27px;
-    outline: 2px solid red;
   }
 }
 
 .site-nav__toggle {
   position: absolute;
   top: 10px;
-  right: 5px;
+  right: 0;
   width: 56px;
   height: 50px;
   font-size: 0;
   background-color: transparent;
-  outline: 1px solid red;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
+
+  @media @tablet-widths {
+    top: 30px;
+  }
 
   @media @desktop-widths {
     display: none;
@@ -65,6 +69,10 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.site-nav--closed .site-nav__logo {
+  border-bottom: none;
+}
+
 .site-nav--closed .site-nav__logo-item {
   background-color: transparent;
 }
@@ -79,23 +87,25 @@
 
 .site-nav__link {
   display: block;
+  position: relative;
   padding-top: 16px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   text-decoration: none;
   text-align: center;
+  font-size: 18px;
+  line-height: 32px;
   text-transform: uppercase;
   font-weight: @bold;
   color: #ffffff;
-  border-bottom: 1px solid red;
 
   @media @tablet-widths {
-    padding-bottom: 15px;
     font-size: 18px;
     line-height: 32px;
   }
 
   @media @desktop-widths {
     padding-top: 46px;
+    padding-bottom: 10px;
     font-size: 18px;
     line-height: 18px;
     font-weight: @regular;
@@ -104,19 +114,27 @@
   }
 }
 
+.site-nav__link--active {
+  @media @desktop-widths {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
 .site-nav__item {
   text-align: center;
+  border-bottom: 1px solid @dimgray-color;
 
   @media @desktop-widths {
     display: inline-block;
+    border-bottom: 0;
   }
 }
 
 .site-nav__logo {
   padding-top: 15px;
   padding-bottom: 25px;
-  padding-left: 10px;
-  border-bottom: 1px solid red;
+  padding-left: 20px;
+  border-bottom: 1px solid @dimgray-color;
 
   @media @tablet-widths {
     padding-top: 35px;
@@ -126,6 +144,6 @@
   @media @desktop-widths {
     float: left;
     width: 160px;
-    outline: 2px solid red;
+    border-bottom: none;
   }
 }

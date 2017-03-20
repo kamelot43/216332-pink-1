@@ -1,28 +1,47 @@
 .pricelist {
   //min-height: 510px;
+  position: relative;
+  background-color: @whitesmoke-color;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-triangle-white.svg") no-repeat 0 0;
+    top: -35px;
+  }
+
+  @media @desktop-widths {
+    &::before {
+      top: -15px;
+    }
+  }
 }
 
 .pricelist__wrapper {
   .container();
-  padding-top: 120px;
+  padding-top: 112px;
 
   @media @tablet-widths {
-    padding-top: 100px;
+    padding-top: 88px;
     padding-bottom: 71px;
   }
 
   @media @desktop-widths {
-    padding-top: 140px;
+    padding-top: 145px;
     padding-bottom: 91px;
   }
 }
 
 .pricelist__table {
   position: relative;
-  width: 800px;
-  left: -93%;
+  width: 825px;
+  left: -98%;
   border-collapse: collapse;
+  background: white;
 
   @media @tablet-widths {
     left: 0;
@@ -35,12 +54,13 @@
 }
 
 .pricelist__title {
+  position: relative;
   height: 95px;
   font-size: 18px;
   line-height: 30px;
   font-weight: @bold;
   text-align: center;
-  outline: 2px solid blue;
+  border: 1px solid #e5e5e5;
   background: #283645;
   color: #ffffff;
 
@@ -53,36 +73,75 @@
   }
 }
 
+.pricelist__title--popular {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 74px;
+    height: 73px;
+    background: url("../img/bg-hit.svg") no-repeat;
+  }
+
+  &::after {
+    content: "хит";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: @regular;
+  }
+
+  @media @tablet-widths {
+    &::before {
+      background: url("../img/bg-hit-tablet.svg") no-repeat;
+    }
+
+    &::after {
+      top: 4px;
+    }
+  }
+}
+
 .pricelist__title--hidden {
   display: none;
 
   @media @tablet-widths {
     display: table-cell;
-    background: transparent;
+    background: @whitesmoke-color;
+    border: none;
   }
 }
 
 .pricelist__option {
   position: relative;
-  height: 55px;
+  height: 58px;
   width: 110px;
-  padding-left: 15px;
-  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-size: 14px;
   line-height: 30px;
   font-weight: @regular;
-  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   text-transform: uppercase;
-  outline: 2px solid red;
 
   @media @tablet-widths {
     padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 45px;
     font-size: 0;
   }
 
   @media @desktop-widths {
+    width: 120px;
     height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -95,6 +154,12 @@
     font-weight: @light;
     text-transform: none;
   }
+
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: @regular;
+  }
 }
 
 .pricelist__icon {
@@ -103,23 +168,62 @@
   width: 30px;
   height: 25px;
   background-repeat: no-repeat;
-  outline: 2px solid green;
+  background-size: 31px 25px;
+
+  @media @tablet-widths {
+    right: 65px;
+    top: 10px;
+  }
+
+  @media @desktop-widths {
+    right: 105px;
+    top: 15px;
+  }
+}
+
+.pricelist__icon--yes {
+  background-image: url("../img/icon-yes.svg");
+}
+
+.pricelist__icon--no {
+  background-image: url("../img/icon-no.svg");
 }
 
 .pricelist__package {
   text-transform: uppercase;
   font-weight: @bold;
+
+  @media @tablet-widths {
+    font-size: 16px;
+  }
+
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .pricelist__price {
   display: block;
   font-size: 24px;
+  font-weight: @light;
   text-transform: uppercase;
+
+  @media @tablet-widths {
+    font-size: 18px;
+  }
+
+  @media @desktop-widths {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .pricelist__controls {
-  //временно для разметки!
-  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 45px;
 
   @media @tablet-widths {
     display: none;

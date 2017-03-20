@@ -1,5 +1,5 @@
 .reviews {
-  min-height: 315px;
+  //  min-height: 315px;
 }
 
 .reviews__list {
@@ -11,7 +11,7 @@
   }
 
   @media @desktop-widths {
-    padding-top: 140px;
+    padding-top: 135px;
   }
 }
 
@@ -36,13 +36,16 @@
 
 .reviews__author {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   font-size: 18px;
   line-height: 30px;
   font-weight: @bold;
   text-align: center;
 
   @media @tablet-widths {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
     order: 2;
   }
 
@@ -81,13 +84,19 @@
   @media @desktop-widths {
     width: 680px;
     margin: 0 auto;
-    outline: 2px solid red;
+    padding-bottom: 40px;
   }
 }
 
 .reviews__controls {
-  //временно для разметки!!
-  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  padding-bottom: 17px;
+
+  @media @tablet-widths {
+    margin-top: 25px;
+  }
 
   @media @desktop-widths {
     display: none;
@@ -99,10 +108,8 @@
   width: 22px;
   height: 41px;
   border: none;
-  background-color: red;
   cursor: pointer;
   opacity: 0.3;
-  outline: 2px solid green;
 
   @media @desktop-widths {
     display: inline-block;
@@ -110,9 +117,15 @@
 }
 
 .reviews__toggle--prev {
-  transform: translate(0, 215px);
+  transform: translate(5px, 215px);
 }
 
 .reviews__toggle--next {
   transform: translate(885px, 215px);
+}
+
+.reviews__quotes {
+  @media @desktop-widths {
+    display: none;
+  }
 }

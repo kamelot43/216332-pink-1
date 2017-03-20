@@ -43,6 +43,7 @@
           <button class="site-nav__toggle" type="button">Открыть меню</button>
 
           <div class="site-nav__logo">
+
             <a>
               <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
             </a>
@@ -50,7 +51,7 @@
 
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a class="site-nav__link">Главная</a>
+              <a class="site-nav__link site-nav__link--active">Главная</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="photo.html">Фотографии</a>
@@ -59,7 +60,7 @@
               <a class="site-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
+              <a class="site-nav__link" href="http://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -85,9 +86,9 @@
         <p class="download__text">Взгляните на жизнь иначе</p>
         <a class="custom-btn custom-btn--download" href="http://www.apple.com/itunes/">Скачать приложение</a>
         <div class="download__markets">
-          <a class="download__link download__link--apple" href="http://www.apple.com/itunes/">Itunes</a>
-          <a class="download__link download__link--android" href="https://play.google.com/store">Android</a>
-          <a class="download__link download__link--microsoft" href="https://www.microsoftstore.com/store">Microsoft</a>
+          <a class="download__link links links--apple" href="http://www.apple.com/itunes/">Itunes</a>
+          <a class="download__link links links--android" href="https://play.google.com/store">Android</a>
+          <a class="download__link links links--microsoft" href="https://www.microsoftstore.com/store">Microsoft</a>
         </div>
         <div class="download__descr">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8.
@@ -96,16 +97,19 @@
     </section>
 
     <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="visually-hidden">О преимуществах</h2>
-        <div class="advantages__proposals">
+
+      <h2 class="visually-hidden">О преимуществах</h2>
+      <div class="advantages__proposals">
+        <div class="advantages__wrapper advantages__wrapper--proposals">
           <div class="advantages__proposal">Устали от серости мегаполиса?</div>
           <div class="advantages__proposal">Нам есть, что вам<br> предложить!</div>
         </div>
+      </div>
+      <div class="advantages__wrapper">
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__descr">Приложение позволяет вам победить осенюю хандру и дипрессию буквально в несколько кликов</p>
+            <p class="advantages__descr">Приложение позволит вам победить осенюю хандру и депрессию<br> буквально в несколько кликов</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
@@ -117,14 +121,17 @@
             <p class="advantages__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <section class="research">
+      </div>
+      <section class="research">
+        <div class="research__wrapper">
           <div class="research-inner">
             <h3 class="research-title">Эффект<br> на 24 часа!</h3>
             <p class="research-descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="research-link">Узнать больше об исследовании</a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
     </section>
 
     <section class="reviews">
@@ -137,15 +144,15 @@
             <p class="reviews__author">Николай Петров
               <span class="reviews__author-description">25 лет, водитель трамвая</span>
             </p>
-            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="reviews__text"><span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span></p>
           </li>
           <li class="reviews__item">
             <p class="reviews__author">Николай Петров</p>
-            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="reviews__text"><span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span></p>
           </li>
           <li class="reviews__item">
             <p class="reviews__author">Николай Петров</p>
-            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="reviews__text"><span class="reviews__quotes">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quotes">»</span></p>
           </li>
         </ul>
         <div class="reviews__controls slider-controls">
@@ -223,11 +230,15 @@
       <ul class="site-footer__list">
         <li class="site-footer__item">
           <span class="site-footer__action">Звоните:</span>
-          <span class="site-footer__contact">+7 (812) 555-66-66</span>
+          <a href="tel:+78125556666">
+            <span class="site-footer__contact">+7 (812) 555-66-66</span>
+          </a>
         </li>
         <li class="site-footer__item">
           <span class="site-footer__action">Пишите:</span>
-          <span class="site-footer__contact">mail@htmlacademy.ru</span>
+          <a href="mailto:mail@htmlacademy.ru">
+            <span class="site-footer__contact">mail@htmlacademy.ru</span>
+          </a>
         </li>
         <li class="site-footer__item">
           <span class="site-footer__action">Приезжайте в гости:</span>

@@ -12,7 +12,7 @@
 
 .site-footer__question {
   margin: 0;
-  padding-top: 50px;
+  padding-top: 40px;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
@@ -37,18 +37,19 @@
 
 .site-footer__list {
   .list-clear-indent();
-  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 
   @media @tablet-widths {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
   }
 
   @media @desktop-widths {
     padding-top: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 19px;
   }
 }
 
@@ -61,23 +62,23 @@
 .site-footer__contact {
   display: block;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: @light;
   color: @crimson-color;
 
   @media @desktop-widths {
-    padding-top: 25px;
+    padding-top: 15px;
   }
 }
 
 .site-footer__item {
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 
   @media @tablet-widths {
     padding-left: 35px;
     padding-right: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     padding-top: 13px;
   }
@@ -101,56 +102,63 @@
   margin-bottom: 0;
 }
 
+.site-footer__item a {
+  text-decoration: none;
+}
+
 .site-footer__logo {
-  padding-top: 52px;
-  margin-bottom: 40px;
-  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 75px;
 
   @media @tablet-widths {
-    margin-bottom: 0;
-    padding-top: 40px;
+    padding-top: 10px;
   }
 
   @media @desktop-widths {
-    padding-top: 70px;
+    align-items: flex-start;
+    padding-bottom: 50px;
   }
 }
 
 .site-footer__logo--photo {
-  padding-top: 42px;
-
-  @media @desktop-widths {
-    padding-top: 70px;
-  }
+  flex-basis: 65px;
 }
 
 .site-footer__social {
   display: flex;
   justify-content: center;
-  margin-bottom: 29px;
 
   @media @tablet-widths {
-    align-items: center;
-    justify-content: space-between;
-    width: 180px;
-    margin-bottom: 0;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 200px;
+    padding-top: 30px;
+  }
+
+  @media @desktop-widths {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    width: 210px;
+    padding-top: 25px;
   }
 }
 
 .site-footer__copyright {
-  padding-bottom: 40px;
-  text-align: center;
+  display: flex;
+  flex-basis: 45px;
   line-height: 18px;
 
   @media @tablet-widths {
-    padding-top: 50px;
+    flex-direction: row;
+    align-items: flex-end;
   }
 
   @media @desktop-widths {
-    padding-top: 80px;
-    padding-bottom: 70px;
     font-size: 18px;
     line-height: 18px;
+    align-items: flex-start;
   }
 }
 
@@ -160,19 +168,37 @@
   height: 40px;
   vertical-align: middle;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 10px 0;
   font-size: 0;
-  outline: 2px solid red;
+  background-image: url("../img/logo-htmlacademy.svg");
+
+  @media @tablet-widths {
+    background-position: bottom;
+    transform: translateY(10px);
+  }
+
+  @media @desktop-widths {
+    transform: translateY(-10px);
+  }
 }
 
 .site-footer__inner {
   .container();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 285px;
 
   @media @tablet-widths {
-    display: flex;
     flex-direction: row;
-    .container();
     justify-content: space-between;
+    .container();
+    min-height: 115px;
+  }
+
+  @media @desktop-widths {
+    min-height: 200px;
   }
 }
 
@@ -185,11 +211,34 @@
 }
 
 .site-footer__map {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat top center;
+    top: -15px;
+    z-index: 1;
+  }
+
   @media @tablet-widths {
-    height: 380px;
+    height: 366px;
+
+    &::before {
+      top: 0;
+    }
   }
 
   @media @desktop-widths {
     height: 480px;
+    margin-bottom: 10px;
+
+    &::before {
+      background-size: 900px 80px;
+    }
   }
 }

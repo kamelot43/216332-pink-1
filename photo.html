@@ -32,7 +32,7 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="site-header site-header--inner">
     <div class="site-header__wrapper">
 
 
@@ -51,13 +51,13 @@
               <a class="site-nav__link" href="index.html">Главная</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link">Фотографии</a>
+              <a class="site-nav__link site-nav__link--active">Фотографии</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="http://htmlacademy.ru/">Html academy</a>
+              <a class="site-nav__link" href="http://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -70,7 +70,7 @@
 
     <section class="feed">
       <h2 class="visually-hidden">Лента пользователей</h2>
-      <p class="feed__promo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших!</p>
+      <p class="feed__promo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
       <article class="post post--panorama">
 
@@ -85,12 +85,16 @@
 
 
         </div>
-        <div class="feed__wrapper feed__wrapper--panorama">
-          <p class="post__author">Анна
-            <span class="post__time">(5 минут назад)</span>
-          </p>
-          <p class="post__text">Прыгать или нет?Напишите в комментарии свой совет и посмотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <span class="post__likes post__likes--popular">Нравится:215</span>
+        <div class="feed__wrapper">
+          <div class="post__content post__content--panorama">
+            <p class="post__author">Анна
+              <span class="post__time">(5 минут назад)</span>
+            </p>
+            <p class="post__text post__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="post__likes post__likes--popular">
+              <button class="heart-btn post__btn post__btn--popular" type="button">Лайк</button> Нравится:215
+            </div>
+          </div>
         </div>
       </article>
       <div class="feed__wrapper">
@@ -106,11 +110,15 @@
 
 
           </div>
-          <p class="post__author">Левон
-            <span class="post__time">(5 часов назад)</span>
-          </p>
-          <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <span class="post__likes">Нравится:356</span>
+          <div class="post__content">
+            <p class="post__author">Левон
+              <span class="post__time">(5 часов назад)</span>
+            </p>
+            <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="post__likes">
+              <button class="heart-btn post__btn" type="button">Лайк</button> Нравится:356
+            </div>
+          </div>
 
         </article>
 
@@ -125,11 +133,15 @@
 
 
           </div>
-          <p class="post__author">Антон
-            <span class="post__time">(12 часов назад)</span>
-          </p>
-          <p class="post__text">Соседи будут рады.</p>
-          <span class="post__likes">Нравится:666</span>
+          <div class="post__content">
+            <p class="post__author">Антон
+              <span class="post__time">(12 часов назад)</span>
+            </p>
+            <p class="post__text">Соседи будут рады.</p>
+            <div class="post__likes">
+              <button class="heart-btn post__btn" type="button">Лайк</button> Нравится:666
+            </div>
+          </div>
 
         </article>
 
@@ -144,11 +156,15 @@
 
 
           </div>
-          <p class="post__author">Борис
-            <span class="post__time">(20 часов назад)</span>
-          </p>
-          <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <span class="post__likes">Нравится:215</span>
+          <div class="post__content">
+            <p class="post__author">Борис
+              <span class="post__time">(20 часов назад)</span>
+            </p>
+            <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="post__likes">
+              <button class="heart-btn post__btn" type="button">Лайк</button> Нравится:215
+            </div>
+          </div>
 
         </article>
 
@@ -163,11 +179,15 @@
 
 
           </div>
-          <p class="post__author">Сергей
-            <span class="post__time">(25 часов назад)</span>
-          </p>
-          <p class="post__text">Самая кубанская в мире!</p>
-          <span class="post__likes">Нравится:4</span>
+          <div class="post__content">
+            <p class="post__author">Сергей
+              <span class="post__time">(25 часов назад)</span>
+            </p>
+            <p class="post__text">Самая кубанская в мире!</p>
+            <div class="post__likes">
+              <button class="heart-btn post__btn" type="button">Лайк</button> Нравится:4
+            </div>
+          </div>
 
         </article>
 
@@ -182,11 +202,15 @@
 
 
           </div>
-          <p class="post__author">Максим
-            <span class="post__time">(40 часов назад)</span>
-          </p>
-          <p class="post__text">Где снег-то?</p>
-          <span class="post__likes">Нравится:50</span>
+          <div class="post__content">
+            <p class="post__author">Максим
+              <span class="post__time">(40 часов назад)</span>
+            </p>
+            <p class="post__text">Где снег-то?</p>
+            <div class="post__likes">
+              <button class="heart-btn post__btn" type="button">Лайк</button> Нравится:150
+            </div>
+          </div>
 
         </article>
 
@@ -200,11 +224,15 @@
             </picture>
 
           </div>
-          <p class="post__author">Надежда
-            <span class="post__time">(45 часов назад)</span>
-          </p>
-          <p class="post__text">Всем GM и взаимные лайки!</p>
-          <span class="post__likes ">Нравится:2560</span>
+          <div class="post__content">
+            <p class="post__author">Надежда
+              <span class="post__time">(45 часов назад)</span>
+            </p>
+            <p class="post__text">Всем GM и взаимные лайки!</p>
+            <div class="post__likes">
+              <button class="heart-btn post__btn" type="button">Лайк</button> Нравится:2560
+            </div>
+          </div>
 
         </article>
       </div>
@@ -228,7 +256,7 @@
             <div class="photo-editor__filters">
 
               <div class="photo-editor__filter">
-                <button class="photo-editor__btn photo-editor__btn--crop" type="button"></button>
+                <button class="photo-editor__btn photo-editor__btn--crop photo-editor__btn--active" type="button"></button>
                 <div class="photo-editor__scale">
                   <div class="photo-editor__toggle  photo-editor__toggle--crop"></div>
                 </div>
