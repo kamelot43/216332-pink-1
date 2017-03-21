@@ -34,6 +34,11 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 540px;
   background-repeat: no-repeat;
+  @media (min-width: 320px) and (min-resolution: 144dpi),
+  (min-width: 320px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px 320px;
+  }
 
   @media @tablet-widths {
     background-position: 0 30px;

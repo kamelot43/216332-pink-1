@@ -113,6 +113,7 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+  overflow: hidden;
 
   &::after {
     content: "Панорама дня";
@@ -139,6 +140,18 @@
   @media @desktop-widths {
     width: 960px;
   }
+}
+
+.post__photo--panorama img {
+  position: relative;
+
+    @media @tablet-widths {
+      left: -20px;
+    }
+
+  @media @desktop-widths {
+  left: -120px;
+}
 }
 
 .post__heart {
