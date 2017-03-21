@@ -28,9 +28,23 @@
 
 .reviews__wrapper {
   .container();
+  position: relative;
+
 
   @media @desktop-widths {
     padding-bottom: 30px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 73px;
+        left: 435px;
+        display: block;
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        background: url("../img/icon-quotes.svg") no-repeat 0 0;
+        opacity: 0.3;
+      }
   }
 }
 
@@ -117,11 +131,13 @@
 }
 
 .reviews__toggle--prev {
-  transform: translate(5px, 215px);
+  transform: translate(0, 215px);
+  background-image: url("../img/icon-review-arrow-left.svg");
 }
 
 .reviews__toggle--next {
-  transform: translate(885px, 215px);
+  transform: translate(890px, 215px);
+  background-image: url("../img/icon-review-arrow-right.svg");
 }
 
 .reviews__quotes {

@@ -34,6 +34,7 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 540px;
   background-repeat: no-repeat;
+
   @media (min-width: 320px) and (min-resolution: 144dpi),
   (min-width: 320px) and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
@@ -136,6 +137,7 @@
     width: 240px;
     margin: 0 auto;
     padding-bottom: 25px;
+    padding-top: 51px;
     text-align: center;
     font-size: 30px;
     line-height: 30px;
@@ -178,11 +180,16 @@
   @media @desktop-widths {
     flex-basis: 280px;
     margin-bottom: 0;
-    padding-top: 355px;
-    background: url("http://placehold.it/250x300") no-repeat top center;
-    outline: 2px solid green;
   }
 }
+.advantages__item img {
+  display: none;
+
+  @media @desktop-widths {
+    display: block;
+  }
+}
+
 
 .advantages__item:last-child {
   margin-bottom: 0;

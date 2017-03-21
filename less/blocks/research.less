@@ -12,7 +12,48 @@
 }
 
 .research__wrapper {
+  position: relative;
   .container ();
+  display: flex;
+  &::before {
+      content: "24";
+      position: absolute;
+      top: 85px;
+      left: 20px;
+      display: block;
+      box-sizing: border-box;
+      width: 202px;
+      height: 202px;
+      padding-top: 69px;
+     padding-left: 31px;
+     font-size: 96px;
+     font-weight: 700;
+     color: @crimson-color;
+     border: 14px solid @crimson-color;
+     border-radius: 50%;
+   }
+   @media @desktop-widths {
+     &::before {
+      top: 95px;
+      left: 22px;
+      width: 253px;
+      height: 253px;
+      padding-top: 91px;
+      padding-left: 40px;
+      font-size: 120px;
+      border-width: 17px;
+    }
+   }
+}
+.research__wrapper svg {
+  position: relative;
+  top: 30px;
+  opacity: 0.2;
+    @media @desktop-widths {
+      width: 298px;
+     height: 345px;
+     top: 27px;
+    }
 }
 
 .research-inner {
