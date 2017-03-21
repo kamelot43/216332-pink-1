@@ -455,6 +455,7 @@
       background-repeat: no-repeat;
       background-position: center;
       border: 2px solid @lightgray-color;
+      background-color: @whitesmoke-color;
     }
   }
 
@@ -467,6 +468,17 @@
     }
   }
 }
+.contest__item--feedback-phone {
+     &::after {
+    background-image: url("../img/icon-phone.svg");
+    }
+}
+.contest__item--feedback-mail {
+     &::after {
+    background-image: url("../img/icon-mail.svg");
+    }
+}
+
 
 .contest__item--achievement {
   margin-bottom: 52px;
