@@ -2,10 +2,6 @@
   min-height: 615px;
 }
 
-.site-footer {
-  //min-height: 285px;
-}
-
 .site-footer__wrapper {
   .container();
 }
@@ -112,12 +108,49 @@
   flex-basis: 75px;
 
   @media @tablet-widths {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   @media @desktop-widths {
     align-items: flex-start;
     padding-bottom: 50px;
+  }
+}
+
+.site-footer__logotype {
+  @media @mobile-widths-only {
+    position: relative;
+    top: 10px;
+  }
+}
+
+.site-footer__logotype-glasses--desktop {
+  display: none;
+
+  @media @desktop-widths {
+    display: inline;
+  }
+}
+
+.site-footer__logotype-glasses--mobile {
+  @media @desktop-widths {
+    display: none;
+  }
+}
+
+.site-footer__logotype-shine {
+  display: none;
+
+  @media @desktop-widths {
+    display: inline;
+  }
+}
+
+.site-footer__logotype-particle {
+  display: none;
+
+  @media @desktop-widths {
+    display: inline;
   }
 }
 
@@ -153,12 +186,14 @@
   @media @tablet-widths {
     flex-direction: row;
     align-items: flex-end;
+    padding-top: 15px;
   }
 
   @media @desktop-widths {
     font-size: 18px;
     line-height: 18px;
     align-items: flex-start;
+    padding-top: 0;
   }
 }
 

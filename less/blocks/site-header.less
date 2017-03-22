@@ -1,6 +1,7 @@
 .site-header {
   overflow: hidden;
   background: @darkviolet-color url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+
   &--inner {
     background-position: center bottom -222px;
   }
@@ -12,26 +13,30 @@
 
   @media @tablet-widths {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
+
     &--inner {
       background-position: center bottom -290px;
     }
-  @retina {
-        background: url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
-        background-size: 1200px 729px;
-      }
+
+    @retina {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
+      background-size: 1200px 729px;
+    }
   }
+
   @media @desktop-widths {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom ;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+
     &--inner {
       background-position: center bottom -460px;
     }
- @retina {
-        background: url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom -10px;
-        background-size: 2560px 865px;
-      }
+
+    @retina {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom -10px;
+      background-size: 2560px 865px;
+    }
   }
 }
-
 /*@media (min-width: 320px) and (min-resolution: 144dpi),
 (min-width: 320px) and (min-resolution: 1.5dppx) {
   .site-header {
@@ -66,21 +71,20 @@
 }
 */
 
-.site-header__demo-img  {
+.site-header__demo-img {
   @media @mobile-widths-only {
     margin: 0 auto;
     margin-top: 110px;
     width: 320px;
   }
+
   @media @tablet-widths {
-    //min-height: 545px;
     margin: 0 auto;
     margin-top: 73px;
     width: 600px;
-
   }
+
   @media @desktop-widths {
-    //min-height: 545px;
     margin-top: 93px;
     width: 860px;
   }
@@ -88,12 +92,13 @@
 
 .site-header__demo-img img {
   @media @tablet-widths {
-  position: relative;
-  left: -50px;
-}
-@media @desktop-widths {
-  left: -25px;
-}
+    position: relative;
+    left: -50px;
+  }
+
+  @media @desktop-widths {
+    left: -25px;
+  }
 }
 
 .site-header__title {
@@ -111,6 +116,7 @@
 
 .site-header__title--form {
   padding-bottom: 50px;
+
   @media @tablet-widths {
     width: 500px;
     margin: auto;
@@ -120,6 +126,7 @@
     line-height: 58px;
     font-weight: @light;
   }
+
   @media @desktop-widths {
     width: 800px;
     padding-top: 64px;
@@ -136,6 +143,7 @@
     line-height: 58px;
     font-weight: @light;
   }
+
   @media @desktop-widths {
     padding-top: 64px;
     padding-bottom: 100px;

@@ -1,5 +1,4 @@
 .site-nav {
-  //min-height: 325px;
   background: @darkviolet-color;
 
   @media @desktop-widths {
@@ -149,42 +148,51 @@
     border-bottom: none;
   }
 }
+
 .site-nav__logotype {
   position: relative;
   left: -70px;
 
-    @media @tablet-widths {
-      left: 0;
-    }
+  @media @tablet-widths {
+    left: 0;
+  }
+
   @media @desktop-widths {
     left: -20px;
   }
-
 }
 
 .site-nav__logotype-glasses--desktop {
   display: none;
+
   @media @desktop-widths {
     display: inline;
   }
 }
+
 .site-nav__logotype-shine {
   display: none;
+
   @media @desktop-widths {
     display: inline;
   }
 }
-.site-nav__logotype-glasses--tablet{
+
+.site-nav__logotype-glasses--tablet {
   display: none;
-    @media @tablet-widths {
-      display: inline;
-    }
-    @media @desktop-widths {
-      display: none;
-    }
+
+  @media @tablet-widths {
+    display: inline;
+  }
+
+  @media @desktop-widths {
+    display: none;
+  }
 }
+
 .site-nav__logotype-particle {
   display: none;
+
   @media @desktop-widths {
     display: inline;
   }

@@ -1,6 +1,4 @@
 .contest {
-  //min-height: 2215px;
-
   @media @desktop-widths {
     margin-bottom: 10px;
   }
@@ -335,8 +333,6 @@
 }
 
 .contest__fieldset--identification {
-  //min-height: 325px;
-
   @media @tablet-widths {
     border: none;
   }
@@ -347,17 +343,7 @@
   }
 }
 
-.contest__fieldset--achievement {
-  //min-height: 605px;
-}
-
-.contest__fieldset--feedback {
-  //min-height: 210px;
-}
-
 .contest__fieldset--soft {
-  //min-height: 340px;
-
   @media @desktop-widths {
     width: 430px;
   }
@@ -468,17 +454,18 @@
     }
   }
 }
+
 .contest__item--feedback-phone {
-     &::after {
+  &::after {
     background-image: url("../img/icon-phone.svg");
-    }
-}
-.contest__item--feedback-mail {
-     &::after {
-    background-image: url("../img/icon-mail.svg");
-    }
+  }
 }
 
+.contest__item--feedback-mail {
+  &::after {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
 
 .contest__item--achievement {
   margin-bottom: 52px;

@@ -1,10 +1,6 @@
-.reviews {
-  //  min-height: 315px;
-}
-
 .reviews__list {
   .list-clear-indent();
-  padding-top: 35px;
+  padding-top: 45px;
 
   @media @tablet-widths {
     padding-top: 90px;
@@ -30,21 +26,21 @@
   .container();
   position: relative;
 
-
   @media @desktop-widths {
     padding-bottom: 30px;
+
     &::before {
-        content: "";
-        position: absolute;
-        top: 73px;
-        left: 435px;
-        display: block;
-        box-sizing: border-box;
-        width: 100px;
-        height: 100px;
-        background: url("../img/icon-quotes.svg") no-repeat 0 0;
-        opacity: 0.3;
-      }
+      content: "";
+      position: absolute;
+      top: 73px;
+      left: 435px;
+      display: block;
+      box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+      background: url("../img/icon-quotes.svg") no-repeat 0 0;
+      opacity: 0.3;
+    }
   }
 }
 

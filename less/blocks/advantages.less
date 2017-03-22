@@ -1,6 +1,5 @@
 .advantages {
   position: relative;
-  //min-height: 1002px;
   overflow: hidden;
   background-color: @whitesmoke-color;
   z-index: 1;
@@ -35,8 +34,7 @@
   background-position: center 540px;
   background-repeat: no-repeat;
 
-  @media (min-width: 320px) and (min-resolution: 144dpi),
-  (min-width: 320px) and (min-resolution: 1.5dppx) {
+  @media (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
     background-size: 157px 320px;
   }
@@ -98,15 +96,15 @@
 .advantages__list {
   .list-clear-indent();
   padding-top: 115px;
-  padding-bottom: 330px;
+  padding-bottom: 320px;
   padding-left: 10px;
   padding-right: 10px;
 
   @media @tablet-widths {
     width: 320px;
     margin-left: auto;
-    padding-top: 100px;
-    padding-bottom: 40px;
+    padding-top: 95px;
+    padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
@@ -182,6 +180,7 @@
     margin-bottom: 0;
   }
 }
+
 .advantages__item img {
   display: none;
 
@@ -189,7 +188,6 @@
     display: block;
   }
 }
-
 
 .advantages__item:last-child {
   margin-bottom: 0;
