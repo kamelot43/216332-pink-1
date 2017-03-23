@@ -117,14 +117,13 @@
   }
 }
 
-.site-footer__logotype {
+.site-footer__logo a {
   @media @mobile-widths-only {
-    position: relative;
-    top: 10px;
+    transform: translate(0, 10px);
   }
 }
 
-.site-footer__logotype-glasses--desktop {
+.site-footer__logo-glasses--desktop {
   display: none;
 
   @media @desktop-widths {
@@ -132,13 +131,13 @@
   }
 }
 
-.site-footer__logotype-glasses--mobile {
+.site-footer__logo-glasses--mobile {
   @media @desktop-widths {
     display: none;
   }
 }
 
-.site-footer__logotype-shine {
+.site-footer__logo-shine {
   display: none;
 
   @media @desktop-widths {
@@ -146,7 +145,7 @@
   }
 }
 
-.site-footer__logotype-particle {
+.site-footer__logo-particle {
   display: none;
 
   @media @desktop-widths {
@@ -186,7 +185,7 @@
   @media @tablet-widths {
     flex-direction: row;
     align-items: flex-end;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
   @media @desktop-widths {
@@ -209,7 +208,7 @@
 
   @media @tablet-widths {
     background-position: bottom;
-    transform: translateY(10px);
+    transform: translate(8px, 10px);
   }
 
   @media @desktop-widths {

@@ -15,11 +15,14 @@
   position: relative;
   .container ();
   display: flex;
+  background: url("../img/icon-timer.svg") no-repeat;
+  background-position: 0 59px;
+  background-size: 238px 276px;
 
   &::before {
     content: "24";
     position: absolute;
-    top: 115px;
+    top: 113px;
     left: 20px;
     display: block;
     box-sizing: border-box;
@@ -35,6 +38,8 @@
   }
 
   @media @desktop-widths {
+    background-size: 298px 345px;
+    background-position: 0 46px;
     &::before {
       left: 22px;
       width: 253px;
@@ -44,18 +49,6 @@
       font-size: 120px;
       border-width: 17px;
     }
-  }
-}
-
-.research__wrapper svg {
-  position: relative;
-  top: 60px;
-  opacity: 0.2;
-
-  @media @desktop-widths {
-    width: 298px;
-    height: 345px;
-    top: 47px;
   }
 }
 

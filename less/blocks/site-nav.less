@@ -131,15 +131,15 @@
 }
 
 .site-nav__logo {
-  padding-top: 5px;
-  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
   padding-left: 20px;
+  min-height: 70px;
   border-bottom: 1px solid @dimgray-color;
   box-sizing: border-box;
 
   @media @tablet-widths {
-    padding-top: 25px;
-    padding-bottom: 35px;
+    min-height: 110px;
   }
 
   @media @desktop-widths {
@@ -148,21 +148,19 @@
     border-bottom: none;
   }
 }
-
-.site-nav__logotype {
-  position: relative;
-  left: -70px;
+.site-nav__logo svg {
+  transform: translate(-70px, -5px);
 
   @media @tablet-widths {
-    left: 0;
+  transform: translate(0, -5px);
   }
-
   @media @desktop-widths {
-    left: -20px;
+    transform: translate(-20px, -5px);
   }
 }
 
-.site-nav__logotype-glasses--desktop {
+
+.site-nav__logo-glasses--desktop {
   display: none;
 
   @media @desktop-widths {
@@ -170,7 +168,7 @@
   }
 }
 
-.site-nav__logotype-shine {
+.site-nav__logo-shine {
   display: none;
 
   @media @desktop-widths {
@@ -178,7 +176,7 @@
   }
 }
 
-.site-nav__logotype-glasses--tablet {
+.site-nav__logo-glasses--tablet {
   display: none;
 
   @media @tablet-widths {
@@ -190,7 +188,7 @@
   }
 }
 
-.site-nav__logotype-particle {
+.site-nav__logo-particle {
   display: none;
 
   @media @desktop-widths {

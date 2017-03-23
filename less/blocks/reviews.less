@@ -7,7 +7,7 @@
   }
 
   @media @desktop-widths {
-    padding-top: 135px;
+    padding-top: 185px;
   }
 }
 
@@ -120,19 +120,22 @@
   border: none;
   cursor: pointer;
   opacity: 0.3;
+  background-color: transparent;
 
   @media @desktop-widths {
+    position: absolute;
     display: inline-block;
+    top: 50%;
   }
 }
 
 .reviews__toggle--prev {
-  transform: translate(0, 215px);
+  left: 0;
   background-image: url("../img/icon-review-arrow-left.svg");
 }
 
 .reviews__toggle--next {
-  transform: translate(890px, 215px);
+  right: 0;
   background-image: url("../img/icon-review-arrow-right.svg");
 }
 
