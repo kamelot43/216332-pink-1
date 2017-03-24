@@ -195,6 +195,14 @@
   background-position: 10px 0;
   font-size: 0;
   background-image: url("../img/logo-htmlacademy.svg");
+
+  &:hover {
+    background-image: url("../img/logo-htmlacademy-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-footer__inner {
@@ -257,4 +265,24 @@
       background-size: 960px 80px;
     }
   }
+}
+
+.site-footer__logo a:hover .site-footer__logo-word,
+.site-footer__logo a:hover .site-footer__logo-glasses {
+  fill: @crimson-color;
+}
+
+.site-footer__logo a:active .site-footer__logo-word,
+.site-footer__logo a:active .site-footer__logo-glasses {
+  opacity: 0.3;
+}
+
+.site-footer__item--mail a:hover .site-footer__contact{
+  text-decoration: underline;
+  color: @darkviolet-color;
+}
+
+.site-footer__item--mail a:active .site-footer__contact{
+  text-decoration: none;
+  opacity: 0.3;
 }

@@ -100,6 +100,10 @@
   cursor: pointer;
   background-position: center;
 
+  &:hover {
+   opacity: 0.5;
+ }
+
   &--crop {
     background-image: url("../img/icon-editor-crop.svg");
   }
@@ -119,6 +123,10 @@
     background-size: 24px 26px;
     background-position: center;
     opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
 
     &--crop {
       background-image: url("../img/icon-editor-crop-active.svg");
@@ -194,6 +202,11 @@
   border-radius: 50%;
   background-color: #f2f2f2;
   cursor: pointer;
+
+  &:active {
+  background-color: @crimson-color;
+  }
+
 
   @media @tablet-widths {
     &--crop {

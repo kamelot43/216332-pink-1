@@ -38,6 +38,7 @@
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
+  outline: none;
 
   @media @tablet-widths {
     top: 30px;
@@ -50,10 +51,26 @@
 
 .site-nav--closed .site-nav__toggle {
   background-image: url("../img/icon-menu-burger.svg");
+
+  &:hover {
+    background-image: url("../img/icon-menu-burger-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-nav--opened .site-nav__toggle {
   background-image: url("../img/icon-menu-cross.svg");
+
+  &:hover {
+   background-image: url("../img/icon-menu-cross-hover.svg");
+ }
+
+  &:active {
+   opacity: 0.3;
+ }
 }
 
 .site-nav--closed .site-nav__list {
@@ -96,6 +113,14 @@
   text-transform: uppercase;
   font-weight: @bold;
   color: #ffffff;
+
+  &:hover {
+    color: @crimson-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media @tablet-widths {
     font-size: 18px;
@@ -195,4 +220,14 @@
   @media @desktop-widths {
     display: inline;
   }
+}
+
+.site-nav__logo a:hover .site-nav__logo-word,
+.site-nav__logo a:hover .site-nav__logo-glasses {
+  fill: @crimson-color;
+}
+
+.site-nav__logo a:active .site-nav__logo-word,
+.site-nav__logo a:active .site-nav__logo-glasses {
+  opacity: 0.3;
 }

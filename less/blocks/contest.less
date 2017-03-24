@@ -216,6 +216,14 @@
     border-radius: 3px;
   }
 
+  &:hover::before {
+   border-color: @darkviolet-color;
+ }
+
+ &:active::before {
+   border-color: @crimson-color;
+ }
+
   @media @tablet-widths {
     padding-left: 57px;
   }
@@ -253,6 +261,14 @@
     background-color: #ffffff;
   }
 
+  &:hover::before {
+   border-color: @darkviolet-color;
+ }
+
+ &:active::before {
+   border-color: @crimson-color;
+ }
+
   @media @tablet-widths {
     padding-left: 60px;
   }
@@ -267,6 +283,16 @@
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: @regular;
+  outline: none;
+
+  &:hover {
+   border-color: @darkviolet-color;
+ }
+
+ &:focus {
+   border-color: @crimson-color;
+ }
+
 
   @media @tablet-widths {
     width: 100%;
