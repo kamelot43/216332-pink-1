@@ -1,9 +1,8 @@
 .advantages {
   position: relative;
-  background:@whitesmoke-color url("../img/bg-triangle-white.svg") no-repeat;
+  background: @whitesmoke-color url("../img/bg-triangle-white.svg") no-repeat;
   background-position: 0 155px;
   overflow: hidden;
-
 
   @media @tablet-widths {
     background-position: 0 200px;
@@ -11,7 +10,6 @@
 
   @media @desktop-widths {
     background-position: 0 320px;
-
   }
 }
 
@@ -20,10 +18,11 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 540px;
   background-repeat: no-repeat;
+
   @media (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
     background-size: 157px 320px;
-}
+  }
 
   @media @tablet-widths {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -32,15 +31,13 @@
     @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: 268px 481px;
-  }
-
+    }
   }
 
   @media @desktop-widths {
     background: none;
   }
 }
-
 
 .advantages__wrapper--proposals {
   background: none;
