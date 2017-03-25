@@ -1,21 +1,22 @@
 .pricelist {
   position: relative;
   background: @whitesmoke-color url("../img/bg-triangle-white.svg") no-repeat;
-  background-position: 0 -45px;
+  background-position: 0 0;
+  background-size: 100% 30px;
   overflow: hidden;
 
   @media @tablet-widths {
-    background-position: 0 -40px;
+  background-size: 100% 50px;
   }
 
   @media @desktop-widths {
-    background-position: 0 -10px;
+  background-size: 100% 75px;
   }
 }
 
 .pricelist__wrapper {
   .container();
-  padding-top: 112px;
+  padding-top: 91px;
 
   @media @tablet-widths {
     padding-top: 88px;
