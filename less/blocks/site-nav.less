@@ -85,7 +85,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.site-nav--closed .site-nav__logo {
+.site-nav--closed .site-nav__inner {
   border-bottom: none;
 }
 
@@ -155,12 +155,13 @@
   }
 }
 
-.site-nav__logo {
+.site-nav__inner {
   display: flex;
   align-items: center;
   padding-left: 20px;
   min-height: 70px;
   border-bottom: 1px solid @dimgray-color;
+  border-top: 1px solid #485461;
   box-sizing: border-box;
 
   @media @tablet-widths {
@@ -170,64 +171,55 @@
   @media @desktop-widths {
     float: left;
     width: 160px;
+    padding-left: 0;
     border-bottom: none;
   }
 }
-
-.site-nav__logo svg {
-  transform: translate(-70px, -5px);
-
-  @media @tablet-widths {
-    transform: translate(0, -5px);
-  }
-
-  @media @desktop-widths {
-    transform: translate(-20px, -5px);
-  }
-}
-
-.site-nav__logo-glasses--desktop {
-  display: none;
-
-  @media @desktop-widths {
-    display: inline;
-  }
-}
-
-.site-nav__logo-shine {
-  display: none;
-
-  @media @desktop-widths {
-    display: inline;
-  }
-}
-
-.site-nav__logo-glasses--tablet {
-  display: none;
+.site-nav__inner svg {
+  height: 23px;
+  width: 74px;
 
   @media @tablet-widths {
-    display: inline;
+    height: 40px;
+    width: 146px;
   }
+}
 
-  @media @desktop-widths {
+.site-nav__logo {
+
+  &--tablet {
     display: none;
   }
+
+  &--desktop {
+    display: none;
+  }
+
+    @media @tablet-widths {
+      &--tablet {
+        display: block;
+      }
+      &--mobile {
+        display: none;
+    }
+
 }
-
-.site-nav__logo-particle {
-  display: none;
-
-  @media @desktop-widths {
-    display: inline;
+@media @desktop-widths {
+  &--tablet {
+    display: none;
+}
+  &--desktop {
+    display: block;
   }
 }
+}
 
-.site-nav__logo a:hover .site-nav__logo-word,
-.site-nav__logo a:hover .site-nav__logo-glasses {
+.site-nav__inner a:hover .site-nav__logo-word,
+.site-nav__inner a:hover .site-nav__logo-glasses {
   fill: @crimson-color;
 }
 
-.site-nav__logo a:active .site-nav__logo-word,
-.site-nav__logo a:active .site-nav__logo-glasses {
+.site-nav__inner a:active .site-nav__logo-word,
+.site-nav__inner a:active .site-nav__logo-glasses {
   opacity: 0.3;
 }
