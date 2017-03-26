@@ -216,11 +216,19 @@
   }
 }
 
-.word {
-  fill: green;
+.site-nav__logo .word {
+  fill: orange;
 }
 
-.site-nav__inner a:hover .site-nav__logo {
-  fill: red;
-  transform: skewX(40deg);
+.site-nav__inner-link {
+  fill: #ffffff;
+
+ &:hover {
+  fill: @crimson-color;
+  }
+
+ &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
