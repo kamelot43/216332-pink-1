@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 22px;
-  //outline: 2px solid green;
 
   @media @tablet-widths {
     margin-bottom: 20px;
@@ -26,13 +25,13 @@
   padding-top: 19px;
   padding-bottom: 17px;
   background: @whitesmoke-color;
-  //outline: 2px solid;
 
   @media @tablet-widths {
-    min-height: 115px;
+    min-height: 110px;
     padding-left: 27px;
     padding-right: 30px;
     padding-top: 24px;
+    padding-bottom: 22px;
   }
 }
 
@@ -113,6 +112,7 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+  overflow: hidden;
 
   &::after {
     content: "Панорама дня";
@@ -120,7 +120,7 @@
     top: 0;
     right: 20px;
     display: block;
-    padding: 6px 20px;
+    padding: 5px 20px;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -132,12 +132,28 @@
     width: 660px;
 
     &::after {
-      top: 55px;
+      top: 53px;
+      padding: 5px 20px;
     }
   }
 
   @media @desktop-widths {
     width: 960px;
+
+    &::after {
+      top: 53px;
+      right: 10px;
+    }
+  }
+}
+
+.post__photo--panorama img {
+  @media @tablet-widths {
+    transform: translate(-20px, 0);
+  }
+
+  @media @desktop-widths {
+    transform: translate(-120px, 0);
   }
 }
 

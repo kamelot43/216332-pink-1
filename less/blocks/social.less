@@ -1,12 +1,20 @@
 .social__link {
   width: 45px;
   height: 45px;
-  margin: 0 6px;
+  margin: 0 5px;
   font-size: 0;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
   border: 3px solid @whitesmoke-color;
+
+  &:hover {
+    border-color: @darkviolet-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--tw {

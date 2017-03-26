@@ -9,8 +9,28 @@
   box-sizing: border-box;
   border: none;
   border-radius: 3px;
+  outline: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #61b98f;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
 
   @media @tablet-widths {
     width: 300px;
+  }
+}
+
+.original-btn--popup {
+  @media @desktop-widths {
+    width: 460px;
   }
 }

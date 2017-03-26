@@ -12,20 +12,58 @@
 }
 
 .research__wrapper {
+  position: relative;
   .container ();
+  display: flex;
+  background: url("../img/icon-timer.svg") no-repeat;
+  background-position: 0 59px;
+  background-size: 238px 276px;
+
+  &::before {
+    content: "24";
+    position: absolute;
+    top: 113px;
+    left: 20px;
+    display: block;
+    box-sizing: border-box;
+    width: 202px;
+    height: 202px;
+    padding-top: 69px;
+    padding-left: 31px;
+    font-size: 96px;
+    font-weight: 700;
+    color: @crimson-color;
+    border: 14px solid @crimson-color;
+    border-radius: 50%;
+  }
+
+  @media @desktop-widths {
+    background-size: 298px 345px;
+    background-position: 0 46px;
+
+    &::before {
+      left: 22px;
+      width: 253px;
+      height: 253px;
+      padding-top: 91px;
+      padding-left: 40px;
+      font-size: 120px;
+      border-width: 17px;
+    }
+  }
 }
 
 .research-inner {
   width: 300px;
   margin-left: auto;
-  padding-top: 74px;
-  padding-bottom: 30px;
+  padding-top: 94px;
+  padding-bottom: 35px;
   padding-left: 10px;
   padding-right: 10px;
 
   @media @desktop-widths {
     width: 565px;
-    padding-top: 115px;
+    padding-top: 135px;
     padding-bottom: 110px;
   }
 }

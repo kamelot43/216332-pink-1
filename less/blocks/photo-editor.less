@@ -10,7 +10,7 @@
 
   @media @tablet-widths {
     padding-top: 45px;
-    padding-bottom: 65px;
+    padding-bottom: 75px;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 18px;
@@ -19,6 +19,7 @@
 
   @media @desktop-widths {
     padding-top: 6px;
+    padding-bottom: 60px;
   }
 }
 
@@ -32,14 +33,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 51px;
   }
 
   @media @desktop-widths {
     box-sizing: border-box;
     padding-left: 80px;
     padding-right: 60px;
-    padding-top: 55px;
+    padding-top: 60px;
+    background: @whitesmoke-color;
   }
 }
 
@@ -97,6 +99,10 @@
   cursor: pointer;
   background-position: center;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   &--crop {
     background-image: url("../img/icon-editor-crop.svg");
   }
@@ -116,6 +122,10 @@
     background-size: 24px 26px;
     background-position: center;
     opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
 
     &--crop {
       background-image: url("../img/icon-editor-crop-active.svg");
@@ -192,6 +202,10 @@
   background-color: #f2f2f2;
   cursor: pointer;
 
+  &:active {
+    background-color: @crimson-color;
+  }
+
   @media @tablet-widths {
     &--crop {
       right: 45px;
@@ -262,9 +276,9 @@
 
 .photo-editor__console {
   background: @whitesmoke-color;
-  //min-height: 760px;
 
   @media @desktop-widths {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+    background: none;
   }
 }

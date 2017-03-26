@@ -8,6 +8,16 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
+
+  &:hover:not(&--active)::before {
+    background-color: darken(@silver-color,10%);
+  }
+
+  &:active:not(&--active)::before {
+    background-color: lighten(@silver-color,10%);
+  }
+
 
   &::before {
     content: "";
