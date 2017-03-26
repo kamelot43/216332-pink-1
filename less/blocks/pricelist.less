@@ -4,9 +4,11 @@
   background-position: 0 0;
   background-size: 100% 30px;
   overflow: hidden;
+
   @media @tablet-widths {
     background-size: 100% 50px;
   }
+
   @media @desktop-widths {
     background-size: 100% 75px;
   }
@@ -15,10 +17,12 @@
 .pricelist__wrapper {
   .container();
   padding-top: 91px;
+
   @media @tablet-widths {
     padding-top: 88px;
     padding-bottom: 71px;
   }
+
   @media @desktop-widths {
     padding-top: 145px;
     padding-bottom: 91px;
@@ -31,10 +35,12 @@
   left: -98%;
   border-collapse: collapse;
   background: white;
+
   @media @tablet-widths {
     left: 0;
     width: 620px;
   }
+
   @media @desktop-widths {
     width: 940px;
   }
@@ -50,9 +56,11 @@
   border: 1px solid #e5e5e5;
   background: #283645;
   color: #ffffff;
+
   @media @tablet-widths {
     height: 75px;
   }
+
   @media @desktop-widths {
     height: 95px;
   }
@@ -68,6 +76,7 @@
     height: 73px;
     background: url("../img/bg-hit.svg") no-repeat;
   }
+
   &::after {
     content: "хит";
     position: absolute;
@@ -79,10 +88,12 @@
     font-size: 14px;
     font-weight: @regular;
   }
+
   @media @tablet-widths {
     &::before {
       background: url("../img/bg-hit-tablet.svg") no-repeat;
     }
+
     &::after {
       top: 4px;
     }
@@ -91,6 +102,7 @@
 
 .pricelist__title--hidden {
   display: none;
+
   @media @tablet-widths {
     display: table-cell;
     background: @whitesmoke-color;
@@ -109,6 +121,7 @@
   font-weight: @regular;
   border: 1px solid #e5e5e5;
   text-transform: uppercase;
+
   @media @tablet-widths {
     padding-top: 0;
     padding-left: 15px;
@@ -116,6 +129,7 @@
     height: 45px;
     font-size: 0;
   }
+
   @media @desktop-widths {
     width: 120px;
     height: 60px;
@@ -126,12 +140,14 @@
 
 .pricelist__option--base {
   display: none;
+
   @media @tablet-widths {
     display: table-cell;
     font-size: 14px;
     font-weight: @light;
     text-transform: none;
   }
+
   @media @desktop-widths {
     font-size: 18px;
     line-height: 30px;
@@ -146,10 +162,12 @@
   height: 25px;
   background-repeat: no-repeat;
   background-size: 31px 25px;
+
   @media @tablet-widths {
     right: 65px;
     top: 10px;
   }
+
   @media @desktop-widths {
     right: 105px;
     top: 15px;
@@ -167,9 +185,11 @@
 .pricelist__package {
   text-transform: uppercase;
   font-weight: @bold;
+
   @media @tablet-widths {
     font-size: 16px;
   }
+
   @media @desktop-widths {
     font-size: 18px;
     line-height: 30px;
@@ -181,9 +201,11 @@
   font-size: 24px;
   font-weight: @light;
   text-transform: uppercase;
+
   @media @tablet-widths {
     font-size: 18px;
   }
+
   @media @desktop-widths {
     font-size: 24px;
     line-height: 30px;
@@ -195,6 +217,7 @@
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 45px;
+
   @media @tablet-widths {
     display: none;
   }

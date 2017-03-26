@@ -176,7 +176,7 @@
   }
 }
 
-.site-nav__inner svg {
+.site-nav__logo {
   height: 23px;
   width: 74px;
 
@@ -186,7 +186,7 @@
   }
 }
 
-.site-nav__logo {
+.site-nav__logo-icon {
   &--tablet {
     display: none;
   }
@@ -216,6 +216,11 @@
   }
 }
 
-.site-nav__inner a:hover svg {
-  fill: @crimson-color;
+.word {
+  fill: green;
+}
+
+.site-nav__inner a:hover .site-nav__logo {
+  fill: red;
+  transform: skewX(40deg);
 }
