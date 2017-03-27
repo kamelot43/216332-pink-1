@@ -62,6 +62,17 @@
   font-weight: @light;
   color: @crimson-color;
 
+  &:hover {
+    color: @darkviolet-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: @darkviolet-color;
+
+  }
+
   @media @desktop-widths {
     padding-top: 15px;
   }
@@ -105,10 +116,10 @@
 .site-footer__logo-wrapper {
   display: flex;
   align-items: flex-end;
-  flex-basis: 90px;
+  flex-basis: 100px;
 
   &--photo {
-    flex-basis: 80px;
+    flex-basis: 90px;
   }
 
   @media @desktop-widths {
@@ -177,7 +188,7 @@
 .site-footer__copyright-wrapper {
   display: flex;
   align-items: center;
-  flex-basis: 60px;
+  flex-basis: 75px;
   line-height: 18px;
 
   @media @tablet-widths {
