@@ -62,15 +62,16 @@
   font-weight: @light;
   color: @crimson-color;
 
-  &:hover {
-    color: @darkviolet-color;
-    text-decoration: underline;
-  }
+  &--mail {
+    &:hover {
+      color: @darkviolet-color;
+      text-decoration: underline;
+    }
 
-  &:active {
-    opacity: 0.3;
-    color: @darkviolet-color;
-
+    &:active {
+      opacity: 0.3;
+      color: @darkviolet-color;
+    }
   }
 
   @media @desktop-widths {
@@ -152,7 +153,6 @@
     }
   }
 }
-
 
 .site-footer__logo-link {
   fill: @darkviolet-color;
