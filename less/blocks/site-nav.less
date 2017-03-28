@@ -97,8 +97,28 @@
   display: none;
 }
 
-.site-nav--nojs .site-nav__item {
+.site-nav--nojs .site-nav__list {
   display: block;
+
+  @media @desktop-widths {
+    display: inline-flex;
+  }
+}
+
+.site-nav--nojs {
+  background: @darkviolet-color;
+
+  @media @desktop-widths {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.site-nav--nojs .site-nav__inner {
+  border-bottom: 1px solid @dimgray-color;
+
+  @media @desktop-widths {
+    border-bottom: none;
+  }
 }
 
 .site-nav__link {
@@ -218,10 +238,6 @@
       display: block;
     }
   }
-}
-
-.site-nav__logo .word {
-  fill: orange;
 }
 
 .site-nav__inner-link {

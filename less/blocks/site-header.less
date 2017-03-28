@@ -1,13 +1,13 @@
 .site-header {
   overflow: hidden;
-  background: @darkviolet-color url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+  background: @navy-color url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
 
   &--inner {
     background-position: center bottom -222px;
   }
 
   @media @tablet-widths {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
+    background: @navy-color url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
 
     &--inner {
       background-position: center bottom -290px;
@@ -15,7 +15,7 @@
   }
 
   @media @desktop-widths {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+    background: @navy-color url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
 
     &--inner {
       background-position: center bottom -460px;
@@ -25,7 +25,7 @@
 
 @media (min-width: 320px) and (min-resolution: 144dpi),(min-width: 320px) and (min-resolution: 1.5dppx) {
   .site-header {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
+    background: @navy-color url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
     background-size: 700px 466px;
 
     &--inner {
@@ -36,7 +36,7 @@
 
 @media (min-width: 660px) and (min-resolution: 144dpi),(min-width: 660px) and (min-resolution: 1.5dppx) {
   .site-header {
-    background: url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
+    background: @navy-color url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
     background-size: 1200px 729px;
 
     &--inner {
@@ -47,7 +47,7 @@
 
 @media (min-width: 960px) and (min-resolution: 144dpi),(min-width: 960px) and (min-resolution: 1.5dppx) {
   .site-header {
-    background: url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom -10px;
+    background: @navy-color url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom -10px;
     background-size: 2560px 865px;
 
     &--inner {
@@ -61,17 +61,20 @@
     margin: 0 auto;
     margin-top: 110px;
     width: 320px;
+    min-height: 286px;
   }
 
   @media @tablet-widths {
     margin: 0 auto;
     margin-top: 73px;
     width: 600px;
+    min-height: 545px;
   }
 
   @media @desktop-widths {
     margin-top: 93px;
     width: 860px;
+    min-height: 645px;
   }
 }
 
