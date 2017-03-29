@@ -1,13 +1,13 @@
 .site-header {
   overflow: hidden;
-  background: @navy-color url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+  background: @darkviolet-color url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
 
   &--inner {
     background-position: center bottom -222px;
   }
 
   @media @tablet-widths {
-    background: @navy-color url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
 
     &--inner {
       background-position: center bottom -290px;
@@ -15,7 +15,7 @@
   }
 
   @media @desktop-widths {
-    background: @navy-color url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
 
     &--inner {
       background-position: center bottom -460px;
@@ -25,7 +25,7 @@
 
 @media (min-width: 320px) and (min-resolution: 144dpi),(min-width: 320px) and (min-resolution: 1.5dppx) {
   .site-header {
-    background: @navy-color url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
     background-size: 700px 466px;
 
     &--inner {
@@ -36,7 +36,7 @@
 
 @media (min-width: 660px) and (min-resolution: 144dpi),(min-width: 660px) and (min-resolution: 1.5dppx) {
   .site-header {
-    background: @navy-color url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
+    background: url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
     background-size: 1200px 729px;
 
     &--inner {
@@ -47,7 +47,7 @@
 
 @media (min-width: 960px) and (min-resolution: 144dpi),(min-width: 960px) and (min-resolution: 1.5dppx) {
   .site-header {
-    background: @navy-color url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom -10px;
+    background: url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom -10px;
     background-size: 2560px 865px;
 
     &--inner {
@@ -55,6 +55,10 @@
     }
   }
 }
+
+
+
+
 
 .site-header__demo-img {
   @media @mobile-widths-only {
