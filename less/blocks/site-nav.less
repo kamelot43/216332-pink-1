@@ -8,9 +8,11 @@
 }
 
 .site-nav__wrapper {
+  width: auto;
   @media @desktop-widths {
     .clearfix();
-    .container();
+     width: 940px;
+     margin: 0 auto;
   }
 }
 
@@ -183,16 +185,20 @@
   display: flex;
   align-items: center;
   padding-left: 20px;
-  min-height: 70px;
+  height: 70px;
   border-bottom: 1px solid @dimgray-color;
   border-top: 1px solid #485461;
   box-sizing: border-box;
 
   @media @tablet-widths {
-    min-height: 110px;
+    height: 110px;
   }
 
   @media @desktop-widths {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
     float: left;
     width: 160px;
     padding-left: 0;

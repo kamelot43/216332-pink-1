@@ -123,6 +123,10 @@
     flex-basis: 90px;
   }
 
+    @media @tablet-widths {
+        flex-basis: 145px;
+    }
+
   @media @desktop-widths {
     align-items: flex-start;
   }
@@ -170,12 +174,12 @@
 .site-footer__social {
   display: flex;
   justify-content: space-between;
-  width: 180px;
+  outline: 2px solid;
 
   @media @tablet-widths {
     align-items: flex-end;
     justify-content: flex-start;
-    width: 200px;
+    flex-basis: 200px;
   }
 
   @media @desktop-widths {
@@ -190,16 +194,20 @@
   align-items: center;
   flex-basis: 75px;
   line-height: 18px;
+  outline: 2px solid;
 
   @media @tablet-widths {
     flex-direction: row;
     align-items: center;
+    flex-basis: 130px;
+
   }
 
   @media @desktop-widths {
     font-size: 18px;
     line-height: 18px;
     align-items: center;
+    flex-basis: 150px;
   }
 }
 
@@ -233,18 +241,19 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 285px;
+  height: 285px;
+  outline: 2px solid red;
 
   @media @tablet-widths {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     .container();
-    min-height: 130px;
+    height: 120px;
   }
 
   @media @desktop-widths {
-    min-height: 200px;
+    height: 200px;
   }
 }
 
