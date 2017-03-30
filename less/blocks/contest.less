@@ -15,10 +15,6 @@
       order: -1;
     }
   }
-
-  @media @desktop-widths {
-    margin-bottom: 5px;
-  }
 }
 
 .contest__wrapper--achievement {
@@ -26,12 +22,8 @@
   background: @whitesmoke-color;
 
   @media @tablet-widths {
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     background: none;
-  }
-
-  @media @desktop-widths {
-    margin-bottom: 55px;
   }
 }
 
@@ -54,12 +46,16 @@
 }
 
 .contest__wrapper--soft {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   background: @whitesmoke-color;
 
   @media @tablet-widths {
     margin-bottom: 55px;
     background: none;
+  }
+
+  @media @desktop-widths {
+    margin-top: 10px;
   }
 }
 
@@ -67,7 +63,11 @@
   margin-bottom: 20px;
 
   @media @tablet-widths {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 50px;
   }
 }
 
@@ -100,11 +100,14 @@
   display: flex;
   flex-direction: column;
 
+  @media @tablet-widths {
+    .container();
+  }
+
   @media @desktop-widths {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    .container();
   }
 }
 
@@ -118,14 +121,14 @@
   @media @tablet-widths {
     width: 500px;
     margin: 0 auto;
-    padding-top: 35px;
+    padding-top: 40px;
   }
 
   @media @desktop-widths {
     width: 820px;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 35px;
+    padding-top: 40px;
     padding-bottom: 5px;
   }
 }
@@ -137,10 +140,10 @@
 }
 
 .contest__list--achievement {
-  padding-top: 43px;
+  padding-top: 120px;
 
   @media @tablet-widths {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -149,7 +152,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 46px;
+    padding-top: 56px;
     padding-left: 62px;
     padding-right: 0;
     padding-bottom: 10px;
@@ -157,7 +160,7 @@
 }
 
 .contest__list--soft {
-  padding-top: 37px;
+  padding-top: 117px;
 
   @media @tablet-widths {
     padding-top: 50px;
@@ -167,7 +170,7 @@
   }
 
   @media @desktop-widths {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-left: 70px;
   }
 }
@@ -313,7 +316,7 @@
   }
 
   @media @desktop-widths {
-    width: 285px;
+    width: 282px;
     margin-top: 0;
   }
 }
@@ -341,6 +344,7 @@
 .contest__fieldset {
   padding: 0;
   .container();
+  position: relative;
 
   @media @mobile-widths-only {
     border: none;
@@ -354,6 +358,7 @@
 .contest__fieldset--identification {
   @media @tablet-widths {
     border: none;
+    margin-bottom: 15px;
   }
 
   @media @desktop-widths {
@@ -363,28 +368,40 @@
 }
 
 .contest__fieldset--soft {
+  @media @tablet-widths {
+    margin-bottom: 10px;
+  }
+
   @media @desktop-widths {
     width: 430px;
+  }
+}
+
+.contest__fieldset--feedback {
+  @media @tablet-widths {
+    margin-bottom: 15px;
   }
 }
 
 .contest__legend {
   line-height: 18px;
   color: @crimson-color;
-  text-align: center;
   text-transform: uppercase;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &--impressions {
+    top: 10px;
+  }
 
   @media @tablet-widths {
+    top: 0;
     padding-left: 25px;
     padding-right: 25px;
-  }
-}
-
-.contest__legend--impressions {
-  transform: translateY(10px);
-
-  @media @tablet-widths {
-    transform: translateY(0);
   }
 }
 
@@ -422,6 +439,14 @@
   }
 }
 
+.contest__legend span {
+  @media @tablet-widths {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white;
+  }
+}
+
 .contest__item {
   display: flex;
 }
@@ -448,6 +473,7 @@
   @media @tablet-widths {
     position: relative;
     flex-direction: column;
+    margin-bottom: 25px;
 
     &::after {
       content: "";
@@ -465,7 +491,6 @@
   }
 
   @media @desktop-widths {
-
     width: 370px;
     margin-bottom: 0;
 
@@ -516,7 +541,7 @@
 }
 
 .contest__textarea {
-  margin-top: 25px;
+  margin-top: 35px;
   padding-top: 15px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -533,15 +558,15 @@
   @media @tablet-widths {
     width: 500px;
     height: 195px;
-    margin-top: 30px;
+    margin-top: 45px;
     margin-left: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   @media @desktop-widths {
     height: 125px;
     width: 820px;
-    margin-top: 35px;
+    margin-top: 45px;
     margin-bottom: 35px;
   }
 }
@@ -573,7 +598,7 @@
   color: @crimson-color;
 }
 
-.conest__request {
+.contest__request {
   display: none;
 
   @media @tablet-widths {

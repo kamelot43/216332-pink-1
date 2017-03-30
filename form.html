@@ -2,37 +2,15 @@
 <html lang="ru">
 
 <head>
-  <style>
-    HTML {
-      background: url('preview/pink-form-mobile.jpg') 50% 0 no-repeat;
-    }
-
-    @media (min-width: 660px) {
-      HTML {
-        background-image: url('preview/pink-form-tablet.jpg');
-      }
-    }
-
-    @media (min-width: 960px) {
-      HTML {
-        background-image: url('preview/pink-form-desktop.jpg');
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
+  <script src="js/picturefill.js" async></script>
   <title>Пинк - конкурс</title>
 </head>
 
 <body>
-  <svg class="svg-defs" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+  <svg class="svg-defs" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
     <defs>
       <symbol id="pink-white-mobile">
         <g>
@@ -145,7 +123,7 @@
 
           <div class="site-nav__inner">
             <a href="index.html" class="site-nav__inner-link">
-              <svg class="site-nav__logo">
+              <svg class="site-nav__logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип Пинк">
               <use class="site-nav__logo-icon site-nav__logo-icon--mobile" xlink:href="#pink-white-mobile"></use>
               <use class="site-nav__logo-icon site-nav__logo-icon--tablet" xlink:href="#pink-white-tablet"></use>
               <use class="site-nav__logo-icon site-nav__logo-icon--desktop" xlink:href="#pink-white-desktop"></use>
@@ -179,12 +157,15 @@
       <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
 
       <p class="contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
-        <span class="conest__request">Пожалуйста, заполните форму ниже:</span>
+        <span class="contest__request">Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="contest__form" action="https://echo.htmlacademy.ru/ " method="get">
 
+
         <div class="contest__wrapper contest__wrapper--identification">
+
           <fieldset class="contest__fieldset contest__fieldset--identification">
+
 
             <ul class="contest__list contest__list--identification">
               <li class="contest__item contest__item--identification">
@@ -205,11 +186,15 @@
             </ul>
 
           </fieldset>
+
         </div>
 
         <div class="contest__wrapper contest__wrapper--achievement">
+
           <fieldset class="contest__fieldset contest__fieldset--achievement">
-            <legend class="contest__legend contest__legend--achievement">Ваши безбашенные<br> достижения в путешествии</legend>
+
+            <legend class="contest__legend contest__legend--achievement"><span>Ваши безбашенные<br> достижения в путешествии</span></legend>
+
             <ul class="contest__list contest__list--achievement">
 
               <li class="contest__item contest__item--achievement">
@@ -245,11 +230,14 @@
             </ul>
 
           </fieldset>
+
         </div>
 
         <div class="contest__wrapper contest__wrapper--feedback">
+
           <fieldset class="contest__fieldset contest__fieldset--feedback">
-            <legend class="contest__legend contest__legend--feedback">Контактная информация</legend>
+
+            <legend class="contest__legend contest__legend--feedback"><span>Контактная информация</span></legend>
 
 
             <ul class="contest__list contest__list--feedback">
@@ -267,13 +255,15 @@
             </ul>
 
           </fieldset>
+
         </div>
 
         <div class="contest__wrapper contest__wrapper--soft">
+
           <fieldset class="contest__fieldset contest__fieldset--soft">
 
+            <legend class="contest__legend contest__legend--soft"><span>С каким приложением путешествовали?</span></legend>
 
-            <legend class="contest__legend contest__legend--soft">С каким приложением путешествовали?</legend>
             <ul class="contest__list contest__list--soft">
 
               <li class="contest__item contest__item--soft">
@@ -294,14 +284,19 @@
             </ul>
 
           </fieldset>
+
         </div>
 
         <div class="contest__wrapper contest__wrapper--impressions">
+
           <fieldset class="contest__fieldset contest__fieldset--impressions">
-            <legend class="contest__legend contest__legend--impressions">Опишите свои эмоции</legend>
+
+            <legend class="contest__legend contest__legend--impressions"><span>Опишите свои эмоции</span></legend>
+
             <textarea class="contest__textarea" name="impressions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 
           </fieldset>
+
         </div>
 
         <div class="contest__wrapper contest__wrapper--submit">
@@ -319,8 +314,8 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div class="site-footer__logo-wrapper">
-        <a class="site-footer__logo-link">
-          <svg class="site-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <a class="site-footer__logo-link" href="index.html">
+          <svg class="site-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип Пинк">
             <use class="site-footer__logo-icon site-footer__logo-icon--mobile" xlink:href="#logo-pink-blue-mobile"></use>
             <use class="site-footer__logo-icon site-footer__logo-icon--tablet" xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
@@ -336,8 +331,9 @@
 
       <div class="site-footer__copyright-wrapper">Разработано:
         <a class="site-footer__copyright-link" href="http://htmlacademy.ru/">Html Academy
-          <svg class="site-footer__copyright-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+          <svg class="site-footer__copyright-logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип Академии">
           <use xlink:href="#logo-htmlacademy"></use>
+        </svg>
         </a>
       </div>
 

@@ -2,32 +2,11 @@
 <html lang="ru">
 
 <head>
-  <style>
-    HTML {
-      background: url('preview/pink-photo-mobile.jpg') 50% 0 no-repeat;
-    }
 
-    @media (min-width: 660px) {
-      HTML {
-        background-image: url('preview/pink-photo-tablet.jpg');
-      }
-    }
-
-    @media (min-width: 960px) {
-      HTML {
-        background-image: url('preview/pink-photo-desktop.jpg');
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
+  <script src="js/picturefill.js" async></script>
   <title>Пинк - фотографии</title>
 </head>
 
@@ -145,7 +124,7 @@
 
           <div class="site-nav__inner">
             <a href="index.html" class="site-nav__inner-link">
-              <svg class="site-nav__logo">
+              <svg class="site-nav__logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип Пинк">
               <use class="site-nav__logo-icon site-nav__logo-icon--mobile" xlink:href="#pink-white-mobile"></use>
               <use class="site-nav__logo-icon site-nav__logo-icon--tablet" xlink:href="#pink-white-tablet"></use>
               <use class="site-nav__logo-icon site-nav__logo-icon--desktop" xlink:href="#pink-white-desktop"></use>
@@ -182,6 +161,7 @@
       <p class="feed__promo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
       <article class="post post--panorama">
+        <h3 class="visually-hidden">Фото пользователя: Анна</h3>
 
         <div class="post__photo post__photo--panorama">
           <a href="#">
@@ -209,6 +189,7 @@
       <div class="feed__wrapper">
 
         <article class="post">
+          <h3 class="visually-hidden">Фото пользователя: Левон</h3>
 
           <div class="post__photo">
             <picture>
@@ -232,6 +213,7 @@
         </article>
 
         <article class="post">
+          <h3 class="visually-hidden">Фото пользователя: Антон</h3>
 
           <div class="post__photo">
             <picture>
@@ -255,6 +237,7 @@
         </article>
 
         <article class="post">
+          <h3 class="visually-hidden">Фото пользователя: Борис</h3>
 
           <div class="post__photo">
             <picture>
@@ -278,6 +261,7 @@
         </article>
 
         <article class="post">
+          <h3 class="visually-hidden">Фото пользователя: Сергей</h3>
 
           <div class="post__photo">
             <picture>
@@ -301,6 +285,7 @@
         </article>
 
         <article class="post">
+          <h3 class="visually-hidden">Фото пользователя: Максим</h3>
 
           <div class="post__photo">
             <picture>
@@ -324,6 +309,8 @@
         </article>
 
         <article class="post">
+          <h3 class="visually-hidden">Фото пользователя: Надежда</h3>
+
 
           <div class="post__photo">
             <picture>
@@ -351,6 +338,7 @@
       <h2 class="visually-hidden">Фоторедактор</h2>
       <p class="photo-editor__text"> Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне !</p>
       <section class="photo-editor__console">
+        <h2 class="visually-hidden">Консоль фоторедактора</h2>
         <div class="photo-editor__wrapper">
 
           <div class="photo-editor__display">
@@ -401,8 +389,8 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div class="site-footer__logo-wrapper site-footer__logo-wrapper--photo">
-        <a class="site-footer__logo-link">
-          <svg class="site-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <a class="site-footer__logo-link" href="index.html">
+          <svg class="site-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип Пинк">
             <use class="site-footer__logo-icon site-footer__logo-icon--mobile" xlink:href="#logo-pink-blue-mobile"></use>
             <use class="site-footer__logo-icon site-footer__logo-icon--tablet" xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
@@ -418,8 +406,9 @@
 
       <div class="site-footer__copyright-wrapper">Разработано:
         <a class="site-footer__copyright-link" href="http://htmlacademy.ru/">Html Academy
-          <svg class="site-footer__copyright-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+          <svg class="site-footer__copyright-logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Логотип Академии">
           <use xlink:href="#logo-htmlacademy"></use>
+        </svg>
         </a>
       </div>
 
