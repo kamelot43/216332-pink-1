@@ -56,40 +56,14 @@
   max-width: 320px;
   position: relative;
 
-  &::after {
-    content: "Панорама дня";
-    position: absolute;
-    top: 0;
-    right: 20px;
-    display: block;
-    padding: 5px 20px;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: @bold;
-    font-family: "Open Sans", "Arial", sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: @crimson-color;
-  }
-
   @media @tablet-widths {
     max-width: 700px;
     margin-bottom: 47px;
-
-    &::after {
-      top: 53px;
-      right: 20px;
-      padding: 5px 20px;
-    }
   }
 
   @media @desktop-widths {
     max-width: 1200px;
     margin-bottom: 47px;
-
-    &::after {
-      right: 10px;
-    }
   }
 }
 
@@ -146,12 +120,38 @@
   height: 137px;
   overflow: hidden;
 
+  &::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: @bold;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: @crimson-color;
+  }
+
+
   @media @tablet-widths {
     height: 509px;
+    &::after {
+      top: 53px;
+      right: 20px;
+      padding: 5px 20px;
+    }
   }
 
   @media @desktop-widths {
     height: 506px;
+
+    &::after {
+      right: 10px;
+    }
   }
 }
 
