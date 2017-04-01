@@ -49,18 +49,47 @@
 }
 
 .post--panorama {
+  position: relative;
+  margin: 0 auto;
   margin-bottom: 22px;
   min-height: 327px;
+  width: auto;
+  max-width: 320px;
+
+  &::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: block;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: @crimson-color;
+  }
 
   @media @tablet-widths {
-    width: auto;
+    max-width: 700px;
     margin-bottom: 47px;
     min-height: 630px;
+
+    &::after {
+      top: 53px;
+      right: 20px;
+      padding: 5px 20px;
+    }
   }
 
   @media @desktop-widths {
+    max-width: 1200px;
     margin-bottom: 47px;
     min-height: 603px;
+
+    &::after {
+      right: 10px;
+    }
   }
 }
 
@@ -116,50 +145,16 @@
   width: 320px;
   margin: 0 auto;
   overflow: hidden;
-  outline: 2px solid red;
-
-  &::after {
-    content: "Панорама дня";
-    position: absolute;
-    top: 0;
-    right: 20px;
-    display: block;
-    padding: 5px 20px;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: @crimson-color;
-  }
 
   @media @tablet-widths {
-    width: auto;
-
-    &::after {
-      top: 53px;
-      right: 60px;
-      padding: 5px 20px;
-    }
+    width: 700px;
   }
 
   @media @desktop-widths {
-    &::after {
-      top: 53px;
-      right: 250px;
-    }
+    width: 1200px;
   }
 }
 
-/*.post__photo--panorama img {
-  @media @tablet-widths {
-    transform: translate(-20px, 0);
-  }
-
-  @media @desktop-widths {
-    transform: translate(-120px, 0);
-  }
-}
-*/
 
 .post__heart {
   font-size: 0;
