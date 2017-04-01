@@ -116,6 +116,7 @@
   width: 320px;
   margin: 0 auto;
   overflow: hidden;
+  outline: 2px solid red;
 
   &::after {
     content: "Панорама дня";
@@ -132,25 +133,24 @@
   }
 
   @media @tablet-widths {
-    width: 660px;
+    width: auto;
 
     &::after {
       top: 53px;
+      right: 60px;
       padding: 5px 20px;
     }
   }
 
   @media @desktop-widths {
-    width: 960px;
-
     &::after {
       top: 53px;
-      right: 10px;
+      right: 250px;
     }
   }
 }
 
-.post__photo--panorama img {
+/*.post__photo--panorama img {
   @media @tablet-widths {
     transform: translate(-20px, 0);
   }
@@ -159,6 +159,7 @@
     transform: translate(-120px, 0);
   }
 }
+*/
 
 .post__heart {
   font-size: 0;
