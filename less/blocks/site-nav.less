@@ -22,7 +22,7 @@
 
   @media @desktop-widths {
     float: right;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     width: 625px;
     padding-bottom: 27px;
@@ -78,10 +78,8 @@
 }
 
 .site-nav--closed .site-nav__list {
-  display: none;
-
-  @media @desktop-widths {
-    display: flex;
+  @media (max-width: 959px) {
+    display: none;
   }
 }
 
